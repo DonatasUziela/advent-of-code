@@ -19,4 +19,4 @@ const top3Total = sorted[0] + sorted[1] + sorted[2];
 
 console.log(top3Total)
 
-// node 2022/1/CalorieCounting.js;2D
+// node 2022/1/CalorieCounting.js
