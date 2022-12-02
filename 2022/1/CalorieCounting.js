@@ -4,6 +4,8 @@ const path = require('path');
 const input = fs.readFileSync(path.resolve(__dirname, 'input.txt'), 'utf-8');
 const entries = input.split('\n');
 
+console.log(input.split('\n'))
+
 const caloriesByElf = entries.reduce((result, entry) => {
     if (entry === '') return [...result, 0];
     
