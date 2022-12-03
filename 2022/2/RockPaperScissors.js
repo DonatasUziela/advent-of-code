@@ -16,11 +16,11 @@ const scoreByPlay = {
     'C Z': 6,
 }
 
-const result3 = plays
+const result = plays
     .map(p => scoreByPlay[p])
     .reduce((sum, s) => sum += s)
 
-console.log(result3) // 13526
+console.log(result) // 13526
 
 // Part 2
 
@@ -36,10 +36,10 @@ const scoreByPlay2 = {
     'C Z': 7,
 }
 
-const result4 = plays
+const result2 = plays
     .map(p => scoreByPlay2[p])
     .reduce((sum, s) => sum += s)
 
-console.log(result4) // 14204
+console.log(result2) // 14204
 
 // node 2022/2/RockPaperScissors.js
