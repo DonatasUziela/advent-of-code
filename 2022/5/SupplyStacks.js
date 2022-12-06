@@ -1,19 +1,9 @@
 const fs = require('fs');
+const { chunk } = require('lodash');
 const path = require('path');
 
 const input = fs.readFileSync(path.resolve(__dirname, 'input.txt'), 'utf-8');
 const entries = input.split('\n');
-
-const COLUMN_COUNT = 9;
-const LETTER_STEP = 4
-
-const toRow = (str) => {
-    const row = []
-    for (let i = 0; i < COLUMN_COUNT; i++) {
-        row.push(str.slice(i * LETTER_STEP, i * LETTER_STEP + 3))
-    }
-    return row
-}
 
 const transpose = (result, row) => {
     row.forEach((item, i) => {
@@ -25,11 +15,12 @@ const transpose = (result, row) => {
 
 const _stack = entries
     .slice(0, 8)
-    .map(toRow)
-    .map(r => r.map(s => s.replace(/ /g, '')))
+    .map(row => chunk(row, 4))
     .reverse()
     .reduce(transpose, [])    
-    .map(s => s.filter(i => i))    
+    .map(c => c.map(i => i.join('')))
+    .map(c => c.map(i => i.replace(/[ \]\[]/g, '')))
+    .map(c => c.filter(i => i))
 
 const stack2 = _stack.map(l => l.slice()); // deep close for part 2
 
@@ -72,4 +63,4 @@ const result2 = stack2
 
 console.log({ result2 }) // TCGLQSLPW
 
-// node 2022/5/SupplyStacks.jsz
+// node 2022/5/SupplyStacks.js
