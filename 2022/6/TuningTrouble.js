@@ -7,9 +7,8 @@ const taskInput = fs.readFileSync(path.resolve(__dirname, 'input.txt'), 'utf-8')
 const PACKET_START = 4;
 
 /**
- * 
  * @param {string} input 
- * @returns number
+ * @param {number} size
  */
 const findUniqueSymbolsMessage = (input, size) => {
     for (let i = 0; i < input.length - size; i++) {
