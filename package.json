@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/DonatasUziela/advent-of-code#readme",
   "dependencies": {
+    "chai": "^4.3.7",
     "lodash": "^4.17.21"
   }
 }
