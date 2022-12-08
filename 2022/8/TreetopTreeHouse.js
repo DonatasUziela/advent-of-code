@@ -127,4 +127,4 @@ const countHighestScenicScore = (input) => {
 expect(countHighestScenicScore(testData)).to.equal(8)
 expect(countHighestScenicScore(taskInput)).to.equal(537600)
 
-// node 2022/8/index.js
+// node 2022/8/TreetopTreeHouse.js
