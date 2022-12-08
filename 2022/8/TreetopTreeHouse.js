@@ -69,7 +69,6 @@ const countHighestScenicScore = (input) => {
         .map(r => r.split(''))
         .map(r => r.map(c => parseInt(c, 10)));
 
-    const transposed = forest.reduce(transpose, []);
     const forestSize = forest.length;
 
     /**
@@ -80,33 +79,40 @@ const countHighestScenicScore = (input) => {
         const size = forest[row][column]
         const isBigger = tree => tree >= size
     
-        const left = forest[row].slice(0, column).reverse();
-        const higherIndexLeft = left.findIndex(isBigger);
-        const leftScore = higherIndexLeft === -1 ? column : higherIndexLeft + 1;
+        let leftScore = 0;
+        for (let c = column - 1; c >= 0; c--) {
+            leftScore++;
+            if (isBigger(forest[row][c])) break;
+        }
 
-        const right = forest[row].slice(column + 1, forestSize)
-        const higherIndexRight = right.findIndex(isBigger);
-        const rightScore = higherIndexRight === -1 ? forestSize - column - 1 : higherIndexRight + 1;
-        
-        const columnAbove = transposed[column].slice(0, row).reverse();
-        const higherIndexAbove = columnAbove.findIndex(isBigger);
-        const aboveScore = higherIndexAbove === -1 ? row : higherIndexAbove + 1;
+        let rightScore = 0;
+        for (let c = column + 1; c < forestSize; c++) {
+            rightScore++;
+            if (isBigger(forest[row][c])) break;
+        }
 
-        const columnBelow = transposed[column].slice(row + 1, forestSize);
-        const higherIndexBelow = columnBelow.findIndex(isBigger);
-        const belowScore = higherIndexBelow === -1 ? forestSize - row - 1 : higherIndexBelow + 1;
-        
+        let aboveScore = 0;
+        for (let r = row - 1; r >= 0; r--) {
+            aboveScore++;
+            if (isBigger(forest[r][column])) break;
+        }
+
+        let belowScore = 0;
+        for (let r = row + 1; r < forestSize; r++) {
+            belowScore++;
+            if (isBigger(forest[r][column])) break;
+        }
+
         return leftScore * rightScore * aboveScore * belowScore
     }
 
     const scores = [];
-
+    
     for (let row = 1; row < forest.length - 1; row++) {
         for (let column = 1; column < forest.length - 1; column++) {
             scores.push(getScore(row, column));
         }
     }
-
 
     return Math.max(...scores)
 }
