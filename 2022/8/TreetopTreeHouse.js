@@ -17,53 +17,41 @@ const countVisibleTree = (input) => {
         .map(r => r.map(c => parseInt(c, 10)));
 
     const transposed = forest.reduce(transpose, []);
-
-    const rowCount = forest.length;
-    const columnCount = forest[0].length;
-    const edgeTreesCount = (rowCount * 2) + (columnCount * 2) - 4;
+    const forestSize = forest.length;
+    const edgeTreesCount = (forestSize * 4) - 4
 
     /**
     *  @param {number} row
     *  @param {number} column
     */
     const isTreeVisible = (row, column) => {
-        const size = forest[row][column]
-        const isBigger = tree => tree >= size
+        const treeSize = forest[row][column]
+        const isBigger = tree => tree >= treeSize
     
         const left = forest[row].slice(0, column)
-        if (left.find(isBigger) === undefined) {
-            return true
-        }
+        if (left.find(isBigger) === undefined) return true;
 
-        const right = forest[row].slice(column + 1, columnCount)
-        if (right.find(isBigger) === undefined) {
-            return true
-        }
+        const right = forest[row].slice(column + 1, forestSize)
+        if (right.find(isBigger) === undefined) return true;
         
         const columnAbove = transposed[column].slice(0, row);
-        if (columnAbove.find(isBigger) === undefined) {
-            return true
-        }
+        if (columnAbove.find(isBigger) === undefined) return true;
 
-        const columnBelow = transposed[column].slice(row + 1, rowCount);
-        if (columnBelow.find(isBigger) === undefined) {
-            return true
-        }
+        const columnBelow = transposed[column].slice(row + 1, forestSize);
+        if (columnBelow.find(isBigger) === undefined) return true
         
         return false
     }
 
-    let internalVisibleTreesCount = 0;
+    let visibleInteriorTrees = 0;
 
-    for (let row = 1; row < rowCount - 1; row++) {
-        for (let column = 1; column < columnCount - 1; column++) {
-            if (isTreeVisible(row, column)) {
-                internalVisibleTreesCount++
-            }
+    for (let row = 1; row < forestSize - 1; row++) {
+        for (let column = 1; column < forestSize - 1; column++) {
+            if (isTreeVisible(row, column)) visibleInteriorTrees++
         }
     }
 
-    return edgeTreesCount + internalVisibleTreesCount;
+    return edgeTreesCount + visibleInteriorTrees;
 }
 
 expect(countVisibleTree(testData)).to.equal(21)
@@ -82,7 +70,6 @@ const countHighestScenicScore = (input) => {
         .map(r => r.map(c => parseInt(c, 10)));
 
     const transposed = forest.reduce(transpose, []);
-
     const forestSize = forest.length;
 
     /**
