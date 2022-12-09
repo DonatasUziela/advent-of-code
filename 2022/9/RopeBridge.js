@@ -17,12 +17,12 @@ const moveHeadMatchers = {
     'D': ({ x, y }) => ({ x, y: y - 1 }),
 }
 
-const moveTail = ({ headPosition, tailPosition }) => {
-    const xDiff = headPosition.x - tailPosition.x;
-    const yDiff = headPosition.y - tailPosition.y;
+const moveTail = ({ head, tail }) => {
+    const xDiff = head.x - tail.x;
+    const yDiff = head.y - tail.y;
 
-    let newX = tailPosition.x;
-    let newY = tailPosition.y;
+    let newX = tail.x;
+    let newY = tail.y;
 
     if (xDiff === 2 || (xDiff === 1 && Math.abs(yDiff) === 2)) newX++;
     else if (xDiff === -2 || (xDiff === -1 && Math.abs(yDiff) === 2)) newX--;
@@ -39,9 +39,9 @@ const moveTail = ({ headPosition, tailPosition }) => {
 
 
 const solve = (input) => {
-    let headPosition = { x: 0, y: 0 };
-    let tailPosition = { x: 0, y: 0 };
-    const lastTailVisitedPositions = [];
+    let head = { x: 0, y: 0 };
+    let tail = { x: 0, y: 0 };
+    const tailVisitedPosition = [];
 
     input
         .split('\n')
@@ -49,13 +49,13 @@ const solve = (input) => {
         .map(([d, amount]) => [d, parseInt(amount, 10)])
         .forEach(([direction, amount]) => {
             for (let i = 0; i < amount; i++) {
-                headPosition = moveHeadMatchers[direction](headPosition)
-                tailPosition = moveTail({ headPosition, tailPosition })
-                lastTailVisitedPositions.push(serialseCoords(tailPosition))
+                head = moveHeadMatchers[direction](head)
+                tail = moveTail({ head, tail })
+                tailVisitedPosition.push(serialseCoords(tail))
             }
         });
 
-    return uniq(lastTailVisitedPositions).length
+    return uniq(tailVisitedPosition).length
 }
 
 expect(solve(testData)).to.equal(13)
@@ -69,11 +69,11 @@ expect(solve(taskInput)).to.equal(6037)
  * @param {string} input
  */
 const solvePart2 = (input) => {
-    let headPosition = { x: 0, y: 0 };
-    let tailPositions = [];
+    let head = { x: 0, y: 0 };
+    let tails = [];
     const lastTailVisitedPositions = [];
 
-    for (let i = 0; i < 9; i++) tailPositions.push({ x: 0, y: 0 })
+    for (let i = 0; i < 9; i++) tails.push({ x: 0, y: 0 })
 
     input
         .split('\n')
@@ -81,17 +81,18 @@ const solvePart2 = (input) => {
         .map(([d, amount]) => [d, parseInt(amount, 10)])
         .forEach(([direction, amount]) => {
             for (let i = 0; i < amount; i++) {
-                headPosition = moveHeadMatchers[direction](headPosition)
+                head = moveHeadMatchers[direction](head)
 
-                tailPositions = tailPositions.reduce((result, tailPosition, index) => {
+                tails = tails.reduce((updatedTails, tail, index) => {
                     const newPosition = moveTail({
-                        headPosition: index === 0 ? headPosition : result[index - 1],
-                        tailPosition
+                        head: index === 0 ? head : updatedTails[index - 1],
+                        tail
                     });
-                    return [...result, newPosition];
+
+                    return [...updatedTails, newPosition];
                 }, [])
 
-                lastTailVisitedPositions.push(serialseCoords(tailPositions.at(-1)))
+                lastTailVisitedPositions.push(serialseCoords(tails.at(-1)))
             }
         });
 
