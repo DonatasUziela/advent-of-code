@@ -20,15 +20,16 @@ const moveHeadMatchers = {
 const moveTail = ({ head, tail }) => {
     const xDiff = head.x - tail.x;
     const yDiff = head.y - tail.y;
+    
+    const absXDiff = Math.abs(xDiff);
+    const absYDiff = Math.abs(yDiff);
 
     let newX = tail.x;
     let newY = tail.y;
 
-    if (xDiff === 2 || (xDiff === 1 && Math.abs(yDiff) === 2)) newX++;
-    else if (xDiff === -2 || (xDiff === -1 && Math.abs(yDiff) === 2)) newX--;
+    if (absXDiff === 2 || (absXDiff === 1 && absYDiff === 2)) newX += Math.sign(xDiff);
 
-    if (yDiff === 2 || (yDiff === 1 && Math.abs(xDiff) === 2)) newY++
-    else if (yDiff === -2 || (yDiff === -1 && Math.abs(xDiff) === 2)) newY--
+    if (absYDiff === 2 || (absYDiff === 1 && absXDiff === 2)) newY += Math.sign(yDiff)
 
     return { x: newX, y: newY };
 }
