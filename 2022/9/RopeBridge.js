@@ -48,13 +48,12 @@ const solve = (input) => {
         .split('\n')
         .map(l => l.split(' '))
         .map(([d, amount]) => [d, parseInt(amount, 10)])
-        .forEach(([direction, amount]) => {
-            for (let i = 0; i < amount; i++) {
-                head = moveHeadMatchers[direction](head)
-                tail = moveTail({ head, tail })
-                tailVisitedPosition.push(serialseCoords(tail))
-            }
-        });
+        .flatMap(([d, amount]) => d.repeat(amount).split(''))
+        .forEach((direction) => {
+            head = moveHeadMatchers[direction](head)
+            tail = moveTail({ head, tail })
+            tailVisitedPosition.push(serialseCoords(tail))
+        })
 
     return uniq(tailVisitedPosition).length
 }
@@ -80,21 +79,20 @@ const solvePart2 = (input) => {
         .split('\n')
         .map(l => l.split(' '))
         .map(([d, amount]) => [d, parseInt(amount, 10)])
-        .forEach(([direction, amount]) => {
-            for (let i = 0; i < amount; i++) {
-                head = moveHeadMatchers[direction](head)
+        .flatMap(([d, amount]) => d.repeat(amount).split(''))
+        .forEach((direction) => {
+            head = moveHeadMatchers[direction](head)
 
-                tails = tails.reduce((updatedTails, tail, index) => {
-                    const newPosition = moveTail({
-                        head: index === 0 ? head : updatedTails[index - 1],
-                        tail
-                    });
+            tails = tails.reduce((updatedTails, tail, index) => {
+                const newPosition = moveTail({
+                    head: index === 0 ? head : updatedTails[index - 1],
+                    tail
+                });
 
-                    return [...updatedTails, newPosition];
-                }, [])
+                return [...updatedTails, newPosition];
+            }, [])
 
-                lastTailVisitedPositions.push(serialseCoords(tails.at(-1)))
-            }
+            lastTailVisitedPositions.push(serialseCoords(tails.at(-1)))
         });
 
     return uniq(lastTailVisitedPositions).length
