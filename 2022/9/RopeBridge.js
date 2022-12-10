@@ -37,8 +37,6 @@ const moveTail = ({ head, tail }) => {
 /**
  * @param {string} input
  */
-
-
 const solve = (input) => {
     let head = { x: 0, y: 0 };
     let tail = { x: 0, y: 0 };
@@ -60,7 +58,6 @@ const solve = (input) => {
 
 expect(solve(testData)).to.equal(13)
 expect(solve(testData2)).to.equal(7)
-
 expect(solve(taskInput)).to.equal(6037)
 
 // Part 2
