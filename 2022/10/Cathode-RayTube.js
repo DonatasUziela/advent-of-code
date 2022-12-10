@@ -20,18 +20,12 @@ const solve = (input) => {
         .split('\n')
         .map(c => c.split(' '))
         .map(([command, arg]) => [command, parseInt(arg, 10)])
-        .flatMap(([command, arg]) => {
-            if (command === 'noop') return [null]
-            return [null, arg]
-        })
+        .flatMap(([command, arg]) => command === 'noop' ? [null] : [null, arg])
         .forEach((add) => {
             cycle++;
-
-            if (((cycle - 20) % 40) === 0)  {
-                signalStrengths.push(cycle * x)
-            }
-
-            if (add !== null) x += add;
+            // every 40 cycles, starting from 20
+            if (((cycle - 20) % 40) === 0) signalStrengths.push(cycle * x)
+            if (add) x += add;
         })
 
     return sum(signalStrengths)
@@ -41,6 +35,8 @@ expect(solve(testData)).to.equal(13140)
 expect(solve(taskInput)).to.equal(12640)
 
 // Part 2
+
+const CRT_WIDTH = 40;
 
 /**
  * @param {string} input
@@ -54,27 +50,19 @@ const solve2 = (input) => {
         .split('\n')
         .map(c => c.split(' '))
         .map(([command, arg]) => [command, parseInt(arg, 10)])
-        .flatMap(([command, arg]) => {
-            if (command === 'noop') return [null]
-            return [null, arg]
-        })
+        .flatMap(([command, arg]) => command === 'noop' ? [null] : [null, arg])
         .forEach((add) => {
             cycle++;
 
-            const position = ((cycle - 1) % 40);
-            
-            if (Math.abs(position - x) <= 1) {
-                CRT += '#';
-            } else {
-                CRT += '.';
-            }
+            const position = ((cycle - 1) % CRT_WIDTH);
+            const pixel = Math.abs(position - x) <= 1 ? '#' : '.'
 
-            if (position === 39) CRT += '\n';
-
-            if (add !== null) x += add;
+            CRT += pixel;
+            if (position === CRT_WIDTH - 1) CRT += '\n';
+            if (add) x += add;
         })
 
-    return CRT.slice(0, -1);
+    return CRT.slice(0, -1); // remove last new line
 }
 
 expect(solve2(testData)).to.equal(testResult)
