@@ -83,7 +83,7 @@ const solve2 = (input) => {
             while (monkey.items.length) {
                 worryLevel = monkey.items.shift()
                 monkey.inspected++;
-                const increased = monkey.operation(worryLevel) % LCM; // Main part -> reducing by common LargestCommonMultiple of all monkeys
+                const increased = monkey.operation(worryLevel) % LCM; // Main part -> reducing by LargestCommonMultiple of all monkeys
                 const throwToMonkey = monkey.test(increased)
                 monkeys[throwToMonkey].items.push(increased)
             }
