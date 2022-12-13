@@ -40,9 +40,9 @@ const compare = (left, right, depth = 0) => {
             continue
         }
 
-        throw new Error(`Unmaped types. l: ${typeof l}, r: ${typeof r}`) 
+        throw new Error(`Unmaped types. l: ${typeof l}, r: ${typeof r}`)
     }
-    
+
     return
 }
 
@@ -70,7 +70,7 @@ const solve = (input) => {
 }
 
 expect(solve(testData)).to.equal(13)
-expect(solve(taskInput)).to.equal(6123)
+expect(solve(taskInput)).to.equal(6086)
 
 // Part 2
 
@@ -78,9 +78,24 @@ expect(solve(taskInput)).to.equal(6123)
  * @param {string} input
  */
 const solve2 = (input) => {
+    const DIVIDER_1 = [[2]];
+    const DIVIDER_2 = [[6]];
+
+    const packets = input
+        .split('\n')
+        .filter(r => r)
+        .map(r => JSON.parse(r))
+        .concat([DIVIDER_1, DIVIDER_2])
+        .sort((a, b) => compare(a, b) ? -1 : 1)
+        .map(p => JSON.stringify(p));
+
+    const firstDividerIndex = packets.indexOf(JSON.stringify(DIVIDER_1)) + 1
+    const secondDividerIndex = packets.indexOf(JSON.stringify(DIVIDER_2)) + 1
+
+    return firstDividerIndex * secondDividerIndex
 }
 
-expect(solve2(testData)).to.equal(undefined)
-expect(solve2(taskInput)).to.equal(undefined);
+expect(solve2(testData)).to.equal(140)
+expect(solve2(taskInput)).to.equal(27930);
 
 // node 2022/13/index.js 
