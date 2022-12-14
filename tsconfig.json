@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "lib": [
+            "ESNext"
+        ],
+    },
+    "include": [
+        "2022/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
