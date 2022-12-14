@@ -14,16 +14,16 @@ const normalize = ([x, y], minX) => [x - minX, y];
 
 const symbolMatchers = [
     {
+        match: ({ x, y }, { sandSource }) => sandSource.x === x && sandSource.y === y,
+        symbol: '+'
+    },
+    {
         match: ({ x, y }, { sand }) => sand[serializeCoords({ x, y })],
         symbol: 'o'
     },
     {
         match: ({ x, y }, { rocks }) => rocks[serializeCoords({ x, y })],
         symbol: '#'
-    },
-    {
-        match: ({ x, y }, { sandSource }) => sandSource.x === x && sandSource.y === y,
-        symbol: '+'
     },
     {
         match: () => true,
@@ -181,12 +181,70 @@ expect(solve(taskInput)).to.equal(793)
  * @param {string} input
  */
 const solve2 = (input) => {
+    const linesData = input
+        .split('\n')
+        .map(l => l.split(' -> '))
+        .map(l => l.map(c => c.split(',')))
+        .map(l => l.map(c => c.map(d => parseInt(d))))
 
-    // TODO block sand at + & stop cycle then
-    // maxY + 2
+    const ys = linesData.flatMap(l => l.map(([_x, y]) => y))
+    const xs = linesData.flatMap(l => l.map(([x, _y]) => x));
+
+    const SAND_SOURCE_X = 500;
+    const maxY = Math.max(...ys) + 2;
+    const minX = 0
+    const maxX = SAND_SOURCE_X * 2
+    const normalizedMaxX = maxX - minX
+    const sandSource = { x: SAND_SOURCE_X - minX, y: 0 };
+
+    const normalized = linesData
+        .map(l => l.map(c => normalize(c, minX)))
+        .map(l => l.map(([x, y]) => ({ x, y })));
+
+    const bottomLine = []
+    for (let x = 0; x <= normalizedMaxX; x++) {
+        bottomLine.push({ x, y: maxY })
+    }
+
+    const rocks = normalized
+        .flatMap(linesToRocks)
+        .concat(bottomLine)
+        .reduce((result, c) => {
+            result[serializeCoords(c)] = true;
+            return result;
+        }, {})
+
+    const sand = {}
+
+    let sandUnits = 0;
+    let abyss = false;
+
+    while (!abyss) {
+        let sandUnit = sandSource;
+        sandUnits++
+
+        if (sand[serializeCoords(sandUnit)]) break;
+
+        while (true) {
+            sand[serializeCoords(sandUnit)] = false;
+            sandUnit = sandFall({ sandUnit, maxY, rocks, sand })
+
+            if (!sandUnit) {
+                abyss = true;
+                break;
+            }
+
+            sand[serializeCoords(sandUnit)] = true;
+            if (sandUnit.rest) break;
+        }
+    }
+
+    render({ maxX: normalizedMaxX, maxY, rocks, sandSource, sand })
+
+    return --sandUnits;
 }
 
 expect(solve2(testData)).to.equal(93)
-expect(solve2(taskInput)).to.equal(undefined);
+expect(solve2(taskInput)).to.equal(24166);
 
 // node 2022/14/index.js 
