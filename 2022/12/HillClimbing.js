@@ -155,4 +155,4 @@ const solve2 = (input) => {
 expect(solve2(testData)).to.equal(29)
 expect(solve2(taskInput)).to.equal(522);
 
-// node 2022/12/index.js 
+// node 2022/12/HillClimbing.js 

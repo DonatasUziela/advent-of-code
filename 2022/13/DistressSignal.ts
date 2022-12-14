@@ -87,4 +87,4 @@ const solve2 = (input: string) => {
 expect(solve2(testData)).to.equal(140)
 expect(solve2(taskInput)).to.equal(27930);
 
-// npx ts-node 2022/13/index.ts
+// npx ts-node 2022/13/DistressSignal.ts

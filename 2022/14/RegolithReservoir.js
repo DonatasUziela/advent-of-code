@@ -236,4 +236,4 @@ const solve2 = (input) => {
 expect(solve2(testData)).to.equal(93)
 expect(solve2(taskInput)).to.equal(24166);
 
-// node 2022/14/index.js 
+// node 2022/14/RegolithReservoir.js 
