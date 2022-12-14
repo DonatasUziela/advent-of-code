@@ -188,23 +188,19 @@ const solve2 = (input) => {
         .map(l => l.map(c => c.map(d => parseInt(d))))
 
     const ys = linesData.flatMap(l => l.map(([_x, y]) => y))
-    const xs = linesData.flatMap(l => l.map(([x, _y]) => x));
 
     const SAND_SOURCE_X = 500;
     const maxY = Math.max(...ys) + 2;
     const minX = 0
     const maxX = SAND_SOURCE_X * 2
-    const normalizedMaxX = maxX - minX
-    const sandSource = { x: SAND_SOURCE_X - minX, y: 0 };
+    const sandSource = { x: SAND_SOURCE_X, y: 0 };
 
     const normalized = linesData
         .map(l => l.map(c => normalize(c, minX)))
         .map(l => l.map(([x, y]) => ({ x, y })));
 
     const bottomLine = []
-    for (let x = 0; x <= normalizedMaxX; x++) {
-        bottomLine.push({ x, y: maxY })
-    }
+    for (let x = 0; x <= maxX; x++) bottomLine.push({ x, y: maxY })
 
     const rocks = normalized
         .flatMap(linesToRocks)
@@ -215,11 +211,9 @@ const solve2 = (input) => {
         }, {})
 
     const sand = {}
-
     let sandUnits = 0;
-    let abyss = false;
 
-    while (!abyss) {
+    while (true) {
         let sandUnit = sandSource;
         sandUnits++
 
@@ -228,18 +222,12 @@ const solve2 = (input) => {
         while (true) {
             sand[serializeCoords(sandUnit)] = false;
             sandUnit = sandFall({ sandUnit, maxY, rocks, sand })
-
-            if (!sandUnit) {
-                abyss = true;
-                break;
-            }
-
             sand[serializeCoords(sandUnit)] = true;
             if (sandUnit.rest) break;
         }
     }
 
-    render({ maxX: normalizedMaxX, maxY, rocks, sandSource, sand })
+    render({ maxX, maxY, rocks, sandSource, sand })
 
     return --sandUnits;
 }
