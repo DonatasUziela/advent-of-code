@@ -215,9 +215,10 @@ const solve2 = (input) => {
 
     while (true) {
         let sandUnit = sandSource;
-        sandUnits++
-
+        
         if (sand[serializeCoords(sandUnit)]) break;
+        
+        sandUnits++
 
         while (true) {
             sand[serializeCoords(sandUnit)] = false;
@@ -229,7 +230,7 @@ const solve2 = (input) => {
 
     render({ maxX, maxY, rocks, sandSource, sand })
 
-    return --sandUnits;
+    return sandUnits;
 }
 
 expect(solve2(testData)).to.equal(93)
