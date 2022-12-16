@@ -42,6 +42,11 @@ const solve = (input) => {
     let tail = { x: 0, y: 0 };
     const tailVisitedPosition = [];
 
+    let minX = 0;
+    let minY = 0;
+    let maxX = 0;
+    let maxY = 0;
+
     input
         .split('\n')
         .map(l => l.split(' '))
@@ -50,8 +55,15 @@ const solve = (input) => {
         .forEach((direction) => {
             head = moveHeadMatchers[direction](head)
             tail = moveTail({ head, tail })
-            tailVisitedPosition.push(serialseCoords(tail))
+            tailVisitedPosition.push(serialseCoords(head))
+            minX = Math.min(minX, tail.x);
+            minY = Math.min(minY, tail.y);
+            maxX = Math.max(maxX, tail.x);
+            maxY = Math.max(maxY, tail.y);
         })
+
+    console.log({ minX, minY, maxX, maxY })
+    fs.writeFileSync(path.resolve(__dirname, 'positions.json'), JSON.stringify(tailVisitedPosition), 'utf-8')
 
     return uniq(tailVisitedPosition).length
 }

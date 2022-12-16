@@ -1,0 +1,54 @@
+<head>
+    <style>
+        td,
+        th {
+            min-width: 8px;
+            line-height: 8px;
+            font-size: 8px;
+        }
+        tr {
+            height: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="table">
+    </table>
+</body>
+<script type="text/javascript">
+    const data = ["1:0","2:0","3:0","4:0","4:1","4:2","4:3","4:4","3:4","2:4","1:4","1:3","2:3","3:3","4:3","5:3","5:2","4:2","3:2","2:2","1:2","0:2","1:2","2:2"]
+</script>
+<script type="text/javascript">
+    const { minX, maxX, minY, maxY } = { minX: -115, minY: -115, maxX: 52, maxY: 166 };
+    const table = document.getElementById('table');
+
+    const elements = {};
+
+    for (let x = minX; x <= maxX; x++) {
+        const row = document.createElement('tr')
+        for (let y = minY; y <= maxY; y++) {
+            const item = document.createElement('td');
+            item.textContent = '.';
+            row.appendChild(item)
+            elements[`${x}:${y}`] = item
+        }
+        table.appendChild(row)
+    }
+
+    let steps = 0;
+    let head = data[0];
+
+    let interval = setInterval(() => {
+        if (!head) {
+            clearInterval(interval);
+            return;
+        }
+
+        steps++;
+        elements[head].textContent = '.';
+        head = data[steps];
+        elements[head].textContent = 'H'
+    }, 250)
+
+</script>

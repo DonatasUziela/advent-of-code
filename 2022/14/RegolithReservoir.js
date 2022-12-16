@@ -12,35 +12,13 @@ const serializeCoords = ({ x, y }) => `${x}:${y}`
  */
 const normalize = ([x, y], minX) => [x - minX, y];
 
-const symbolMatchers = [
-    {
-        match: ({ x, y }, { sandSource }) => sandSource.x === x && sandSource.y === y,
-        symbol: '+'
-    },
-    {
-        match: ({ x, y }, { sand }) => sand[serializeCoords({ x, y })],
-        symbol: 'o'
-    },
-    {
-        match: ({ x, y }, { rocks }) => rocks[serializeCoords({ x, y })],
-        symbol: '#'
-    },
-    {
-        match: () => true,
-        symbol: '.'
-    },
-]
-
-const render = ({ maxY, maxX, rocks, sandSource, sand }) => {
-    const context = { rocks, sandSource, sand };
+const render = ({ minX = 0, minY = 0, maxY, maxX, symbols, emptySymbol = '.' }) => {
     const caveMap = [];
 
-    for (let y = 0; y <= maxY; y++) {
+    for (let y = minY; y <= maxY; y++) {
         caveMap.push([]);
-        for (let x = 0; x <= maxX; x++) {
-
-            const { symbol } = symbolMatchers.find(({ match }) => match({ x, y }, context));
-
+        for (let x = minX; x <= maxX; x++) {
+            const symbol = symbols[serializeCoords({ x, y })] || emptySymbol
             caveMap[y][x] = symbol
         }
     }
@@ -132,6 +110,7 @@ const solve = (input) => {
     const maxX = Math.max(...xs)
     const normalizedMaxX = maxX - minX
     const sandSource = { x: SAND_SOURCE_X - minX, y: 0 };
+    const sandSourceSymbol = { [serializeCoords(sandSource)]: '+' }
 
     const normalized = linesData
         .map(l => l.map(c => normalize(c, minX)))
@@ -140,7 +119,7 @@ const solve = (input) => {
     const rocks = normalized
         .flatMap(linesToRocks)
         .reduce((result, c) => {
-            result[serializeCoords(c)] = true;
+            result[serializeCoords(c)] = '#';
             return result;
         }, {})
 
@@ -154,7 +133,7 @@ const solve = (input) => {
         sandUnits++
 
         while (true) {
-            sand[serializeCoords(sandUnit)] = false;
+            delete sand[serializeCoords(sandUnit)];
             sandUnit = sandFall({ sandUnit, maxY, rocks, sand })
 
             if (!sandUnit) {
@@ -162,12 +141,20 @@ const solve = (input) => {
                 break;
             }
 
-            sand[serializeCoords(sandUnit)] = true;
+            sand[serializeCoords(sandUnit)] = 'o';
             if (sandUnit.rest) break;
         }
     }
 
-    render({ maxX: normalizedMaxX, maxY, rocks, sandSource, sand })
+    render({
+        maxX: normalizedMaxX,
+        maxY,
+        symbols: {
+            ...sandSourceSymbol,
+            ...rocks,
+            ...sand
+        }
+    })
 
     return --sandUnits;
 }
@@ -194,6 +181,7 @@ const solve2 = (input) => {
     const minX = 0
     const maxX = SAND_SOURCE_X * 2
     const sandSource = { x: SAND_SOURCE_X, y: 0 };
+    const sandSourceSymbol = { [serializeCoords(sandSource)]: '+' }
 
     const normalized = linesData
         .map(l => l.map(c => normalize(c, minX)))
@@ -206,7 +194,7 @@ const solve2 = (input) => {
         .flatMap(linesToRocks)
         .concat(bottomLine)
         .reduce((result, c) => {
-            result[serializeCoords(c)] = true;
+            result[serializeCoords(c)] = '#';
             return result;
         }, {})
 
@@ -221,14 +209,22 @@ const solve2 = (input) => {
         sandUnits++
 
         while (true) {
-            sand[serializeCoords(sandUnit)] = false;
+            delete sand[serializeCoords(sandUnit)];
             sandUnit = sandFall({ sandUnit, maxY, rocks, sand })
-            sand[serializeCoords(sandUnit)] = true;
+            sand[serializeCoords(sandUnit)] = 'o';
             if (sandUnit.rest) break;
         }
     }
 
-    render({ maxX, maxY, rocks, sandSource, sand })
+    render({
+        maxX,
+        maxY,
+        symbols: {
+            ...sandSourceSymbol,
+            ...rocks,
+            ...sand
+        }
+    })
 
     return sandUnits;
 }

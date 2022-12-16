@@ -1,14 +1,14 @@
 {
-    "compilerOptions": {
+    "compilerOptions": {   
         "strict": true,
         "lib": [
             "ESNext"
         ],
+        "moduleResolution": "node",
+        "target": "ESNext"
     },
     "include": [
-        "2022/**/*"
-    ],
-    "exclude": [
-        "node_modules"
+        "2022/**/*",
+        "utils"
     ]
 }
