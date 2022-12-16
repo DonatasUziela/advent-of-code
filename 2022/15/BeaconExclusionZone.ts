@@ -1,9 +1,9 @@
 import { expect } from 'chai';
 import { readFileSync } from 'fs';
-import { sum } from 'lodash';
+import { concat, intersection, sum } from 'lodash';
 import { resolve } from 'path';
 import { Coordinates } from '../../utils/coordinates'
-import { Polygon, Point } from '@mathigon/euclid'
+import { Polygon, Point, Line, intersections } from '@mathigon/euclid'
 
 const taskInput = readFileSync(resolve(__dirname, 'input.txt'), 'utf-8');
 const testData = readFileSync(resolve(__dirname, 'testData.txt'), 'utf-8');
@@ -45,22 +45,34 @@ const solve = (input: string, rowToCheck: number) => {
 
     const xCovered: number[][] = [];
 
+    const line = new Line(
+        new Point(Number.MIN_SAFE_INTEGER, rowToCheck),
+        new Point(Number.MAX_SAFE_INTEGER, rowToCheck)
+    )
+
     inputData.forEach(({ sensor, beacon }) => {
         const distanceToBeacon = calculateManhattanDistance(sensor, beacon);
-        const distanceToRow = Math.abs(sensor.y - rowToCheck);
 
-        if (distanceToBeacon < distanceToRow) return;
+        const diamond = new Polygon(
+            new Point(sensor.x, sensor.y + distanceToBeacon),
+            new Point(sensor.x + distanceToBeacon, sensor.y),
+            new Point(sensor.x, sensor.y - distanceToBeacon),
+            new Point(sensor.x - distanceToBeacon, sensor.y),
+        );
 
-        const diff = distanceToBeacon - distanceToRow;
+        const intersect = intersections(diamond, line);
 
-        const center = sensor.x;
-        const left = center - diff;
-        const right = center + diff;
+        if (!intersect.length) return;
 
-        xCovered.push([left, right])
+        const normalized = intersect
+            .map(p => Math.round(p.x))
+            .sort((a, b) => a - b)
+        
+        xCovered.push(normalized.length === 1 ? [normalized[0], normalized[0]] : normalized)
     });
 
-    const result = sum(merge(xCovered).map(([start, end]) => end - start));
+    const result = sum(merge(xCovered)
+        .map(([start, end]) => end - start));
 
     return result
 }
