@@ -22,8 +22,6 @@ const parseInput = (input: string) => input
         return result
     }, {} as Graph)
 
-const MAX_TIME = 30;
-
 const serializePair = ([first, second]: readonly [string, string]) => `${first}-${second}`
 
 const getPairKey = (source: string, target: string) => {
@@ -49,6 +47,7 @@ const calculatePairDistances = (keys: string[], graph: Graph) => keys
     }, {})
 
 const solve = (input: string) => {
+    const MAX_TIME = 30;
     const graph = parseInput(input)
     const nonZeroNodes = Object.values(graph).filter(v => v.rate > 0);
     const nonZeroNodesKeys = nonZeroNodes.map(n => n.valve);
@@ -95,6 +94,69 @@ expect(solve(taskInput)).to.equal(2087)
 // Part 2
 
 const solve2 = (input: string) => {
+    const MAX_TIME = 26;
+    const graph = parseInput(input)
+    const nonZeroNodes = Object.values(graph).filter(v => v.rate > 0);
+    const nonZeroNodesKeys = nonZeroNodes.map(n => n.valve);
+    const nonZeroNodeKeysAndStart = [START, ...nonZeroNodesKeys];
+    const pairsDistances = calculatePairDistances(nonZeroNodeKeysAndStart, graph);
+
+    const search = (
+        currentValveMe: string,
+        currentValveElephant: string,
+        closedValves = nonZeroNodesKeys,
+        remainingTime = MAX_TIME,
+        pressurePerTurn = 0,
+        pressure = 0,
+    ): number => {
+        if (remainingTime === 0) return pressure;
+
+        const pressureFromRemainingTime = remainingTime * pressurePerTurn;
+        const accumulatedPressure = pressure + pressureFromRemainingTime;
+
+        if (!closedValves.length) return accumulatedPressure
+
+        const searches = closedValves.map(myValve => {
+            const remainingValves = closedValves.filter(v => v !== myValve);
+            const myDistanceToValve = pairsDistances[getPairKey(currentValveMe, myValve)];
+            const myRequiredTime = myDistanceToValve + 1;
+
+            if (remainingTime < myRequiredTime) return accumulatedPressure;
+
+            const myNewPressurePerTurn = pressurePerTurn + graph[myValve].rate
+
+            const mySearch = search(
+                myValve,
+                currentValveElephant,
+                remainingValves,
+                remainingTime - myRequiredTime,
+                myNewPressurePerTurn,
+                pressure + (pressurePerTurn * myRequiredTime),
+            );
+
+            const elephantSearch = remainingValves.map((elephantValve => {
+                const elephantDistanceToValve = pairsDistances[getPairKey(currentValveElephant, elephantValve)];
+                const elephantRequiredTime = elephantDistanceToValve + 1;
+
+                if (remainingTime < elephantRequiredTime) return accumulatedPressure; // TODO dont add same accumulated pressure
+
+                return search(
+                    myValve,
+                    elephantValve,
+                    remainingValves.filter(v => v !== elephantValve),
+                    remainingTime - elephantRequiredTime,
+                    pressurePerTurn + graph[elephantValve].rate,
+                    pressure + (pressurePerTurn * elephantRequiredTime)
+                )
+            }))
+
+            return elephantSearch
+        })
+
+        return Math.max(...searches)
+    }
+
+    return search('AA', 'AA');
 }
 
 expect(solve2(testData)).to.equal(1707)
