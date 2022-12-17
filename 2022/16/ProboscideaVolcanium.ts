@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import { readFileSync } from 'fs';
-import { resolve }  from 'path';
+import { resolve } from 'path';
 import { findShortestDistances } from '../../utils/findShortestDistances';
 
 const taskInput = readFileSync(resolve(__dirname, 'input.txt'), 'utf-8');
@@ -33,21 +33,27 @@ const getPairKey = (source: string, target: string) => {
 
 const START = 'AA';
 
+const calculatePairDistances = (keys: string[], graph: Graph) => keys
+    .reduce<Record<string, number>>((result, key) => {
+        const distances = findShortestDistances(key, graph);
+
+        Object
+            .entries(distances)
+            .forEach(([target, distance]) => {
+                if (distance) {
+                    result[getPairKey(key, target)] = distance;
+                }
+            });
+
+        return result;
+    }, {})
+
 const solve = (input: string) => {
     const graph = parseInput(input)
     const nonZeroNodes = Object.values(graph).filter(v => v.rate > 0);
     const nonZeroNodesKeys = nonZeroNodes.map(n => n.valve);
     const nonZeroNodeKeysAndStart = [START, ...nonZeroNodesKeys];
-
-    const pairsDistances = nonZeroNodeKeysAndStart.reduce((result, key) => {
-        const distances = findShortestDistances(key, graph);
-
-        Object.entries(distances).forEach(([target, distance]) => {
-            if (!distance) return;
-            result[getPairKey(key, target)] = distance
-        });
-        return result
-    }, {} as Record<string, number>);
+    const pairsDistances = calculatePairDistances(nonZeroNodeKeysAndStart, graph);
 
     const search = (
         currentValve: string,
@@ -67,7 +73,7 @@ const solve = (input: string) => {
             const requiredTime = distance + 1;
 
             if (remainingTime < requiredTime) return pressure + pressureFromRemainingTime
-            
+
             return search(
                 valve,
                 closedValves.filter(v => v !== valve),
@@ -91,7 +97,7 @@ expect(solve(taskInput)).to.equal(2087)
 const solve2 = (input: string) => {
 }
 
-expect(solve2(testData)).to.equal(undefined)
+expect(solve2(testData)).to.equal(1707)
 expect(solve2(taskInput)).to.equal(undefined);
 
 // npx ts-node 2022/16/ProboscideaVolcanium.ts
