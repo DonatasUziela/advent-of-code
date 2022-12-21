@@ -32,7 +32,7 @@ const solve = (input) => {
 }
 
 expect(solve(testData)).to.equal(13140)
-expect(solve(taskInput)).to.equal(12640)
+expect(solve(taskInput)).to.equal(17380)
 
 // Part 2
 
@@ -65,9 +65,9 @@ const solve2 = (input) => {
     return CRT.slice(0, -1); // remove last new line
 }
 
+fs.writeFileSync(path.resolve(__dirname, 'part2result.txt'), solve2(taskInput), 'utf-8') // FGCUZREC
+
 expect(solve2(testData)).to.equal(testResult)
 expect(solve2(taskInput)).to.equal(part2result);
-
-// fs.writeFileSync(path.resolve(__dirname, 'myResult.txt'), solve2(taskInput), 'utf-8') // EHBZLRJR
 
 // node 2022/10/Cathode-RayTube.js

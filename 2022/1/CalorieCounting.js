@@ -4,8 +4,6 @@ const path = require('path');
 const input = fs.readFileSync(path.resolve(__dirname, 'input.txt'), 'utf-8');
 const entries = input.split('\n');
 
-console.log(input.split('\n'))
-
 const caloriesByElf = entries.reduce((result, entry) => {
     if (entry === '') return [...result, 0];
     
@@ -17,8 +15,14 @@ const caloriesByElf = entries.reduce((result, entry) => {
 
 const sorted = caloriesByElf.sort().reverse();
 
-const top3Total = sorted[0] + sorted[1] + sorted[2];
+// Part 1
 
+const topElf = sorted[0];
+console.log(topElf);
+
+// Part 2
+
+const top3Total = sorted[0] + sorted[1] + sorted[2];
 console.log(top3Total)
 
 // node 2022/1/CalorieCounting.js

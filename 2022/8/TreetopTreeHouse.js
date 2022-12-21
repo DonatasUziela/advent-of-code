@@ -56,7 +56,7 @@ const countVisibleTree = (input) => {
 
 expect(countVisibleTree(testData)).to.equal(21)
 expect(countVisibleTree(testData2)).to.equal(18)
-expect(countVisibleTree(taskInput)).to.equal(1662)
+expect(countVisibleTree(taskInput)).to.equal(1713)
 
 // Part 2: highest scenic score
 
@@ -118,6 +118,6 @@ const countHighestScenicScore = (input) => {
 }
 
 expect(countHighestScenicScore(testData)).to.equal(8)
-expect(countHighestScenicScore(taskInput)).to.equal(537600)
+expect(countHighestScenicScore(taskInput)).to.equal(268464)
 
 // node 2022/8/TreetopTreeHouse.js

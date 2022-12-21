@@ -74,7 +74,7 @@ const totalSizeOfSmallDirectories = (input) => {
 }
 
 expect(totalSizeOfSmallDirectories(testData)).to.equal(95437);
-expect(totalSizeOfSmallDirectories(taskInput)).to.equal(1989474);
+expect(totalSizeOfSmallDirectories(taskInput)).to.equal(1667443);
 
 // Part 2
 
@@ -98,6 +98,6 @@ const findSmallestToDelete = (input) => {
 }
 
 expect(findSmallestToDelete(testData)).to.equal(24933642)
-expect(findSmallestToDelete(taskInput)).to.equal(1111607)
+expect(findSmallestToDelete(taskInput)).to.equal(8998590)
 
 // node 2022/7/NoSpaceLeftOnDevice.js

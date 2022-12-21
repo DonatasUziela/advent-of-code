@@ -20,7 +20,7 @@ const result = plays
     .map(p => scoreByPlay[p])
     .reduce((sum, s) => sum += s)
 
-console.log(result) // 13526
+console.log(result) // 11841
 
 // Part 2
 
@@ -40,6 +40,6 @@ const result2 = plays
     .map(p => scoreByPlay2[p])
     .reduce((sum, s) => sum += s)
 
-console.log(result2) // 14204
+console.log(result2) // 13022
 
 // node 2022/2/RockPaperScissors.js

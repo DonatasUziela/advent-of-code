@@ -45,7 +45,7 @@ const result = stack
     .join('')
     .replace(/[\]\[]/g, '')
 
-console.log({ result }) // VWLCWGSDQ
+console.log({ result }) // SBPQRSCDF
 
 // Part 2
 
@@ -61,6 +61,6 @@ const result2 = stack2
     .join('')
     .replace(/[\]\[]/g, '')
 
-console.log({ result2 }) // TCGLQSLPW
+console.log({ result2 }) // RGLVRCQSB
 
 // node 2022/5/SupplyStacks.js

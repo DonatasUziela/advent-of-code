@@ -27,7 +27,7 @@ const result = pairCamps
     })
     .length
 
-console.log(result) // 560
+console.log(result) // 540
 
 // Part 2
 
@@ -35,6 +35,6 @@ const result2 = pairCamps
     .filter(([elf1, elf2]) => intersection(elf1, elf2).length)
     .length
 
-console.log(result2) // 839
+console.log(result2) // 872
 
 // node 2022/4/CampCleanup.js

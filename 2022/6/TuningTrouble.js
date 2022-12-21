@@ -25,7 +25,7 @@ const testData = [
     ['nppdvjthqldpwncqszvftbrmjlhg', 6],
     ['nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg', 10],
     ['zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw', 11],
-    [taskInput, 1538]
+    [taskInput, 1929]
 ]
 
 const PACKET_START = 4;
@@ -43,7 +43,7 @@ const testData2 = [
     ['nppdvjthqldpwncqszvftbrmjlhg', 23],
     ['nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg', 29],
     ['zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw', 26],
-    [taskInput, 2315]
+    [taskInput, 3298]
 ]
 
 const MESSAGE_START = 14;

@@ -42,11 +42,6 @@ const solve = (input) => {
     let tail = { x: 0, y: 0 };
     const tailVisitedPosition = [];
 
-    let minX = 0;
-    let minY = 0;
-    let maxX = 0;
-    let maxY = 0;
-
     input
         .split('\n')
         .map(l => l.split(' '))
@@ -55,14 +50,9 @@ const solve = (input) => {
         .forEach((direction) => {
             head = moveHeadMatchers[direction](head)
             tail = moveTail({ head, tail })
-            tailVisitedPosition.push(serialseCoords(head))
-            minX = Math.min(minX, tail.x);
-            minY = Math.min(minY, tail.y);
-            maxX = Math.max(maxX, tail.x);
-            maxY = Math.max(maxY, tail.y);
+            tailVisitedPosition.push(serialseCoords(tail))
         })
 
-    console.log({ minX, minY, maxX, maxY })
     fs.writeFileSync(path.resolve(__dirname, 'positions.json'), JSON.stringify(tailVisitedPosition), 'utf-8')
 
     return uniq(tailVisitedPosition).length
@@ -70,7 +60,7 @@ const solve = (input) => {
 
 expect(solve(testData)).to.equal(13)
 expect(solve(testData2)).to.equal(7)
-expect(solve(taskInput)).to.equal(6037)
+expect(solve(taskInput)).to.equal(6406)
 
 // Part 2
 
@@ -109,6 +99,6 @@ const solvePart2 = (input) => {
 
 expect(solvePart2(testData)).to.equal(1)
 expect(solvePart2(testData3)).to.equal(36)
-expect(solvePart2(taskInput)).to.equal(2485)
+expect(solvePart2(taskInput)).to.equal(2643)
 
 // node 2022/9/RopeBridge.js

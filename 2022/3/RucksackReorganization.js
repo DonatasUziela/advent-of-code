@@ -22,7 +22,7 @@ const result = rucksacks
     .map(charToPriority)
     .reduce((sum, i) => sum += i)
 
-console.log(result) // 7831
+console.log(result) // 8349
 
 // Part 2
 
@@ -32,6 +32,6 @@ const result2 = chunk(rucksacks, 3)
     .map(charToPriority)
     .reduce((sum, i) => sum += i)
 
-console.log(result2) // 2683
+console.log(result2) // 2681
 
 // node 2022/3/RucksackReorganization.js
