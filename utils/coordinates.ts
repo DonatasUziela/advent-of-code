@@ -2,31 +2,21 @@ export type Coordinates = { x: number, y: number };
 
 export const serializeCoords = ({ x, y }: Coordinates) => `${x}:${y}`
 
-export const get4Directions = ({ x, y }: Coordinates) => [
-    {
-        x: x + 1,
-        y,
-    },
-    {
-        x: x - 1,
-        y,
-    },
-    {
-        x,
-        y: y + 1,
-    },
-    {
-        x,
-        y: y - 1,
-    },
-];
+export const left = (c: Coordinates) => ({ x: c.x - 1, y: c.y });
+export const right = (c: Coordinates) => ({ x: c.x + 1, y: c.y });
+export const down = (c: Coordinates) => ({ x: c.x, y: c.y - 1 });
+export const up = (c: Coordinates) => ({ x: c.x, y: c.y + 1 });
+
+export const get4Directions = (c: Coordinates) => [right(c), left(c), up(c), down(c)];
+
+export type Symbols = { [coords: string]: string };
 
 interface Render {
     minX?: number;
     minY?: number;
     maxY: number;
     maxX: number;
-    symbols: { [coords: string]: string },
+    symbols: Symbols;
     emptySymbol?: string;
 }
 
