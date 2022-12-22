@@ -89,7 +89,7 @@ const solve = (input: string) => {
 }
 
 expect(solve(testData)).to.equal(1651)
-expect(solve(taskInput)).to.equal(2087)
+expect(solve(taskInput)).to.equal(2056)
 
 // Part 2
 
@@ -152,8 +152,8 @@ const solve2 = (input: string) => {
 
             return elephantSearch
         })
-
-        return Math.max(...searches)
+        return 0
+        // return Math.max(...searches)
     }
 
     return search('AA', 'AA');

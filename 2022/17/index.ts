@@ -3,9 +3,11 @@ import { readFileSync, appendFileSync, writeFileSync } from 'fs';
 import { resolve }  from 'path';
 import { Coordinates, down, left, render, right, serializeCoords, Symbols } from '../../utils/coordinates';
 import { isDefined } from '../../utils/isDefined';
+import { kmpMatching } from './kmp';
 
 const taskInput = readFileSync(resolve(__dirname, 'input.txt'), 'utf-8');
 const testData = readFileSync(resolve(__dirname, 'testData.txt'), 'utf-8');
+const GROUNDS_FILE = 'grounds.txt';
 
 const WIDTH = 7;
 const MAX_X = WIDTH - 1;
@@ -76,32 +78,11 @@ const windAdjustment = (shape: Shape, step: number, winds: string[], blocks: Coo
     return newShape
 }
 
-const findUniqPattern = (source: string, minLength: number) => {
-    if (source.length < minLength) throw new Error('minLength should not be lower that length of string!')
-
-    const max = Math.floor(source.length / 2);
-    
-    for (let i = minLength; i <= max; i++) {
-        const subString = source.slice(0, i);
-        const times = Math.floor(max / i) + 1;
-        const testString = subString.repeat(times);
-
-        if (source.indexOf(testString) === 0) return subString;
-    }
-}
-
 
 const areCoordinatesEqual = (c1: Coordinates, c2: Coordinates) => c1.x === c2.x && c1.y === c2.y;
 
-const solve = (input: string, maxRocks: number) => {
+const solve = (input: string, maxRocks: number, write?: boolean, append?: boolean) => {
     const winds = input.split('');
-
-    const minUniqPatternLength = Math.floor(winds.length / START_Y_DELTA) * rockGenerators.length;
-    console.log({ windsLen: winds.length, minUniqPatternLength })
-
-    // find initial offset
-    // find how many blocks will it take for the pattern to repeat itself;
-    // find remaining blocks without pattern
 
     let blocks: Coordinates[] = [];
 
@@ -135,108 +116,97 @@ const solve = (input: string, maxRocks: number) => {
         return yS.map((y) => y - minY).join(' ');
     }
 
-    const isBlockClosed = (b: Coordinates) => xes.every((x) => !!blocks.find((bb) => bb.x === x && bb.y > b.y + 2))
-
-    const removeClosedShapes = () => {
-
-        const filtered = blocks.filter(b => !isBlockClosed(b))
-
-        if (filtered.length < blocks.length) {
-            // console.log(`Removing ${ blocks.length - filtered.length} blocks`)
-            blocks = filtered
-        }
-    }
-
-    // const removeLine = (y: number) => {
-    //     blocks = blocks
-    //         .filter(b => b.y !== y)
-    //         .map((b) => ({ x: b.x, y: b.y > y ? b.y - 1 : b.y }))
-    // }
-
-    // DEBUG: let numbersOfWindsUsed = [];
-
     let grounds: string[] = []
-    let pattern: string[] | undefined;
-    let patternStart: number | undefined;
 
     for (let rockCount = 0; rockCount <= maxRocks - 1; rockCount++) {
         const shapeIndex = rockCount % rockGenerators.length;
         let generator = rockGenerators[shapeIndex]
         let shape = generator(getMaxY() + START_Y_DELTA);
 
-        // DEBUG: console.log(rockCount, blocks.length)
-        // DEBUG: numbersOfWindsUsed.push(0);
-
         while (true) {
-            // DEBUG: numbersOfWindsUsed[numbersOfWindsUsed.length - 1] += 1;
             shape = windAdjustment(shape, stepCount, winds, blocks);
             stepCount++;
             const movedDown = shape.map(down);
             if (isShapeStoppped(movedDown, blocks)) {
                 blocks.push(...shape);
-                removeClosedShapes(); 
                 break;
             }
             shape = movedDown;
         }
         const ground = serializeGround();
-        const firstGroundIndex = grounds.indexOf(ground)
-        if (!isDefined(patternStart) && firstGroundIndex !== -1) {
-            // starting pattern
-            patternStart = firstGroundIndex;
-            pattern = [ground]
-        } else if (isDefined(patternStart)) {
-            if (!isDefined(pattern)) throw new Error(`patternLength should be defined`)
-            
-            const comparingWith = grounds[patternStart + pattern.length];
-            console.log({ comparingWith, patternStart, patternLeght: pattern.length })
-            if (comparingWith === ground) { // TODO cut to find the SHORTEST repeating pattern
-                // continuing pattern
-                pattern.push(ground)
-            } else {
-                // stopping pattern
-                if (pattern.length > 1) {
-                    break
-                }
-                patternStart = undefined
-                pattern = undefined
-            }
-        }
         grounds.push(ground);
     }
 
-    console.log({ patternStart, patternLength: pattern?.length })
+    if (append) appendFileSync(resolve(__dirname, GROUNDS_FILE), grounds.join('\n'), 'utf-8');
+    if (write) writeFileSync(resolve(__dirname, GROUNDS_FILE), grounds.join('\n'), 'utf-8');
 
-    // appendFileSync(resolve(__dirname, 'grounds.txt'), grounds.join('\n'), 'utf-8');
-    writeFileSync(resolve(__dirname, 'grounds.txt'), grounds.join('\n'), 'utf-8');
-
-    if (pattern) {
-        // find shortest pattern length
-        const paternString = pattern.join('\n');
-        const splitLen = Math.floor(paternString.length / 2);
-        const firstPart = paternString.slice(0, splitLen);
-        const scndPart = paternString.slice(splitLen + 1);
-        // if (scndPart.indexOf(firstPart) > -1)
+    return {
+        grounds,
+        maxY: getMaxY()
     }
-
-    // console.log(
-    //     numbersOfWindsUsed.reduce((result, num) => {
-    //         result[num] = (result[num] || 0) + 1
-    //         return result;
-    //     }, {} as Record<number, number>)
-    // )
-
-    // renderCurrent()
-
-    return getMaxY();
 }
 
-expect(solve(testData, 2022)).to.equal(3068)
-// expect(solve(taskInput, 2022)).to.equal(3159)
+expect(solve(testData, 2022).maxY).to.equal(3068)
+expect(solve(taskInput, 2022).maxY).to.equal(3114)
 
 // Part 2
 
-// expect(solve(testData, 1000_000_000_000)).to.equal(1514285714288)
-// expect(solve(taskInput, 1000_000_000_000)).to.equal(undefined);
+const ROCKS_COUNT = 1000_000_000_000;
+
+const findRepeatingPattern = (grounds: string[]) => {
+    const groundAsString = grounds.join('\n');
+    const repeatingPatternsMap = grounds.reduce((result, ground, index) => {
+        result.set(ground, (result.get(ground) || 0) + 1)
+        return result;
+    }, new Map() as Map<string, number>)
+
+
+    let pattern = '';
+    let patternLength = 0;
+
+    for (const [ground, times] of repeatingPatternsMap) {
+        if (times === 1) repeatingPatternsMap.delete(ground)
+    }
+    pattern = pattern.slice(0, -1);
+
+    const firstPattern = repeatingPatternsMap.entries().next().value[0];
+    const matches = kmpMatching(groundAsString, firstPattern);
+
+    console.log({ matches })
+
+    return {
+        startIndex: grounds.indexOf(firstPattern),
+        patternLength,
+        pattern,
+        repeatingPatternsMap
+    }
+}
+
+const solve2 = (input: string) => {
+    const { grounds } = solve(input, 6000, true)
+    const { startIndex, patternLength, pattern, repeatingPatternsMap } = findRepeatingPattern(grounds);
+
+    // let pattern = '';
+    // for (const [ground] of repeatingPatternsMap) {
+    //     pattern += ground
+    //     pattern += '\n'
+    // }
+    console.log('------')
+    console.log(pattern)
+
+    const yBeforePatternStarts = solve(input, startIndex - 1).maxY;
+    const yAfterFirstPatternEnds = solve(input, startIndex + patternLength - 1).maxY;
+    const patternY = yAfterFirstPatternEnds - yBeforePatternStarts;
+    const patternRepeats = Math.floor((ROCKS_COUNT - startIndex - 1) / patternLength)
+    const remainingGroundsCount = (ROCKS_COUNT - startIndex - 1) % patternLength
+    const yOfStartingAndEndingPartsNotInFullPattern = solve(input, startIndex + remainingGroundsCount - 1).maxY
+    const yAfterAllPatterns = yOfStartingAndEndingPartsNotInFullPattern - yBeforePatternStarts;
+    
+    return yBeforePatternStarts + (patternY * patternRepeats) + yAfterAllPatterns;
+}
+
+
+expect(solve2(testData)).to.equal(1514285714288)
+expect(solve2(taskInput)).to.equal(1540317460306);
 
 // npx ts-node 2022/17/index.ts

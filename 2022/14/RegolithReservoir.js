@@ -160,7 +160,7 @@ const solve = (input) => {
 }
 
 expect(solve(testData)).to.equal(24)
-expect(solve(taskInput)).to.equal(793)
+expect(solve(taskInput)).to.equal(862)
 
 // Part 2
 
@@ -230,6 +230,6 @@ const solve2 = (input) => {
 }
 
 expect(solve2(testData)).to.equal(93)
-expect(solve2(taskInput)).to.equal(24166);
+expect(solve2(taskInput)).to.equal(28744);
 
 // node 2022/14/RegolithReservoir.js 

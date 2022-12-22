@@ -65,7 +65,7 @@ const solve = (input) => {
 }
 
 expect(solve(testData)).to.equal(10605)
-expect(solve(taskInput)).to.equal(55930)
+expect(solve(taskInput)).to.equal(90882)
 
 // Part 2
 
@@ -102,6 +102,6 @@ const solve2 = (input) => {
 }
 
 expect(solve2(testData)).to.equal(2713310158)
-expect(solve2(taskInput)).to.equal(14636993466);
+expect(solve2(taskInput)).to.equal(30893109657);
 
 // node 2022/11/MonkeyInTheMiddle.js 

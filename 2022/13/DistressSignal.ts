@@ -62,7 +62,7 @@ const solve = (input: string) => {
 }
 
 expect(solve(testData)).to.equal(13)
-expect(solve(taskInput)).to.equal(6086)
+expect(solve(taskInput)).to.equal(6070)
 
 // Part 2
 
@@ -85,6 +85,6 @@ const solve2 = (input: string) => {
 }
 
 expect(solve2(testData)).to.equal(140)
-expect(solve2(taskInput)).to.equal(27930);
+expect(solve2(taskInput)).to.equal(20758);
 
 // npx ts-node 2022/13/DistressSignal.ts

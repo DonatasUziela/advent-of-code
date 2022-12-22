@@ -78,7 +78,7 @@ const solve = (input: string, rowToCheck: number) => {
 }
 
 expect(solve(testData, 10)).to.equal(26)
-expect(solve(taskInput, 2000000)).to.equal(4907780)
+expect(solve(taskInput, 2000000)).to.equal(5073496)
 
 // Part 2
 
@@ -119,6 +119,6 @@ const solve2 = (input: string, size: number) => {
 }
 
 expect(solve2(testData, 20)).to.equal(56000011)
-expect(solve2(taskInput, 4000000)).to.equal(13639962836448);
+expect(solve2(taskInput, 4000000)).to.equal(13081194638237);
 
 // npx ts-node 2022/15/BeaconExclusionZone.ts
