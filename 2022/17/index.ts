@@ -1,16 +1,14 @@
 import { expect } from 'chai';
-import { readFileSync, appendFileSync, writeFileSync } from 'fs';
-import { resolve }  from 'path';
+import { readFileSync, writeFileSync } from 'fs';
+import { isEqual } from 'lodash';
+import { resolve } from 'path';
 import { Coordinates, down, left, render, right, serializeCoords, Symbols } from '../../utils/coordinates';
-import { isDefined } from '../../utils/isDefined';
-import { kmpMatching } from './kmp';
 
 const taskInput = readFileSync(resolve(__dirname, 'input.txt'), 'utf-8');
 const testData = readFileSync(resolve(__dirname, 'testData.txt'), 'utf-8');
 const GROUNDS_FILE = 'grounds.txt';
 
 const WIDTH = 7;
-const MAX_X = WIDTH - 1;
 const START_X = 2;
 const START_Y_DELTA = 4;
 
@@ -28,7 +26,7 @@ const plus = (top: number) => [
     { x: START_X + 1, y: top + 1 },
     { x: START_X + 1, y: top + 2 },
     { x: START_X + 1, y: top },
-    { x: START_X + 2, y: top +1 }
+    { x: START_X + 2, y: top + 1 }
 ]
 
 const elShape = (top: number) => [
@@ -81,7 +79,7 @@ const windAdjustment = (shape: Shape, step: number, winds: string[], blocks: Coo
 
 const areCoordinatesEqual = (c1: Coordinates, c2: Coordinates) => c1.x === c2.x && c1.y === c2.y;
 
-const solve = (input: string, maxRocks: number, write?: boolean, append?: boolean) => {
+const solve = (input: string, maxRocks: number, write?: boolean) => {
     const winds = input.split('');
 
     let blocks: Coordinates[] = [];
@@ -99,7 +97,7 @@ const solve = (input: string, maxRocks: number, write?: boolean, append?: boolea
             maxY: getMaxY() + 3,
             symbols: symbols
         });
-    
+
         console.log(screen)
     }
 
@@ -137,7 +135,6 @@ const solve = (input: string, maxRocks: number, write?: boolean, append?: boolea
         grounds.push(ground);
     }
 
-    if (append) appendFileSync(resolve(__dirname, GROUNDS_FILE), grounds.join('\n'), 'utf-8');
     if (write) writeFileSync(resolve(__dirname, GROUNDS_FILE), grounds.join('\n'), 'utf-8');
 
     return {
@@ -154,59 +151,47 @@ expect(solve(taskInput, 2022).maxY).to.equal(3114)
 const ROCKS_COUNT = 1000_000_000_000;
 
 const findRepeatingPattern = (grounds: string[]) => {
-    const groundAsString = grounds.join('\n');
-    const repeatingPatternsMap = grounds.reduce((result, ground, index) => {
-        result.set(ground, (result.get(ground) || 0) + 1)
-        return result;
-    }, new Map() as Map<string, number>)
+    for (let i = 0; i < grounds.length; i++) {
+        const ground = grounds[i];
+        const nextMatchIndex = grounds.indexOf(ground, i + 1);
 
+        if (nextMatchIndex === -1) continue // such ground does not repeat
 
-    let pattern = '';
-    let patternLength = 0;
+        const patternArray = grounds.slice(i, nextMatchIndex);
 
-    for (const [ground, times] of repeatingPatternsMap) {
-        if (times === 1) repeatingPatternsMap.delete(ground)
-    }
-    pattern = pattern.slice(0, -1);
+        if (i > patternArray.length) continue // such short pattern should have been found earlier
 
-    const firstPattern = repeatingPatternsMap.entries().next().value[0];
-    const matches = kmpMatching(groundAsString, firstPattern);
+        const nextArray = grounds.slice(nextMatchIndex, nextMatchIndex + patternArray.length)
 
-    console.log({ matches })
-
-    return {
-        startIndex: grounds.indexOf(firstPattern),
-        patternLength,
-        pattern,
-        repeatingPatternsMap
+        if (isEqual(patternArray, nextArray)) {
+            return {
+                startIndex: i,
+                patternLength: patternArray.length,
+                pattern: patternArray,
+            };
+        }
     }
 }
 
 const solve2 = (input: string) => {
-    const { grounds } = solve(input, 6000, true)
-    const { startIndex, patternLength, pattern, repeatingPatternsMap } = findRepeatingPattern(grounds);
+    const { grounds } = solve(input, 6000, true);
+    const found = findRepeatingPattern(grounds);
+    if (!found) throw new Error('Repeating pattern not found!')
+    const { startIndex, patternLength } = found;
 
-    // let pattern = '';
-    // for (const [ground] of repeatingPatternsMap) {
-    //     pattern += ground
-    //     pattern += '\n'
-    // }
-    console.log('------')
-    console.log(pattern)
-
-    const yBeforePatternStarts = solve(input, startIndex - 1).maxY;
-    const yAfterFirstPatternEnds = solve(input, startIndex + patternLength - 1).maxY;
+    const yBeforePatternStarts = solve(input, startIndex).maxY;
+    const yAfterFirstPatternEnds = solve(input, startIndex + patternLength).maxY;
     const patternY = yAfterFirstPatternEnds - yBeforePatternStarts;
-    const patternRepeats = Math.floor((ROCKS_COUNT - startIndex - 1) / patternLength)
-    const remainingGroundsCount = (ROCKS_COUNT - startIndex - 1) % patternLength
-    const yOfStartingAndEndingPartsNotInFullPattern = solve(input, startIndex + remainingGroundsCount - 1).maxY
+    const patternRepeats = Math.floor((ROCKS_COUNT - startIndex) / patternLength)
+    const remainingGroundsCount = (ROCKS_COUNT - startIndex) % patternLength
+    const yOfStartingAndEndingPartsNotInFullPattern = solve(input, startIndex + remainingGroundsCount).maxY
     const yAfterAllPatterns = yOfStartingAndEndingPartsNotInFullPattern - yBeforePatternStarts;
-    
+
     return yBeforePatternStarts + (patternY * patternRepeats) + yAfterAllPatterns;
 }
 
 
-expect(solve2(testData)).to.equal(1514285714288)
-expect(solve2(taskInput)).to.equal(1540317460306);
+expect(solve2(testData)).to.equal(1514285714288);
+expect(solve2(taskInput)).to.equal(1540804597682);
 
 // npx ts-node 2022/17/index.ts
