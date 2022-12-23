@@ -9,6 +9,8 @@ const testData = readFileSync(resolve(__dirname, 'testData.txt'), 'utf-8');
 type Node = { rate: number, nodeKeys: string[], valve: string }
 type Graph = { [valve: string]: Node }
 
+// test
+
 const parseInput = (input: string) => input
     .split('\n')
     .map(l => l.split(' '))
