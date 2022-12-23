@@ -71,7 +71,7 @@ const windAdjustment = (shape: Shape, step: number, winds: string[], blocks: Coo
     const newShape = shape.map(transform);
 
     if (newShape.find(({ x }) => x < 0 || x > WIDTH - 1)) return shape;
-    if (isShapeStoppped(newShape, blocks)) return shape // TODO: BET gali palisti "po" kitu shape
+    if (isShapeStoppped(newShape, blocks)) return shape;
 
     return newShape
 }
