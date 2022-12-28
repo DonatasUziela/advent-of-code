@@ -2,10 +2,11 @@
     "compilerOptions": {   
         "strict": true,
         "lib": [
+            "DOM",
             "ESNext"
         ],
         "moduleResolution": "node",
-        "target": "ESNext"
+        "target": "ESNext",
     },
     "include": [
         "2022/**/*",
