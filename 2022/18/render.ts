@@ -22,8 +22,6 @@ testData.forEach(([x, y, z]) => {
 
 camera.position.y = 2;
 camera.position.z = 10;
-const controls = new OrbitControls( camera, renderer.domElement );
-
 
 renderer.render( scene, camera );
 
