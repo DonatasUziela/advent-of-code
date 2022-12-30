@@ -65,7 +65,7 @@ const solve2 = (input: string, write = false) => {
     const start = [minX, minY, minZ];
     const water: Record<string, Coordinates3D> = { [getKey(start)]: start };
 
-    const expand = (coords: Coordinates3D, area: number): number => {
+    const expand = (coords: Coordinates3D, surfaceArea: number): number => {
         const sides = get6Sides(coords);
         const toVisit = sides.filter(side => {
             const key = getKey(side);
@@ -80,7 +80,7 @@ const solve2 = (input: string, write = false) => {
             .filter(side => cubeExistsByKey[getKey(side)])
             .length
 
-        const others = toVisit.reduce((acc, side) => acc + expand(side, area), area);
+        const others = toVisit.reduce((acc, side) => acc + expand(side, surfaceArea), surfaceArea);
 
         return current + others
     }
