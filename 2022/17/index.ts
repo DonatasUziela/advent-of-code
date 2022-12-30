@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { readFileSync, writeFileSync } from 'fs';
 import { isEqual } from 'lodash';
 import { resolve } from 'path';
-import { Coordinates, down, left, render, right, serializeCoords, Symbols } from '../../utils/coordinates';
+import { Coordinates, down, left, render, right, serializeCoords, Symbols } from 'utils/coordinates';
 
 const taskInput = readFileSync(resolve(__dirname, 'input.txt'), 'utf-8');
 const testData = readFileSync(resolve(__dirname, 'testData.txt'), 'utf-8');

@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
-import { findShortestDistances } from '../../utils/findShortestDistances';
+import { findShortestDistances } from 'utils/findShortestDistances';
 
 const taskInput = readFileSync(resolve(__dirname, 'input.txt'), 'utf-8');
 const testData = readFileSync(resolve(__dirname, 'testData.txt'), 'utf-8');
