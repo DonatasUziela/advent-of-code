@@ -1,8 +1,8 @@
 import { expect } from 'chai';
 import { readFileSync } from 'fs';
-import { concat, intersection, sum } from 'lodash';
+import { sum } from 'lodash';
 import { resolve } from 'path';
-import { Coordinates } from '../../utils/coordinates'
+import { Coordinates } from 'utils/coordinates'
 import { Polygon, Point, Line, intersections } from '@mathigon/euclid'
 
 const taskInput = readFileSync(resolve(__dirname, 'input.txt'), 'utf-8');

@@ -7,9 +7,13 @@
         ],
         "moduleResolution": "node",
         "target": "ESNext",
+        "baseUrl": "."
     },
     "include": [
         "2022/**/*",
         "utils"
-    ]
+    ],
+    "ts-node": {
+        "require": ["tsconfig-paths/register"]
+    }
 }

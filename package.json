@@ -27,6 +27,7 @@
     "@types/chai": "^4.3.4",
     "@types/lodash": "^4.14.191",
     "@types/three": "^0.146.0",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.1"
   }
 }

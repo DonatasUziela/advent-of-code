@@ -1,11 +1,22 @@
 const { expect } = require('chai');
 const fs = require('fs');
 const path = require('path');
-const { transpose } = require('../../utils');
 
 const taskInput = fs.readFileSync(path.resolve(__dirname, 'input.txt'), 'utf-8');
 const testData = fs.readFileSync(path.resolve(__dirname, 'testData.txt'), 'utf-8');
 const testData2 = fs.readFileSync(path.resolve(__dirname, 'testData2.txt'), 'utf-8');
+
+/**
+ * @param {number[][]} result
+ * @param {number[]} row
+ */
+const transpose = (result, row) => {
+    row.forEach((item, i) => {
+        if (!result[i]) result[i] = [];
+        result[i].push(item)
+    })
+    return result;
+}
 
 /**
  * @param {string} input
