@@ -47,7 +47,7 @@ const compare = (left: Value[], right: Value[]): boolean | undefined => {
 const solve = (input: string) => {
     const pairs = chunk(
         input
-            .split('\n')
+            .split('\r\n')
             .filter(r => r)
             .map(r => JSON.parse(r) as Value[]),
         2
@@ -71,7 +71,7 @@ const solve2 = (input: string) => {
     const DIVIDER_2 = [[6]];
 
     const packets = input
-        .split('\n')
+        .split('\r\n')
         .filter(r => r)
         .map(r => JSON.parse(r))
         .concat([DIVIDER_1, DIVIDER_2])
