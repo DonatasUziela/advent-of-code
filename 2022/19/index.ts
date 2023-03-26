@@ -1,6 +1,5 @@
 import { expect } from 'chai';
 import { readFileSync } from 'fs';
-import { map } from 'lodash';
 import { resolve } from 'path';
 
 const taskInput = readFileSync(resolve(__dirname, 'input.txt'), 'utf-8');
@@ -59,12 +58,12 @@ const deductImmutable = (cost: Cost, resources: Resources) => {
     return newResources
 }
 
-const decide2 = (blueprint: BluePrint, resources: Resources): ResourceType | undefined => {
+const decide = (blueprint: BluePrint, resources: Resources, alwaysBuyObsidian: boolean): ResourceType | undefined => {
     if (canAfford(blueprint.geode, resources)) {
         return 'geode'
     }
 
-    if (canAfford(blueprint.obsidian, resources)) {
+    if (canAfford(blueprint.obsidian, resources) && (alwaysBuyObsidian || (Math.random() > 0.2))) {
         return 'obsidian'
     }
 
@@ -88,47 +87,43 @@ const addResources = (resources: Resources, robots: Robots) => {
     return newResources;
 }
 
-const solve = (input: string) => {
-    const blueprints = parseBlueprints(input);
-    const MAX_MINUTES = 24;
+const takeTurn = (turn: number, blueprint: BluePrint, resources: Resources, robots: Robots, maxMinutes: number, alwaysBuyObsidian: boolean): number => {
+    let newRobots = robots;
+    let newResources = resources;
+    const type = decide(blueprint, resources, alwaysBuyObsidian)
 
-    const takeTurn = (turn: number, blueprint: BluePrint, resources: Resources, robots: Robots): number => {
-        let newRobots = robots;
-        let newResources = resources;
-        const type = decide2(blueprint, resources)
-
-        if (type) {
-            newRobots = {
-                ...robots,
-                [type]: robots[type] + 1
-            }
-            newResources = deductImmutable(blueprint[type], resources);
+    if (type) {
+        newRobots = {
+            ...robots,
+            [type]: robots[type] + 1
         }
-
-        newResources = addResources(newResources, robots);
-
-        if (turn === MAX_MINUTES) return newResources.geode;
-
-        return takeTurn(turn + 1, blueprint, newResources, newRobots);
+        newResources = deductImmutable(blueprint[type], resources);
     }
 
+    newResources = addResources(newResources, robots);
+
+    if (turn === maxMinutes) return newResources.geode;
+
+    return takeTurn(turn + 1, blueprint, newResources, newRobots, maxMinutes, alwaysBuyObsidian);
+}
+
+const solveBlueprintMultipleTimes = (blueprint: BluePrint, maxMinutes: number, maxTimes: number, alwaysBuyObsidian: boolean) => {
     const initialResources = { ore: 0, clay: 0, obsidian: 0, geode: 0 };
     const initialRobots = { ore: 1, clay: 0, obsidian: 0, geode: 0 }
-
-    const solveBlueprintMultipleTimes = (blueprint: BluePrint) => {
-        let bestResult = 0;
-        for (let i = 0; i < 5000; i++) {
-            let result = takeTurn(1, blueprint, initialResources, initialRobots);
-            bestResult = Math.max(result, bestResult)
-        }
-        console.log({ id: blueprint.id, bestResult })
-
-        return bestResult
+    let bestResult = 0;
+    for (let i = 0; i < maxTimes; i++) {
+        let result = takeTurn(1, blueprint, initialResources, initialRobots, maxMinutes, alwaysBuyObsidian);
+        bestResult = Math.max(result, bestResult)
     }
+    console.log({ id: blueprint.id, bestResult })
 
-    return blueprints
+    return bestResult
+}
+
+const solve = (input: string) => {
+    return parseBlueprints(input)
         .map(blueprint => {
-            return blueprint.id * solveBlueprintMultipleTimes(blueprint)
+            return blueprint.id * solveBlueprintMultipleTimes(blueprint, 24, 10000, true)
         } )
         .reduce((sum, item) => sum + item)
 }
@@ -139,10 +134,15 @@ expect(solve(taskInput)).to.equal(1382)
 // Part 2
 
 const solve2 = (input: string) => {
-    const MAX_MINUTES = 32;
+    return parseBlueprints(input)
+        .slice(0, 3)
+        .map(blueprint => {
+            return solveBlueprintMultipleTimes(blueprint, 32, 400000, false)
+        } )
+        .reduce((sum, item) => sum * item)
 }
 
-expect(solve2(testData)).to.equal(undefined)
-expect(solve2(taskInput)).to.equal(undefined);
+expect(solve2(testData)).to.equal(3472)
+expect(solve2(taskInput)).to.equal(31740);
 
 // npx ts-node 2022/19/index.ts
