@@ -51,12 +51,6 @@ const canAfford = (cost: Cost, resources: Resources) => Object.entries(cost)
         resources[resource as ResourceType] >= amount
     )
 
-const deduct = (cost: Cost, resources: Resources) => {
-    Object.entries(cost).forEach(([resource, amount]) => {
-        resources[resource as ResourceType] -= amount
-    })
-}
-
 const deductImmutable = (cost: Cost, resources: Resources) => {
     const newResources = { ...resources }
     Object.entries(cost).forEach(([resource, amount]) => {
@@ -65,23 +59,23 @@ const deductImmutable = (cost: Cost, resources: Resources) => {
     return newResources
 }
 
-const resourcePriority: ResourceType[] = ['geode', 'obsidian', 'clay', 'ore']
+const decide2 = (blueprint: BluePrint, resources: Resources): ResourceType | undefined => {
+    if (canAfford(blueprint.geode, resources)) {
+        return 'geode'
+    }
 
-const decide = (blueprint: BluePrint, resources: Resources, robots: Robots): ResourceType[][] => {
-    const affordableTypes = resourcePriority
-        .filter(type => canAfford(blueprint[type], resources));
-    const remainingScenarios = affordableTypes.flatMap(type => {
-        const cost = blueprint[type];
-        const remainingDecisions = decide(blueprint, deductImmutable(cost, resources), robots);
-        return [
-            ...remainingDecisions.map(decision => [type, ...decision]),
-            [type]
-        ]
-    })
+    if (canAfford(blueprint.obsidian, resources)) {
+        return 'obsidian'
+    }
 
-    return remainingScenarios
+    if (canAfford(blueprint.clay, resources) && Math.random() > 0.5) {
+        return 'clay'
+    }
+
+    if (canAfford(blueprint.ore, resources) && Math.random() > 0.5) {
+        return 'ore'
+    }
 }
-
 
 
 const addResources = (resources: Resources, robots: Robots) => {
@@ -96,110 +90,56 @@ const addResources = (resources: Resources, robots: Robots) => {
 
 const solve = (input: string) => {
     const blueprints = parseBlueprints(input);
-    const MAX_MINUTES = 20;
-
-    let decisionCount = 0;
+    const MAX_MINUTES = 24;
 
     const takeTurn = (turn: number, blueprint: BluePrint, resources: Resources, robots: Robots): number => {
-        const decisions = resourcePriority
-            .filter(type => canAfford(blueprint[type], resources))
-            .map(type => ({
-                newRobots: {
-                    ...robots,
-                    [type]: robots[type] + 1
-                },
-                newResources: deductImmutable(blueprint[type], resources)
-            }))
-            .concat({
-                newResources: resources,
-                newRobots: robots
-            }) // don't buy anything
+        let newRobots = robots;
+        let newResources = resources;
+        const type = decide2(blueprint, resources)
 
-
-        if (turn === MAX_MINUTES) return resources.geode;
-
-        const possibleScenarios = decisions.map(({ newResources, newRobots }) => {
-            decisionCount++;
-            return takeTurn(turn + 1, blueprint, addResources(newResources, robots), newRobots);
-        })
-
-        return Math.max(...possibleScenarios)
-
-    }
-
-    const findMaxGeodeCount = (blueprint: BluePrint): number => {
-        const resources: Resources = { ore: 0, clay: 0, obsidian: 0, geode: 0 };
-        const robots: Robots = { ore: 1, clay: 0, obsidian: 0, geode: 0 };
-
-        const buildRobots = () => {
-            const newRobots = { ore: 0, clay: 0, obsidian: 0, geode: 0 };
-
-            // TODO: implement saving for resource logic
-
-            resourcePriority.forEach(resource => {
-                const cost = blueprint[resource];
-                if (canAfford(cost, resources)) {
-                    newRobots[resource] += 1
-                    deduct(cost, resources)
-                }
-                // while (canAfford(cost, resources)) {
-                // console.log('Can afford', resource, cost, resources)
-                // console.log(`Spend ${JSON.stringify(cost)} to start building a ${resource}-collecting robot.`)
-                // }
-            })
-
-            return newRobots
+        if (type) {
+            newRobots = {
+                ...robots,
+                [type]: robots[type] + 1
+            }
+            newResources = deductImmutable(blueprint[type], resources);
         }
 
+        newResources = addResources(newResources, robots);
 
+        if (turn === MAX_MINUTES) return newResources.geode;
 
-        for (let minute = 1; minute <= MAX_MINUTES; minute++) {
-            console.log(`== Minute ${minute} ==`)
-            const affordableTypes = resourcePriority.filter(type => canAfford(blueprint[type], resources));
-            const decisions = [...affordableTypes, 'save'];
-            const newRobots = buildRobots();
-            console.log({ decisions })
-            // console.log({ minute, resources, robots, newRobots })
-
-
-            robots.ore += newRobots.ore;
-            robots.clay += newRobots.clay;
-            robots.obsidian += newRobots.obsidian;
-            robots.geode += newRobots.geode;
-        }
-        console.log(`===== MAX GEODE COUNT FOR BLUEPRINT ${blueprint.id} IS ${resources.geode} =====`)
-        return resources.geode;
+        return takeTurn(turn + 1, blueprint, newResources, newRobots);
     }
-
-    // const makeTurn = (resources: Resources, robots: Robots, minute = 1): number => {
-    //     const decisions = decide(resources, robots)
-
-    //     if (minute === 24) {
-    //         return mine(resources, robots).geode;
-    //     }
-
-    //     return decisions.map(({ newRobots, remainingResources }) => {
-    //         const nextResources = mine(remainingResources);
-    //         const nextRobots = addRobots(robots, newRobots)
-    //         return makeTurn(nextResources, nextRobots, minute + 1);
-    //     })
-    // }
 
     const initialResources = { ore: 0, clay: 0, obsidian: 0, geode: 0 };
     const initialRobots = { ore: 1, clay: 0, obsidian: 0, geode: 0 }
 
+    const solveBlueprintMultipleTimes = (blueprint: BluePrint) => {
+        let bestResult = 0;
+        for (let i = 0; i < 5000; i++) {
+            let result = takeTurn(1, blueprint, initialResources, initialRobots);
+            bestResult = Math.max(result, bestResult)
+        }
+        console.log({ id: blueprint.id, bestResult })
+
+        return bestResult
+    }
+
     return blueprints
-        .slice(0, 1) // TODO: remove
-        .map(blueprint => blueprint.id * takeTurn(1, blueprint, initialResources, initialRobots))
+        .map(blueprint => {
+            return blueprint.id * solveBlueprintMultipleTimes(blueprint)
+        } )
         .reduce((sum, item) => sum + item)
 }
 
 expect(solve(testData)).to.equal(33)
-// expect(solve(taskInput)).to.equal(undefined)
+expect(solve(taskInput)).to.equal(1382)
 
 // Part 2
 
 const solve2 = (input: string) => {
+    const MAX_MINUTES = 32;
 }
 
 expect(solve2(testData)).to.equal(undefined)
