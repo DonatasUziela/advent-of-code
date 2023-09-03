@@ -1,6 +1,5 @@
 import { expect } from "chai";
 import { readFileSync } from "fs";
-import { uniq, keyBy } from "lodash";
 import { resolve } from "path";
 
 const testData = readFileSync(resolve(__dirname, "testData.txt"), "utf-8");
@@ -9,31 +8,18 @@ const taskInput = readFileSync(resolve(__dirname, "input.txt"), "utf-8");
 const parseInput = (input: string) =>
   input.split("\n").map((n) => parseInt(n, 10));
 
-const generateIndexes = (amount: number) => {
-  let result: Record<number, number> = {};
-  for (let i = 0; i < amount; i++) {
-    result[i] = i;
-  }
-  return result;
-};
-
 const move = (
-  initialArrangement: number[],
+  numbers: { value: number; originalIndex: number }[],
   index: number,
-  currentNumbers = initialArrangement,
-  indexes = generateIndexes(initialArrangement.length),
   log = false
 ) => {
-  //   const initialData = initialArrangement.map((value, index) => ({
-  //     originalIndex: index,
-  //     currentIndex: index,
-  //     value,
-  //   }));
-  //   const initialMap = keyBy(initialData, "originalIndex");
+  const len = numbers.length;
 
-  const numberToMove = initialArrangement[index];
-  const len = initialArrangement.length;
-  const currentIndex = indexes[index];
+  const currentIndex = numbers.findIndex(
+    ({ originalIndex }) => originalIndex === index
+  );
+  if (currentIndex === -1) throw `Number with originalIndex ${index} not found`;
+  const numberToMove = numbers[currentIndex].value;
 
   const toMove = numberToMove % (len - 1);
   const toMove2 = currentIndex + toMove;
@@ -50,14 +36,8 @@ const move = (
 
   if (newIndex === index) {
     console.log(`${numberToMove} does not move:`);
-    return {
-      newNumbers: currentNumbers,
-      newIndexes: indexes,
-    };
+    return numbers;
   }
-
-  // TODO: update many indexes. Keep original index;
-  indexes[index] = newIndex;
 
   if (log) {
     console.log({
@@ -72,78 +52,57 @@ const move = (
     });
   }
 
-  const newNumbers = currentNumbers.slice(0);
-  newNumbers.splice(currentIndex, 1);
-  newNumbers.splice(
-    // newIndex > index ? newIndex - 1 : newIndex,
-    newIndex,
-    0,
-    numberToMove
-  );
+  const newNumbers = numbers.slice(0);
+  const [removed] = newNumbers.splice(currentIndex, 1);
+  newNumbers.splice(newIndex, 0, removed);
 
   if (log) {
     console.log(
-      `${numberToMove} moves between ${newNumbers[newIndex - 1]} and ${
-        newNumbers[newIndex + 1]
+      `${numberToMove} moves between ${newNumbers[newIndex - 1].value} and ${
+        newNumbers[newIndex + 1].value
       }:`
     );
   }
 
-  return {
-    newNumbers,
-    newIndexes: indexes,
-  };
+  return newNumbers;
 };
 
 const test = () => {
-  const initialArrangement = [1, 2, -3, 3, -2, 0, 4];
+  const initialArrangement = [1, 2, -3, 3, -2, 0, 4].map(
+    (value, originalIndex) => ({ value, originalIndex })
+  );
 
-  const testCase1 = [4, 5, 6, 1, 7, 8, 9];
-  const result1 = move(testCase1, 3);
-  expect(result1.newNumbers).to.deep.eq([4, 5, 6, 7, 1, 8, 9]);
+  const result1 = move(initialArrangement, 0);
+  expect(result1.map(({ value }) => value)).to.deep.eq([2, 1, -3, 3, -2, 0, 4]);
 
-  const testCase2 = [4, -2, 5, 6, 7, 8, 9];
-  const result2 = move(testCase2, 1);
-  expect(result2.newNumbers).to.deep.eq([4, 5, 6, 7, 8, -2, 9]);
+  const result2 = move(result1, 1);
+  expect(result2.map(({ value }) => value)).to.deep.eq([1, -3, 2, 3, -2, 0, 4]);
 
-  const testCase3 = [1, -3, 2, 3, -2, 0, 4];
-  expect(move(testCase3, 1).newNumbers).to.deep.equal([1, 2, 3, -2, -3, 0, 4]);
-
-  const testCase4 = [2, 1, -3, 3, -2, 0, 4];
-  const testCase4Indexes = {};
-  expect(
-    move(initialArrangement, 1, testCase4, testCase4Indexes).newNumbers
-  ).to.deep.eq([1, -3, 2, 3, -2, 0, 4]);
-
-  expect(move([1, 2, 3, -2, -3, 0, 4], 2).newNumbers).to.deep.eq([
-    1, 2, -2, -3, 0, 3, 4,
-  ]);
+  const result3 = move(result2, 2);
+  expect(result3.map(({ value }) => value)).to.deep.eq([1, 2, 3, -2, -3, 0, 4]);
 };
 
 test();
 
 const solve = (input: string, log = false) => {
   const numbers = parseInput(input);
-
-  expect(uniq(numbers).length).to.eq(numbers.length);
+  const initialData = numbers.map((value, originalIndex) => ({
+    value,
+    originalIndex,
+  }));
 
   if (log) {
     console.log("Initial arrangement:");
     console.log(numbers.join(", "));
   }
 
-  let result = numbers;
-  let indexes;
+  let result = initialData;
   for (let i = 0; i < numbers.length; i++) {
-    const { newNumbers, newIndexes } = move(numbers, i, result, indexes, log);
-    result = newNumbers;
-    indexes = newIndexes;
-    if (log) {
-      console.log(result.join(", "));
-    }
+    result = move(result, i, log);
+    if (log) console.log(result.map(({ value }) => value).join(", "));
   }
 
-  const indexOfZero = result.indexOf(0);
+  const indexOfZero = result.findIndex(({ value }) => value === 0);
 
   const findNth = (n: number) => {
     const toMove = n % numbers.length;
@@ -151,9 +110,9 @@ const solve = (input: string, log = false) => {
     return result[indexOfFoundNumber];
   };
 
-  const coord1 = findNth(1000);
-  const coord2 = findNth(2000);
-  const coord3 = findNth(3000);
+  const coord1 = findNth(1000).value;
+  const coord2 = findNth(2000).value;
+  const coord3 = findNth(3000).value;
 
   if (log) console.log({ coord1, coord2, coord3 });
 
@@ -161,8 +120,7 @@ const solve = (input: string, log = false) => {
 };
 
 expect(solve(testData)).to.equal(3);
-expect(solve(taskInput)).not.to.equal(-3520);
-expect(solve(taskInput)).not.to.equal(-6922);
+expect(solve(taskInput)).to.equal(2827);
 
 // Part 2
 
