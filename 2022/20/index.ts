@@ -35,21 +35,8 @@ const move = (
   const newIndex = toMove3;
 
   if (newIndex === index) {
-    console.log(`${numberToMove} does not move:`);
+    // console.log(`${numberToMove} does not move:`);
     return numbers;
-  }
-
-  if (log) {
-    console.log({
-      index,
-      currentIndex,
-      newIndex,
-      numberToMove,
-      toMove,
-      toMove2,
-      toMove3,
-      len,
-    });
   }
 
   const newNumbers = numbers.slice(0);
@@ -57,11 +44,11 @@ const move = (
   newNumbers.splice(newIndex, 0, removed);
 
   if (log) {
-    console.log(
-      `${numberToMove} moves between ${newNumbers[newIndex - 1].value} and ${
-        newNumbers[newIndex + 1].value
-      }:`
-    );
+    // console.log(
+    //   `${numberToMove} moves between ${newNumbers[newIndex - 1].value} and ${
+    //     newNumbers[newIndex + 1].value
+    //   }:`
+    // );
   }
 
   return newNumbers;
@@ -124,9 +111,48 @@ expect(solve(taskInput)).to.equal(2827);
 
 // Part 2
 
-const solve2 = (input: string) => {};
+const solve2 = (input: string, log = false) => {
+  const numbers = parseInput(input);
+  const decryptionKey = 811589153;
+  const initialData = numbers.map((value, originalIndex) => ({
+    value: value * decryptionKey,
+    originalIndex,
+  }));
 
-expect(solve2(testData)).to.equal(undefined);
+  if (log) {
+    console.log("Initial arrangement:");
+    console.log(initialData.map(({ value }) => value).join(", "));
+  }
+
+  let result = initialData;
+  for (let mixingRound = 1; mixingRound <= 10; mixingRound++) {
+    for (let i = 0; i < numbers.length; i++) {
+      result = move(result, i, log);
+    }
+    if (log) {
+      console.log(`After ${mixingRound} of mixing:`);
+      console.log(result.map(({ value }) => value).join(", "));
+    }
+  }
+
+  const indexOfZero = result.findIndex(({ value }) => value === 0);
+
+  const findNth = (n: number) => {
+    const toMove = n % numbers.length;
+    const indexOfFoundNumber = (indexOfZero + toMove) % numbers.length;
+    return result[indexOfFoundNumber];
+  };
+
+  const coord1 = findNth(1000).value;
+  const coord2 = findNth(2000).value;
+  const coord3 = findNth(3000).value;
+
+  if (log) console.log({ coord1, coord2, coord3 });
+
+  return coord1 + coord2 + coord3;
+};
+
+expect(solve2(testData, true)).to.equal(1623178306);
 expect(solve2(taskInput)).to.equal(undefined);
 
 // npx ts-node 2022/20/index.ts
