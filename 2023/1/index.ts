@@ -1,14 +1,22 @@
-const fs = require('fs');
-const path = require('path');
+import { expect } from 'chai';
+import { readFileSync } from 'fs';
+import { resolve }  from 'path';
 
-const input = fs.readFileSync(path.resolve(__dirname, 'input.txt'), 'utf-8');
-const entries = input.split('\n');
+const taskInput = readFileSync(resolve(__dirname, 'input.txt'), 'utf-8');
+const testData = readFileSync(resolve(__dirname, 'testData.txt'), 'utf-8');
 
-// Part 1
+const solve = (input: string) => {
+}
 
-console.log({ input });
+expect(solve(testData)).to.equal(undefined)
+expect(solve(taskInput)).to.equal(undefined)
 
 // Part 2
 
+const solve2 = (input: string) => {
+}
+
+expect(solve2(testData)).to.equal(undefined)
+expect(solve2(taskInput)).to.equal(undefined);
 
 // npx ts-node 2023/1/index.ts
