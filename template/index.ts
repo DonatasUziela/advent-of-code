@@ -19,4 +19,4 @@ const solve2 = (input: string) => {
 expect(solve2(testData)).to.equal(undefined)
 expect(solve2(taskInput)).to.equal(undefined);
 
-// npx ts-node 2022/13/index.ts
+// npx ts-node 2023/2/index.ts
