@@ -1,22 +1,115 @@
 import { expect } from 'chai'
 import { readFileSync } from 'fs'
+import { sum } from 'lodash'
 import { resolve } from 'path'
+import { type Coordinates, serializeCoords, get8Directions, left, parseCoords, sameCoords } from 'utils/coordinates'
 
 const taskInput = readFileSync(resolve(__dirname, 'input.txt'), 'utf-8')
 const testData = readFileSync(resolve(__dirname, 'testData.txt'), 'utf-8')
 
-const solve = (input: string) => {
+const generateNumberCoords = (numberText: string, end: Coordinates) => {
+  const result = [end]
+
+  for (let i = 1; i < numberText.length; i++) {
+    result.push(left(result[result.length - 1]))
+  }
+
+  return result
 }
 
-expect(solve(testData)).to.equal(undefined)
-expect(solve(taskInput)).to.equal(undefined)
+const parse = (input: string) => {
+  const numbers: Array<{ text: string, coords: Coordinates[] }> = [
+  ]
+
+  const symbols: Record<string, string> = {
+  }
+
+  const lines = input.split('\r\n')
+
+  lines.forEach((line, y) => {
+    let numberText = ''
+    // console.log(line)
+
+    const closeNumber = ({ x, y }: Coordinates) => {
+      if (!numberText) return
+
+      //   console.log('closing number', { x, y, numberText })
+
+      numbers.push({
+        text: numberText,
+        coords: generateNumberCoords(numberText, { x, y })
+      })
+
+      numberText = ''
+    }
+
+    line.split('').forEach((symbol, x) => {
+      if (isNaN(parseInt(symbol, 10))) {
+        if (symbol !== '.') {
+          symbols[serializeCoords({ x, y })] = symbol
+        }
+        closeNumber({ x: x - 1, y })
+      } else {
+        numberText += symbol
+      }
+    })
+
+    closeNumber({ x: line.length - 1, y })
+  })
+
+  return {
+    numbers,
+    symbols
+  }
+}
+
+const solve = (input: string) => {
+  const { numbers, symbols } = parse(input)
+  const numbersWithSymbolNearby = numbers.filter(({ coords }) => {
+    return coords.some(coord => {
+      const allDirections = get8Directions(coord)
+      return allDirections.some(d => symbols[serializeCoords(d)])
+    })
+  })
+  const result = numbersWithSymbolNearby.map(({ text }) => parseInt(text, 10))
+  return sum(result)
+}
+
+expect(solve(testData)).to.equal(4361)
+expect(solve(taskInput)).to.equal(539590)
 
 // Part 2
 
-const solve2 = (input: string) => {
+interface Gear {
+  coords: string
+  symbol: string
+  adjacentNumbers: number[]
 }
 
-expect(solve2(testData)).to.equal(undefined)
-expect(solve2(taskInput)).to.equal(undefined)
+const solve2 = (input: string) => {
+  const { numbers, symbols } = parse(input)
+  const gears = Object.entries(symbols).reduce<Gear[]>((acc, [coords, symbol]) => {
+    if (symbol !== '*') return acc
+
+    const allDirections = get8Directions(parseCoords(coords))
+    const adjacentNumbers = numbers.filter(({ coords }) => {
+      return coords.some(c => allDirections.some(d => sameCoords(c, d)))
+    })
+    if (adjacentNumbers.length !== 2) return acc
+
+    acc.push({
+      coords,
+      symbol,
+      adjacentNumbers: adjacentNumbers.map(n => Number(n.text))
+    })
+    return acc
+  }, [])
+
+  const gearRatios = gears.map(({ adjacentNumbers: [first, second] }) => first * second)
+  return sum(gearRatios)
+}
+
+expect(solve2(testData)).to.equal(467835)
+expect(solve2(taskInput)).to.equal(80703636)
 
 // npx ts-node 2023/3/index.ts
