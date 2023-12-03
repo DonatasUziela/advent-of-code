@@ -18,26 +18,19 @@ const generateNumberCoords = (numberText: string, end: Coordinates) => {
 }
 
 const parse = (input: string) => {
-  const numbers: Array<{ text: string, coords: Coordinates[] }> = [
-  ]
-
-  const symbols: Record<string, string> = {
-  }
-
+  const numbers: Array<{ text: string, coords: Coordinates[] }> = []
+  const symbols: Record<string, string> = {}
   const lines = input.split('\r\n')
 
   lines.forEach((line, y) => {
     let numberText = ''
-    // console.log(line)
 
-    const closeNumber = ({ x, y }: Coordinates) => {
+    const closeNumber = (coords: Coordinates) => {
       if (!numberText) return
-
-      //   console.log('closing number', { x, y, numberText })
 
       numbers.push({
         text: numberText,
-        coords: generateNumberCoords(numberText, { x, y })
+        coords: generateNumberCoords(numberText, coords)
       })
 
       numberText = ''
@@ -48,6 +41,7 @@ const parse = (input: string) => {
         if (symbol !== '.') {
           symbols[serializeCoords({ x, y })] = symbol
         }
+
         closeNumber({ x: x - 1, y })
       } else {
         numberText += symbol
@@ -65,12 +59,11 @@ const parse = (input: string) => {
 
 const solve = (input: string) => {
   const { numbers, symbols } = parse(input)
-  const numbersWithSymbolNearby = numbers.filter(({ coords }) => {
-    return coords.some(coord => {
-      const allDirections = get8Directions(coord)
-      return allDirections.some(d => symbols[serializeCoords(d)])
-    })
-  })
+  const numbersWithSymbolNearby = numbers.filter(({ coords }) =>
+    coords.some(coord =>
+      get8Directions(coord).some(d =>
+        symbols[serializeCoords(d)])))
+
   const result = numbersWithSymbolNearby.map(({ text }) => parseInt(text, 10))
   return sum(result)
 }
@@ -82,7 +75,6 @@ expect(solve(taskInput)).to.equal(539590)
 
 interface Gear {
   coords: string
-  symbol: string
   adjacentNumbers: number[]
 }
 
@@ -92,14 +84,16 @@ const solve2 = (input: string) => {
     if (symbol !== '*') return acc
 
     const allDirections = get8Directions(parseCoords(coords))
-    const adjacentNumbers = numbers.filter(({ coords }) => {
-      return coords.some(c => allDirections.some(d => sameCoords(c, d)))
-    })
+
+    const adjacentNumbers = numbers.filter(({ coords }) =>
+      coords.some(c =>
+        allDirections.some(d =>
+          sameCoords(c, d))))
+
     if (adjacentNumbers.length !== 2) return acc
 
     acc.push({
       coords,
-      symbol,
       adjacentNumbers: adjacentNumbers.map(n => Number(n.text))
     })
     return acc
