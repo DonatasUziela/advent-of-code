@@ -1,5 +1,5 @@
 {
-    "compilerOptions": {   
+    "compilerOptions": {
         "strict": true,
         "lib": [
             "DOM",
@@ -12,9 +12,12 @@
     "include": [
         "2022/**/*",
         "2023/**/*",
-        "utils"
+        "utils",
+        "template"
     ],
     "ts-node": {
-        "require": ["tsconfig-paths/register"]
+        "require": [
+            "tsconfig-paths/register"
+        ]
     }
 }

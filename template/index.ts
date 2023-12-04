@@ -1,9 +1,9 @@
-import { expect } from 'chai';
-import { readFileSync } from 'fs';
-import { resolve }  from 'path';
+import { expect } from 'chai'
+import { readFileSync } from 'fs'
+import { resolve } from 'path'
 
-const taskInput = readFileSync(resolve(__dirname, 'input.txt'), 'utf-8');
-const testData = readFileSync(resolve(__dirname, 'testData.txt'), 'utf-8');
+const taskInput = readFileSync(resolve(__dirname, 'input.txt'), 'utf-8')
+const testData = readFileSync(resolve(__dirname, 'testData.txt'), 'utf-8')
 
 const solve = (input: string) => {
 }
@@ -17,6 +17,6 @@ const solve2 = (input: string) => {
 }
 
 expect(solve2(testData)).to.equal(undefined)
-expect(solve2(taskInput)).to.equal(undefined);
+expect(solve2(taskInput)).to.equal(undefined)
 
 // npx ts-node 2023/2/index.ts
