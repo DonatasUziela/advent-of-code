@@ -14,11 +14,13 @@ type ResourcesMapsByType = ResourcesMap[][]
 
 const parse = (input: string) => {
   const sections = input
-    .split('---')
+    .split('\r\n\r\n')
     .map(i => i
       .split('\r\n')
       .filter(i => i)
     )
+  // console.log(input
+  //   .split('\r\n\r\n'))
 
   const seeds = sections[0][0]
     .split(':')[1]
