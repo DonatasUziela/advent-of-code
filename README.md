@@ -6,7 +6,7 @@ Install dependencies:
 
 `yarn install`
 
-To run challenge code: check the command in last line of each .js file
+To run challenge code: check the command in last line of each .ts (.js) file
 
 ## Troubleshooting
 
