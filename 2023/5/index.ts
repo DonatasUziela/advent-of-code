@@ -19,8 +19,6 @@ const parse = (input: string) => {
       .split('\r\n')
       .filter(i => i)
     )
-  // console.log(input
-  //   .split('\r\n\r\n'))
 
   const seeds = sections[0][0]
     .split(':')[1]
