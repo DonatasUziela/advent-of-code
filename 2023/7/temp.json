@@ -1,0 +1,11002 @@
+[
+    {
+        "hand": [
+            "2",
+            "3",
+            "K",
+            "8",
+            "Q"
+        ],
+        "bid": 359,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "2",
+            "4",
+            "3",
+            "Q",
+            "A"
+        ],
+        "bid": 250,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "2",
+            "4",
+            "3",
+            "K",
+            "7"
+        ],
+        "bid": 979,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "2",
+            "4",
+            "J",
+            "9",
+            "7"
+        ],
+        "bid": 724,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "2",
+            "4",
+            "J",
+            "9",
+            "K"
+        ],
+        "bid": 181,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "2",
+            "4",
+            "A",
+            "6",
+            "K"
+        ],
+        "bid": 197,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "2",
+            "5",
+            "6",
+            "7",
+            "T"
+        ],
+        "bid": 211,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "2",
+            "6",
+            "5",
+            "K",
+            "A"
+        ],
+        "bid": 363,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "2",
+            "8",
+            "Q",
+            "J",
+            "3"
+        ],
+        "bid": 954,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "2",
+            "8",
+            "Q",
+            "K",
+            "T"
+        ],
+        "bid": 655,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "2",
+            "T",
+            "3",
+            "7",
+            "4"
+        ],
+        "bid": 439,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "2",
+            "T",
+            "5",
+            "J",
+            "9"
+        ],
+        "bid": 414,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "2",
+            "Q",
+            "T",
+            "K",
+            "A"
+        ],
+        "bid": 447,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "2",
+            "Q",
+            "J",
+            "T",
+            "A"
+        ],
+        "bid": 229,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "2",
+            "K",
+            "8",
+            "J",
+            "7"
+        ],
+        "bid": 509,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "2",
+            "K",
+            "T",
+            "6",
+            "9"
+        ],
+        "bid": 232,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "2",
+            "A",
+            "8",
+            "J",
+            "K"
+        ],
+        "bid": 13,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "3",
+            "2",
+            "T",
+            "6",
+            "5"
+        ],
+        "bid": 709,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "3",
+            "4",
+            "J",
+            "9",
+            "7"
+        ],
+        "bid": 694,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "3",
+            "5",
+            "8",
+            "K",
+            "2"
+        ],
+        "bid": 725,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "3",
+            "6",
+            "5",
+            "K",
+            "8"
+        ],
+        "bid": 794,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "3",
+            "9",
+            "8",
+            "K",
+            "4"
+        ],
+        "bid": 715,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "3",
+            "T",
+            "Q",
+            "4",
+            "6"
+        ],
+        "bid": 373,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "3",
+            "T",
+            "K",
+            "7",
+            "4"
+        ],
+        "bid": 338,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "3",
+            "J",
+            "5",
+            "4",
+            "7"
+        ],
+        "bid": 223,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "3",
+            "A",
+            "K",
+            "7",
+            "T"
+        ],
+        "bid": 50,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "4",
+            "2",
+            "8",
+            "T",
+            "3"
+        ],
+        "bid": 132,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "4",
+            "2",
+            "K",
+            "3",
+            "9"
+        ],
+        "bid": 116,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "4",
+            "3",
+            "Q",
+            "8",
+            "2"
+        ],
+        "bid": 760,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "4",
+            "5",
+            "8",
+            "T",
+            "7"
+        ],
+        "bid": 860,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "4",
+            "5",
+            "Q",
+            "J",
+            "6"
+        ],
+        "bid": 576,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "4",
+            "5",
+            "Q",
+            "K",
+            "J"
+        ],
+        "bid": 690,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "4",
+            "7",
+            "3",
+            "5",
+            "Q"
+        ],
+        "bid": 259,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "4",
+            "7",
+            "3",
+            "A",
+            "8"
+        ],
+        "bid": 431,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "4",
+            "7",
+            "J",
+            "2",
+            "K"
+        ],
+        "bid": 907,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "4",
+            "8",
+            "2",
+            "Q",
+            "9"
+        ],
+        "bid": 668,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "4",
+            "9",
+            "3",
+            "8",
+            "T"
+        ],
+        "bid": 813,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "4",
+            "T",
+            "6",
+            "9",
+            "3"
+        ],
+        "bid": 806,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "4",
+            "T",
+            "6",
+            "K",
+            "A"
+        ],
+        "bid": 892,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "4",
+            "T",
+            "9",
+            "2",
+            "5"
+        ],
+        "bid": 32,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "4",
+            "T",
+            "9",
+            "8",
+            "J"
+        ],
+        "bid": 105,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "4",
+            "J",
+            "2",
+            "Q",
+            "7"
+        ],
+        "bid": 327,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "4",
+            "J",
+            "9",
+            "6",
+            "8"
+        ],
+        "bid": 542,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "4",
+            "Q",
+            "2",
+            "6",
+            "A"
+        ],
+        "bid": 886,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "4",
+            "Q",
+            "3",
+            "5",
+            "K"
+        ],
+        "bid": 842,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "4",
+            "Q",
+            "3",
+            "8",
+            "5"
+        ],
+        "bid": 269,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "4",
+            "Q",
+            "K",
+            "T",
+            "3"
+        ],
+        "bid": 742,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "4",
+            "K",
+            "7",
+            "5",
+            "6"
+        ],
+        "bid": 800,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "4",
+            "K",
+            "9",
+            "A",
+            "Q"
+        ],
+        "bid": 148,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "5",
+            "4",
+            "9",
+            "6",
+            "K"
+        ],
+        "bid": 590,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "5",
+            "4",
+            "T",
+            "8",
+            "6"
+        ],
+        "bid": 547,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "5",
+            "7",
+            "T",
+            "6",
+            "3"
+        ],
+        "bid": 315,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "5",
+            "8",
+            "A",
+            "6",
+            "J"
+        ],
+        "bid": 452,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "5",
+            "8",
+            "A",
+            "T",
+            "Q"
+        ],
+        "bid": 939,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "5",
+            "9",
+            "Q",
+            "8",
+            "3"
+        ],
+        "bid": 128,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "5",
+            "T",
+            "K",
+            "7",
+            "Q"
+        ],
+        "bid": 417,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "5",
+            "T",
+            "A",
+            "6",
+            "4"
+        ],
+        "bid": 593,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "5",
+            "J",
+            "9",
+            "T",
+            "3"
+        ],
+        "bid": 84,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "5",
+            "J",
+            "T",
+            "7",
+            "3"
+        ],
+        "bid": 434,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "5",
+            "Q",
+            "A",
+            "9",
+            "8"
+        ],
+        "bid": 887,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "5",
+            "K",
+            "9",
+            "J",
+            "7"
+        ],
+        "bid": 124,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "6",
+            "2",
+            "8",
+            "3",
+            "A"
+        ],
+        "bid": 337,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "6",
+            "4",
+            "3",
+            "9",
+            "2"
+        ],
+        "bid": 649,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "6",
+            "4",
+            "Q",
+            "3",
+            "5"
+        ],
+        "bid": 98,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "6",
+            "5",
+            "9",
+            "T",
+            "2"
+        ],
+        "bid": 689,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "6",
+            "5",
+            "J",
+            "2",
+            "K"
+        ],
+        "bid": 565,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "6",
+            "5",
+            "J",
+            "T",
+            "7"
+        ],
+        "bid": 630,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "6",
+            "8",
+            "4",
+            "Q",
+            "J"
+        ],
+        "bid": 40,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "6",
+            "8",
+            "5",
+            "Q",
+            "A"
+        ],
+        "bid": 230,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "6",
+            "8",
+            "J",
+            "5",
+            "K"
+        ],
+        "bid": 947,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "6",
+            "9",
+            "4",
+            "3",
+            "7"
+        ],
+        "bid": 176,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "6",
+            "9",
+            "4",
+            "8",
+            "2"
+        ],
+        "bid": 130,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "6",
+            "T",
+            "5",
+            "A",
+            "Q"
+        ],
+        "bid": 841,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "6",
+            "T",
+            "J",
+            "5",
+            "8"
+        ],
+        "bid": 902,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "6",
+            "A",
+            "4",
+            "5",
+            "J"
+        ],
+        "bid": 978,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "6",
+            "A",
+            "8",
+            "4",
+            "5"
+        ],
+        "bid": 371,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "7",
+            "2",
+            "5",
+            "Q",
+            "K"
+        ],
+        "bid": 140,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "7",
+            "2",
+            "A",
+            "3",
+            "4"
+        ],
+        "bid": 266,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "7",
+            "3",
+            "4",
+            "9",
+            "5"
+        ],
+        "bid": 855,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "7",
+            "3",
+            "5",
+            "A",
+            "6"
+        ],
+        "bid": 384,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "7",
+            "4",
+            "9",
+            "3",
+            "8"
+        ],
+        "bid": 660,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "7",
+            "4",
+            "J",
+            "8",
+            "A"
+        ],
+        "bid": 960,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "7",
+            "5",
+            "4",
+            "9",
+            "2"
+        ],
+        "bid": 895,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "7",
+            "5",
+            "J",
+            "A",
+            "6"
+        ],
+        "bid": 95,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "7",
+            "6",
+            "5",
+            "K",
+            "A"
+        ],
+        "bid": 953,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "7",
+            "6",
+            "K",
+            "8",
+            "2"
+        ],
+        "bid": 153,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "7",
+            "8",
+            "2",
+            "5",
+            "3"
+        ],
+        "bid": 787,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "7",
+            "8",
+            "9",
+            "3",
+            "T"
+        ],
+        "bid": 964,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "7",
+            "T",
+            "4",
+            "8",
+            "A"
+        ],
+        "bid": 194,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "7",
+            "T",
+            "9",
+            "K",
+            "6"
+        ],
+        "bid": 523,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "7",
+            "J",
+            "6",
+            "4",
+            "8"
+        ],
+        "bid": 534,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "7",
+            "J",
+            "K",
+            "3",
+            "5"
+        ],
+        "bid": 5,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "7",
+            "Q",
+            "T",
+            "3",
+            "5"
+        ],
+        "bid": 58,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "7",
+            "Q",
+            "K",
+            "3",
+            "2"
+        ],
+        "bid": 512,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "7",
+            "Q",
+            "K",
+            "T",
+            "2"
+        ],
+        "bid": 497,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "7",
+            "K",
+            "5",
+            "2",
+            "4"
+        ],
+        "bid": 171,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "7",
+            "A",
+            "5",
+            "4",
+            "J"
+        ],
+        "bid": 889,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "7",
+            "A",
+            "T",
+            "2",
+            "8"
+        ],
+        "bid": 234,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "8",
+            "2",
+            "Q",
+            "5",
+            "T"
+        ],
+        "bid": 314,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "8",
+            "2",
+            "A",
+            "4",
+            "7"
+        ],
+        "bid": 612,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "8",
+            "6",
+            "J",
+            "3",
+            "2"
+        ],
+        "bid": 39,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "8",
+            "7",
+            "J",
+            "2",
+            "Q"
+        ],
+        "bid": 761,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "8",
+            "9",
+            "5",
+            "T",
+            "J"
+        ],
+        "bid": 175,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "8",
+            "J",
+            "6",
+            "K",
+            "2"
+        ],
+        "bid": 301,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "8",
+            "Q",
+            "5",
+            "J",
+            "2"
+        ],
+        "bid": 528,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "8",
+            "K",
+            "2",
+            "T",
+            "3"
+        ],
+        "bid": 332,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "8",
+            "K",
+            "6",
+            "4",
+            "5"
+        ],
+        "bid": 959,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "8",
+            "K",
+            "6",
+            "J",
+            "Q"
+        ],
+        "bid": 146,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "8",
+            "K",
+            "7",
+            "9",
+            "T"
+        ],
+        "bid": 917,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "8",
+            "A",
+            "3",
+            "T",
+            "9"
+        ],
+        "bid": 90,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "8",
+            "A",
+            "6",
+            "J",
+            "9"
+        ],
+        "bid": 419,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "9",
+            "2",
+            "A",
+            "J",
+            "6"
+        ],
+        "bid": 587,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "9",
+            "4",
+            "2",
+            "3",
+            "8"
+        ],
+        "bid": 700,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "9",
+            "5",
+            "3",
+            "T",
+            "4"
+        ],
+        "bid": 920,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "9",
+            "5",
+            "K",
+            "8",
+            "3"
+        ],
+        "bid": 433,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "9",
+            "6",
+            "Q",
+            "K",
+            "3"
+        ],
+        "bid": 391,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "9",
+            "6",
+            "A",
+            "8",
+            "5"
+        ],
+        "bid": 878,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "9",
+            "6",
+            "A",
+            "Q",
+            "K"
+        ],
+        "bid": 861,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "9",
+            "7",
+            "Q",
+            "K",
+            "2"
+        ],
+        "bid": 398,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "9",
+            "8",
+            "5",
+            "A",
+            "3"
+        ],
+        "bid": 667,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "9",
+            "T",
+            "J",
+            "6",
+            "7"
+        ],
+        "bid": 522,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "9",
+            "A",
+            "K",
+            "6",
+            "2"
+        ],
+        "bid": 157,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "T",
+            "2",
+            "5",
+            "J",
+            "7"
+        ],
+        "bid": 72,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "T",
+            "2",
+            "Q",
+            "A",
+            "9"
+        ],
+        "bid": 921,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "T",
+            "2",
+            "A",
+            "3",
+            "5"
+        ],
+        "bid": 823,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "T",
+            "3",
+            "5",
+            "Q",
+            "8"
+        ],
+        "bid": 752,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "T",
+            "3",
+            "6",
+            "K",
+            "5"
+        ],
+        "bid": 938,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "T",
+            "3",
+            "A",
+            "2",
+            "9"
+        ],
+        "bid": 535,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "T",
+            "4",
+            "9",
+            "8",
+            "7"
+        ],
+        "bid": 279,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "T",
+            "6",
+            "A",
+            "4",
+            "8"
+        ],
+        "bid": 122,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "T",
+            "8",
+            "A",
+            "K",
+            "7"
+        ],
+        "bid": 983,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "T",
+            "9",
+            "8",
+            "K",
+            "5"
+        ],
+        "bid": 397,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "T",
+            "9",
+            "K",
+            "Q",
+            "3"
+        ],
+        "bid": 231,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "T",
+            "Q",
+            "5",
+            "4",
+            "9"
+        ],
+        "bid": 900,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "T",
+            "K",
+            "4",
+            "5",
+            "6"
+        ],
+        "bid": 568,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "T",
+            "K",
+            "J",
+            "2",
+            "7"
+        ],
+        "bid": 882,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "J",
+            "2",
+            "8",
+            "3",
+            "9"
+        ],
+        "bid": 326,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "J",
+            "5",
+            "T",
+            "4",
+            "A"
+        ],
+        "bid": 455,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "J",
+            "6",
+            "8",
+            "9",
+            "T"
+        ],
+        "bid": 894,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "J",
+            "6",
+            "K",
+            "A",
+            "Q"
+        ],
+        "bid": 607,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "J",
+            "7",
+            "8",
+            "4",
+            "T"
+        ],
+        "bid": 348,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "J",
+            "8",
+            "3",
+            "7",
+            "Q"
+        ],
+        "bid": 552,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "J",
+            "9",
+            "2",
+            "K",
+            "T"
+        ],
+        "bid": 76,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "J",
+            "9",
+            "7",
+            "6",
+            "3"
+        ],
+        "bid": 36,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "J",
+            "T",
+            "Q",
+            "K",
+            "7"
+        ],
+        "bid": 305,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "J",
+            "T",
+            "A",
+            "8",
+            "2"
+        ],
+        "bid": 608,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "J",
+            "Q",
+            "2",
+            "9",
+            "K"
+        ],
+        "bid": 536,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "J",
+            "Q",
+            "6",
+            "4",
+            "K"
+        ],
+        "bid": 718,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "J",
+            "Q",
+            "8",
+            "7",
+            "K"
+        ],
+        "bid": 67,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "J",
+            "A",
+            "T",
+            "Q",
+            "9"
+        ],
+        "bid": 273,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "Q",
+            "3",
+            "9",
+            "6",
+            "8"
+        ],
+        "bid": 901,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "Q",
+            "3",
+            "K",
+            "A",
+            "J"
+        ],
+        "bid": 563,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "Q",
+            "4",
+            "3",
+            "J",
+            "A"
+        ],
+        "bid": 109,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "Q",
+            "4",
+            "5",
+            "K",
+            "A"
+        ],
+        "bid": 754,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "Q",
+            "4",
+            "9",
+            "8",
+            "3"
+        ],
+        "bid": 168,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "Q",
+            "5",
+            "K",
+            "6",
+            "A"
+        ],
+        "bid": 352,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "Q",
+            "6",
+            "7",
+            "A",
+            "J"
+        ],
+        "bid": 628,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "Q",
+            "6",
+            "8",
+            "9",
+            "2"
+        ],
+        "bid": 784,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "Q",
+            "7",
+            "2",
+            "T",
+            "4"
+        ],
+        "bid": 24,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "Q",
+            "7",
+            "J",
+            "3",
+            "6"
+        ],
+        "bid": 850,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "Q",
+            "8",
+            "2",
+            "T",
+            "6"
+        ],
+        "bid": 620,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "Q",
+            "8",
+            "3",
+            "J",
+            "K"
+        ],
+        "bid": 96,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "Q",
+            "8",
+            "5",
+            "3",
+            "7"
+        ],
+        "bid": 969,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "Q",
+            "9",
+            "A",
+            "2",
+            "3"
+        ],
+        "bid": 549,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "Q",
+            "T",
+            "3",
+            "4",
+            "5"
+        ],
+        "bid": 436,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "Q",
+            "J",
+            "3",
+            "5",
+            "T"
+        ],
+        "bid": 505,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "Q",
+            "J",
+            "5",
+            "A",
+            "4"
+        ],
+        "bid": 592,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "Q",
+            "J",
+            "T",
+            "4",
+            "5"
+        ],
+        "bid": 653,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "Q",
+            "A",
+            "5",
+            "4",
+            "3"
+        ],
+        "bid": 942,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "Q",
+            "A",
+            "T",
+            "6",
+            "7"
+        ],
+        "bid": 976,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "K",
+            "3",
+            "5",
+            "6",
+            "7"
+        ],
+        "bid": 218,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "K",
+            "3",
+            "8",
+            "2",
+            "6"
+        ],
+        "bid": 835,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "K",
+            "4",
+            "3",
+            "9",
+            "T"
+        ],
+        "bid": 924,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "K",
+            "4",
+            "3",
+            "J",
+            "7"
+        ],
+        "bid": 484,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "K",
+            "6",
+            "Q",
+            "3",
+            "7"
+        ],
+        "bid": 558,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "K",
+            "8",
+            "3",
+            "5",
+            "4"
+        ],
+        "bid": 285,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "K",
+            "8",
+            "Q",
+            "2",
+            "A"
+        ],
+        "bid": 29,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "K",
+            "9",
+            "7",
+            "A",
+            "6"
+        ],
+        "bid": 298,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "K",
+            "T",
+            "4",
+            "2",
+            "7"
+        ],
+        "bid": 665,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "K",
+            "T",
+            "9",
+            "2",
+            "Q"
+        ],
+        "bid": 189,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "K",
+            "T",
+            "A",
+            "5",
+            "4"
+        ],
+        "bid": 759,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "K",
+            "J",
+            "Q",
+            "T",
+            "9"
+        ],
+        "bid": 44,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "K",
+            "Q",
+            "9",
+            "4",
+            "8"
+        ],
+        "bid": 687,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "K",
+            "A",
+            "5",
+            "3",
+            "Q"
+        ],
+        "bid": 686,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "K",
+            "A",
+            "9",
+            "J",
+            "2"
+        ],
+        "bid": 999,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "A",
+            "3",
+            "6",
+            "8",
+            "K"
+        ],
+        "bid": 988,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "A",
+            "3",
+            "K",
+            "8",
+            "J"
+        ],
+        "bid": 145,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "A",
+            "4",
+            "2",
+            "6",
+            "T"
+        ],
+        "bid": 500,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "A",
+            "7",
+            "2",
+            "6",
+            "3"
+        ],
+        "bid": 16,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "A",
+            "7",
+            "4",
+            "Q",
+            "2"
+        ],
+        "bid": 704,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "A",
+            "8",
+            "6",
+            "2",
+            "4"
+        ],
+        "bid": 35,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "A",
+            "9",
+            "3",
+            "4",
+            "7"
+        ],
+        "bid": 609,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "A",
+            "9",
+            "7",
+            "J",
+            "4"
+        ],
+        "bid": 287,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "A",
+            "J",
+            "K",
+            "2",
+            "6"
+        ],
+        "bid": 538,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "A",
+            "Q",
+            "K",
+            "9",
+            "7"
+        ],
+        "bid": 468,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "A",
+            "K",
+            "4",
+            "2",
+            "7"
+        ],
+        "bid": 108,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "A",
+            "K",
+            "8",
+            "9",
+            "7"
+        ],
+        "bid": 214,
+        "handType": "HighCard"
+    },
+    {
+        "hand": [
+            "2",
+            "2",
+            "3",
+            "8",
+            "J"
+        ],
+        "bid": 86,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "2",
+            "2",
+            "9",
+            "5",
+            "4"
+        ],
+        "bid": 425,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "2",
+            "2",
+            "J",
+            "4",
+            "8"
+        ],
+        "bid": 6,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "2",
+            "3",
+            "2",
+            "5",
+            "A"
+        ],
+        "bid": 961,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "2",
+            "4",
+            "6",
+            "Q",
+            "6"
+        ],
+        "bid": 930,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "2",
+            "6",
+            "7",
+            "6",
+            "9"
+        ],
+        "bid": 816,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "2",
+            "6",
+            "J",
+            "7",
+            "7"
+        ],
+        "bid": 1,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "2",
+            "7",
+            "7",
+            "3",
+            "T"
+        ],
+        "bid": 420,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "2",
+            "7",
+            "7",
+            "4",
+            "A"
+        ],
+        "bid": 280,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "2",
+            "7",
+            "T",
+            "7",
+            "J"
+        ],
+        "bid": 577,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "2",
+            "8",
+            "7",
+            "3",
+            "2"
+        ],
+        "bid": 209,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "2",
+            "8",
+            "8",
+            "6",
+            "T"
+        ],
+        "bid": 346,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "2",
+            "8",
+            "K",
+            "2",
+            "J"
+        ],
+        "bid": 222,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "2",
+            "T",
+            "2",
+            "Q",
+            "J"
+        ],
+        "bid": 375,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "2",
+            "T",
+            "6",
+            "5",
+            "2"
+        ],
+        "bid": 275,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "2",
+            "J",
+            "3",
+            "6",
+            "J"
+        ],
+        "bid": 559,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "2",
+            "J",
+            "6",
+            "K",
+            "J"
+        ],
+        "bid": 854,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "2",
+            "Q",
+            "J",
+            "2",
+            "4"
+        ],
+        "bid": 766,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "2",
+            "A",
+            "7",
+            "T",
+            "T"
+        ],
+        "bid": 991,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "2",
+            "A",
+            "9",
+            "6",
+            "A"
+        ],
+        "bid": 462,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "3",
+            "2",
+            "J",
+            "2",
+            "Q"
+        ],
+        "bid": 428,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "3",
+            "3",
+            "7",
+            "J",
+            "9"
+        ],
+        "bid": 141,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "3",
+            "3",
+            "T",
+            "K",
+            "4"
+        ],
+        "bid": 599,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "3",
+            "4",
+            "2",
+            "Q",
+            "2"
+        ],
+        "bid": 409,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "3",
+            "4",
+            "K",
+            "K",
+            "J"
+        ],
+        "bid": 569,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "3",
+            "6",
+            "T",
+            "9",
+            "3"
+        ],
+        "bid": 934,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "3",
+            "7",
+            "3",
+            "K",
+            "J"
+        ],
+        "bid": 263,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "3",
+            "7",
+            "4",
+            "J",
+            "7"
+        ],
+        "bid": 553,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "3",
+            "7",
+            "T",
+            "T",
+            "6"
+        ],
+        "bid": 380,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "3",
+            "8",
+            "2",
+            "6",
+            "2"
+        ],
+        "bid": 830,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "3",
+            "8",
+            "5",
+            "J",
+            "5"
+        ],
+        "bid": 429,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "3",
+            "8",
+            "7",
+            "J",
+            "8"
+        ],
+        "bid": 663,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "3",
+            "T",
+            "T",
+            "6",
+            "5"
+        ],
+        "bid": 634,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "3",
+            "J",
+            "2",
+            "3",
+            "4"
+        ],
+        "bid": 807,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "3",
+            "J",
+            "6",
+            "3",
+            "9"
+        ],
+        "bid": 149,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "3",
+            "Q",
+            "K",
+            "9",
+            "3"
+        ],
+        "bid": 692,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "3",
+            "K",
+            "A",
+            "7",
+            "3"
+        ],
+        "bid": 411,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "3",
+            "A",
+            "A",
+            "6",
+            "7"
+        ],
+        "bid": 958,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "4",
+            "3",
+            "A",
+            "4",
+            "2"
+        ],
+        "bid": 144,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "T",
+            "8",
+            "6"
+        ],
+        "bid": 131,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "T",
+            "J",
+            "2"
+        ],
+        "bid": 993,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "J",
+            "2",
+            "6"
+        ],
+        "bid": 365,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "J",
+            "8",
+            "T"
+        ],
+        "bid": 227,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "4",
+            "5",
+            "7",
+            "8",
+            "4"
+        ],
+        "bid": 594,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "4",
+            "8",
+            "J",
+            "4",
+            "7"
+        ],
+        "bid": 955,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "4",
+            "9",
+            "3",
+            "K",
+            "9"
+        ],
+        "bid": 233,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "4",
+            "T",
+            "8",
+            "7",
+            "7"
+        ],
+        "bid": 793,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "4",
+            "J",
+            "2",
+            "5",
+            "5"
+        ],
+        "bid": 243,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "4",
+            "Q",
+            "2",
+            "9",
+            "Q"
+        ],
+        "bid": 473,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "4",
+            "Q",
+            "J",
+            "A",
+            "Q"
+        ],
+        "bid": 374,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "4",
+            "K",
+            "4",
+            "Q",
+            "8"
+        ],
+        "bid": 721,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "4",
+            "A",
+            "4",
+            "Q",
+            "2"
+        ],
+        "bid": 237,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "5",
+            "3",
+            "8",
+            "8",
+            "J"
+        ],
+        "bid": 956,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "5",
+            "4",
+            "Q",
+            "4",
+            "2"
+        ],
+        "bid": 62,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "5",
+            "4",
+            "Q",
+            "Q",
+            "T"
+        ],
+        "bid": 770,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "5",
+            "5",
+            "8",
+            "J",
+            "2"
+        ],
+        "bid": 255,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "5",
+            "5",
+            "9",
+            "4",
+            "3"
+        ],
+        "bid": 367,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "5",
+            "5",
+            "T",
+            "Q",
+            "9"
+        ],
+        "bid": 581,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "5",
+            "5",
+            "Q",
+            "2",
+            "9"
+        ],
+        "bid": 8,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "5",
+            "5",
+            "A",
+            "J",
+            "8"
+        ],
+        "bid": 496,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "5",
+            "6",
+            "2",
+            "5",
+            "J"
+        ],
+        "bid": 93,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "5",
+            "7",
+            "9",
+            "2",
+            "2"
+        ],
+        "bid": 582,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "5",
+            "7",
+            "A",
+            "J",
+            "7"
+        ],
+        "bid": 564,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "5",
+            "9",
+            "6",
+            "9",
+            "J"
+        ],
+        "bid": 672,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "5",
+            "9",
+            "8",
+            "J",
+            "5"
+        ],
+        "bid": 729,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "5",
+            "J",
+            "2",
+            "J",
+            "7"
+        ],
+        "bid": 350,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "5",
+            "J",
+            "6",
+            "K",
+            "5"
+        ],
+        "bid": 217,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "5",
+            "J",
+            "9",
+            "J",
+            "T"
+        ],
+        "bid": 281,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "5",
+            "J",
+            "J",
+            "8",
+            "Q"
+        ],
+        "bid": 226,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "5",
+            "J",
+            "Q",
+            "2",
+            "2"
+        ],
+        "bid": 502,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "5",
+            "Q",
+            "3",
+            "6",
+            "5"
+        ],
+        "bid": 343,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "5",
+            "Q",
+            "J",
+            "5",
+            "A"
+        ],
+        "bid": 927,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "5",
+            "K",
+            "2",
+            "4",
+            "2"
+        ],
+        "bid": 324,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "5",
+            "A",
+            "3",
+            "6",
+            "5"
+        ],
+        "bid": 664,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "5",
+            "A",
+            "4",
+            "3",
+            "5"
+        ],
+        "bid": 557,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "6",
+            "2",
+            "2",
+            "3",
+            "5"
+        ],
+        "bid": 545,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "6",
+            "2",
+            "6",
+            "3",
+            "K"
+        ],
+        "bid": 498,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "6",
+            "2",
+            "9",
+            "6",
+            "T"
+        ],
+        "bid": 611,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "6",
+            "2",
+            "T",
+            "6",
+            "Q"
+        ],
+        "bid": 57,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "6",
+            "3",
+            "3",
+            "T",
+            "J"
+        ],
+        "bid": 295,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "6",
+            "4",
+            "6",
+            "2",
+            "5"
+        ],
+        "bid": 727,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "6",
+            "4",
+            "6",
+            "3",
+            "7"
+        ],
+        "bid": 856,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "6",
+            "6",
+            "2",
+            "4",
+            "3"
+        ],
+        "bid": 580,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "6",
+            "7",
+            "J",
+            "Q",
+            "Q"
+        ],
+        "bid": 289,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "6",
+            "7",
+            "Q",
+            "6",
+            "4"
+        ],
+        "bid": 732,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "6",
+            "8",
+            "J",
+            "8",
+            "9"
+        ],
+        "bid": 880,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "6",
+            "9",
+            "8",
+            "9",
+            "J"
+        ],
+        "bid": 221,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "6",
+            "9",
+            "K",
+            "9",
+            "8"
+        ],
+        "bid": 413,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "6",
+            "T",
+            "4",
+            "T",
+            "8"
+        ],
+        "bid": 984,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "6",
+            "T",
+            "4",
+            "A",
+            "4"
+        ],
+        "bid": 156,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "6",
+            "T",
+            "Q",
+            "6",
+            "8"
+        ],
+        "bid": 107,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "6",
+            "J",
+            "T",
+            "T",
+            "Q"
+        ],
+        "bid": 185,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "6",
+            "Q",
+            "6",
+            "J",
+            "3"
+        ],
+        "bid": 435,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "6",
+            "Q",
+            "8",
+            "2",
+            "Q"
+        ],
+        "bid": 303,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "6",
+            "K",
+            "6",
+            "T",
+            "5"
+        ],
+        "bid": 274,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "6",
+            "A",
+            "A",
+            "5",
+            "K"
+        ],
+        "bid": 208,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "7",
+            "2",
+            "7",
+            "9",
+            "6"
+        ],
+        "bid": 264,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "7",
+            "2",
+            "8",
+            "7",
+            "A"
+        ],
+        "bid": 567,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "7",
+            "3",
+            "T",
+            "3",
+            "J"
+        ],
+        "bid": 334,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "7",
+            "6",
+            "4",
+            "Q",
+            "Q"
+        ],
+        "bid": 134,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "7",
+            "6",
+            "6",
+            "2",
+            "Q"
+        ],
+        "bid": 241,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "7",
+            "6",
+            "J",
+            "A",
+            "6"
+        ],
+        "bid": 591,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "2",
+            "Q",
+            "J"
+        ],
+        "bid": 796,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "4",
+            "J",
+            "T"
+        ],
+        "bid": 789,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "J",
+            "9",
+            "4"
+        ],
+        "bid": 919,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "J",
+            "T",
+            "6"
+        ],
+        "bid": 679,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "J",
+            "A",
+            "3"
+        ],
+        "bid": 695,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "A",
+            "K",
+            "8"
+        ],
+        "bid": 588,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "7",
+            "J",
+            "7",
+            "4",
+            "6"
+        ],
+        "bid": 407,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "7",
+            "J",
+            "T",
+            "3",
+            "J"
+        ],
+        "bid": 829,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "7",
+            "Q",
+            "5",
+            "5",
+            "4"
+        ],
+        "bid": 307,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "7",
+            "Q",
+            "Q",
+            "2",
+            "6"
+        ],
+        "bid": 804,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "7",
+            "K",
+            "6",
+            "K",
+            "A"
+        ],
+        "bid": 466,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "7",
+            "K",
+            "T",
+            "T",
+            "9"
+        ],
+        "bid": 658,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "7",
+            "K",
+            "J",
+            "9",
+            "9"
+        ],
+        "bid": 683,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "7",
+            "K",
+            "K",
+            "J",
+            "9"
+        ],
+        "bid": 379,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "7",
+            "A",
+            "T",
+            "J",
+            "J"
+        ],
+        "bid": 361,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "8",
+            "2",
+            "A",
+            "5",
+            "A"
+        ],
+        "bid": 329,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "8",
+            "3",
+            "2",
+            "J",
+            "8"
+        ],
+        "bid": 147,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "8",
+            "4",
+            "T",
+            "5",
+            "T"
+        ],
+        "bid": 589,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "8",
+            "4",
+            "A",
+            "8",
+            "T"
+        ],
+        "bid": 372,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "8",
+            "6",
+            "8",
+            "4",
+            "Q"
+        ],
+        "bid": 828,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "8",
+            "6",
+            "J",
+            "5",
+            "5"
+        ],
+        "bid": 161,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "8",
+            "6",
+            "A",
+            "A",
+            "3"
+        ],
+        "bid": 803,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "8",
+            "7",
+            "K",
+            "A",
+            "8"
+        ],
+        "bid": 472,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "8",
+            "9",
+            "T",
+            "6",
+            "6"
+        ],
+        "bid": 55,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "8",
+            "T",
+            "7",
+            "2",
+            "8"
+        ],
+        "bid": 319,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "8",
+            "T",
+            "7",
+            "4",
+            "T"
+        ],
+        "bid": 928,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "8",
+            "J",
+            "7",
+            "J",
+            "K"
+        ],
+        "bid": 798,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "8",
+            "J",
+            "T",
+            "J",
+            "6"
+        ],
+        "bid": 648,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "8",
+            "J",
+            "Q",
+            "5",
+            "Q"
+        ],
+        "bid": 970,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "8",
+            "Q",
+            "7",
+            "7",
+            "A"
+        ],
+        "bid": 364,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "8",
+            "K",
+            "5",
+            "Q",
+            "5"
+        ],
+        "bid": 115,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "8",
+            "A",
+            "3",
+            "6",
+            "6"
+        ],
+        "bid": 529,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "8",
+            "A",
+            "8",
+            "Q",
+            "5"
+        ],
+        "bid": 46,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "9",
+            "2",
+            "2",
+            "7",
+            "3"
+        ],
+        "bid": 416,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "9",
+            "3",
+            "K",
+            "5",
+            "3"
+        ],
+        "bid": 840,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "9",
+            "4",
+            "2",
+            "J",
+            "2"
+        ],
+        "bid": 386,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "9",
+            "4",
+            "4",
+            "A",
+            "6"
+        ],
+        "bid": 659,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "9",
+            "4",
+            "9",
+            "6",
+            "J"
+        ],
+        "bid": 774,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "9",
+            "5",
+            "5",
+            "2",
+            "J"
+        ],
+        "bid": 504,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "9",
+            "5",
+            "6",
+            "6",
+            "3"
+        ],
+        "bid": 751,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "9",
+            "5",
+            "9",
+            "2",
+            "6"
+        ],
+        "bid": 219,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "9",
+            "6",
+            "5",
+            "T",
+            "T"
+        ],
+        "bid": 54,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "9",
+            "6",
+            "7",
+            "3",
+            "7"
+        ],
+        "bid": 10,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "9",
+            "7",
+            "9",
+            "4",
+            "J"
+        ],
+        "bid": 966,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "9",
+            "8",
+            "J",
+            "9",
+            "Q"
+        ],
+        "bid": 378,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "9",
+            "J",
+            "7",
+            "6",
+            "7"
+        ],
+        "bid": 972,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "9",
+            "J",
+            "7",
+            "A",
+            "9"
+        ],
+        "bid": 394,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "9",
+            "Q",
+            "9",
+            "K",
+            "3"
+        ],
+        "bid": 103,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "9",
+            "K",
+            "J",
+            "5",
+            "5"
+        ],
+        "bid": 299,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "9",
+            "K",
+            "K",
+            "3",
+            "2"
+        ],
+        "bid": 908,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "9",
+            "K",
+            "K",
+            "8",
+            "T"
+        ],
+        "bid": 810,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "T",
+            "2",
+            "4",
+            "T",
+            "J"
+        ],
+        "bid": 117,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "T",
+            "3",
+            "J",
+            "J",
+            "9"
+        ],
+        "bid": 707,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "T",
+            "5",
+            "9",
+            "3",
+            "T"
+        ],
+        "bid": 151,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "T",
+            "7",
+            "6",
+            "4",
+            "T"
+        ],
+        "bid": 688,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "T",
+            "7",
+            "7",
+            "5",
+            "8"
+        ],
+        "bid": 945,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "T",
+            "9",
+            "2",
+            "7",
+            "T"
+        ],
+        "bid": 773,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "T",
+            "9",
+            "2",
+            "9",
+            "J"
+        ],
+        "bid": 743,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "T",
+            "T",
+            "3",
+            "Q",
+            "8"
+        ],
+        "bid": 297,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "T",
+            "T",
+            "Q",
+            "J",
+            "7"
+        ],
+        "bid": 493,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "T",
+            "Q",
+            "5",
+            "T",
+            "J"
+        ],
+        "bid": 530,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "T",
+            "K",
+            "4",
+            "J",
+            "T"
+        ],
+        "bid": 819,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "T",
+            "K",
+            "7",
+            "8",
+            "7"
+        ],
+        "bid": 71,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "T",
+            "K",
+            "7",
+            "J",
+            "J"
+        ],
+        "bid": 101,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "T",
+            "K",
+            "K",
+            "9",
+            "Q"
+        ],
+        "bid": 877,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "T",
+            "A",
+            "6",
+            "9",
+            "6"
+        ],
+        "bid": 986,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "J",
+            "2",
+            "4",
+            "8",
+            "4"
+        ],
+        "bid": 341,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "J",
+            "2",
+            "A",
+            "5",
+            "2"
+        ],
+        "bid": 935,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "J",
+            "3",
+            "8",
+            "3",
+            "2"
+        ],
+        "bid": 631,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "J",
+            "4",
+            "Q",
+            "7",
+            "4"
+        ],
+        "bid": 225,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "J",
+            "5",
+            "7",
+            "7",
+            "9"
+        ],
+        "bid": 323,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "J",
+            "6",
+            "2",
+            "8",
+            "2"
+        ],
+        "bid": 465,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "J",
+            "7",
+            "3",
+            "6",
+            "7"
+        ],
+        "bid": 519,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "J",
+            "7",
+            "4",
+            "4",
+            "5"
+        ],
+        "bid": 957,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "J",
+            "8",
+            "2",
+            "A",
+            "2"
+        ],
+        "bid": 839,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "J",
+            "8",
+            "3",
+            "3",
+            "Q"
+        ],
+        "bid": 165,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "J",
+            "9",
+            "2",
+            "5",
+            "2"
+        ],
+        "bid": 271,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "J",
+            "Q",
+            "3",
+            "5",
+            "5"
+        ],
+        "bid": 224,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "J",
+            "Q",
+            "7",
+            "8",
+            "Q"
+        ],
+        "bid": 597,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "J",
+            "K",
+            "2",
+            "T",
+            "T"
+        ],
+        "bid": 904,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "J",
+            "K",
+            "6",
+            "7",
+            "7"
+        ],
+        "bid": 764,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "J",
+            "K",
+            "K",
+            "5",
+            "4"
+        ],
+        "bid": 876,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "J",
+            "A",
+            "A",
+            "4",
+            "5"
+        ],
+        "bid": 769,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "3",
+            "5",
+            "8",
+            "5"
+        ],
+        "bid": 317,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "3",
+            "8",
+            "8",
+            "T"
+        ],
+        "bid": 170,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "3",
+            "Q",
+            "T",
+            "4"
+        ],
+        "bid": 602,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "4",
+            "4",
+            "J",
+            "K"
+        ],
+        "bid": 525,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "4",
+            "T",
+            "T",
+            "3"
+        ],
+        "bid": 476,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "6",
+            "9",
+            "3",
+            "9"
+        ],
+        "bid": 831,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "7",
+            "J",
+            "T",
+            "7"
+        ],
+        "bid": 448,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "8",
+            "5",
+            "9",
+            "9"
+        ],
+        "bid": 368,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "8",
+            "7",
+            "K",
+            "K"
+        ],
+        "bid": 102,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "J",
+            "2",
+            "7",
+            "2"
+        ],
+        "bid": 106,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "Q",
+            "4",
+            "3",
+            "2"
+        ],
+        "bid": 449,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "Q",
+            "5",
+            "2",
+            "4"
+        ],
+        "bid": 427,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "Q",
+            "6",
+            "2",
+            "T"
+        ],
+        "bid": 524,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "K",
+            "9",
+            "9",
+            "J"
+        ],
+        "bid": 838,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "A",
+            "5",
+            "J",
+            "Q"
+        ],
+        "bid": 585,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "K",
+            "2",
+            "8",
+            "Q",
+            "Q"
+        ],
+        "bid": 286,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "K",
+            "2",
+            "J",
+            "3",
+            "2"
+        ],
+        "bid": 915,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "K",
+            "4",
+            "J",
+            "5",
+            "5"
+        ],
+        "bid": 912,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "K",
+            "5",
+            "J",
+            "6",
+            "K"
+        ],
+        "bid": 340,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "K",
+            "6",
+            "2",
+            "2",
+            "9"
+        ],
+        "bid": 162,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "K",
+            "8",
+            "6",
+            "J",
+            "6"
+        ],
+        "bid": 482,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "K",
+            "8",
+            "8",
+            "J",
+            "6"
+        ],
+        "bid": 853,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "K",
+            "8",
+            "8",
+            "A",
+            "3"
+        ],
+        "bid": 400,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "K",
+            "8",
+            "K",
+            "J",
+            "A"
+        ],
+        "bid": 834,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "K",
+            "9",
+            "9",
+            "7",
+            "2"
+        ],
+        "bid": 22,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "K",
+            "9",
+            "T",
+            "T",
+            "J"
+        ],
+        "bid": 485,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "K",
+            "T",
+            "2",
+            "2",
+            "8"
+        ],
+        "bid": 909,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "K",
+            "T",
+            "7",
+            "J",
+            "K"
+        ],
+        "bid": 748,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "K",
+            "J",
+            "T",
+            "5",
+            "J"
+        ],
+        "bid": 73,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "K",
+            "J",
+            "T",
+            "K",
+            "5"
+        ],
+        "bid": 639,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "K",
+            "J",
+            "K",
+            "4",
+            "8"
+        ],
+        "bid": 251,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "K",
+            "Q",
+            "Q",
+            "2",
+            "T"
+        ],
+        "bid": 837,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "K",
+            "K",
+            "2",
+            "4",
+            "8"
+        ],
+        "bid": 696,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "K",
+            "K",
+            "3",
+            "Q",
+            "4"
+        ],
+        "bid": 390,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "K",
+            "K",
+            "4",
+            "T",
+            "J"
+        ],
+        "bid": 937,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "K",
+            "K",
+            "4",
+            "Q",
+            "8"
+        ],
+        "bid": 471,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "K",
+            "K",
+            "5",
+            "2",
+            "4"
+        ],
+        "bid": 765,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "K",
+            "K",
+            "6",
+            "J",
+            "4"
+        ],
+        "bid": 195,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "A",
+            "3",
+            "2",
+            "8",
+            "3"
+        ],
+        "bid": 284,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "A",
+            "3",
+            "T",
+            "2",
+            "2"
+        ],
+        "bid": 739,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "A",
+            "4",
+            "3",
+            "4",
+            "J"
+        ],
+        "bid": 812,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "A",
+            "4",
+            "4",
+            "Q",
+            "9"
+        ],
+        "bid": 43,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "A",
+            "5",
+            "A",
+            "Q",
+            "9"
+        ],
+        "bid": 871,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "A",
+            "7",
+            "6",
+            "Q",
+            "Q"
+        ],
+        "bid": 159,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "A",
+            "7",
+            "8",
+            "A",
+            "6"
+        ],
+        "bid": 749,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "A",
+            "7",
+            "Q",
+            "6",
+            "6"
+        ],
+        "bid": 719,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "A",
+            "9",
+            "5",
+            "5",
+            "Q"
+        ],
+        "bid": 963,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "A",
+            "T",
+            "9",
+            "A",
+            "8"
+        ],
+        "bid": 45,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "A",
+            "J",
+            "3",
+            "8",
+            "A"
+        ],
+        "bid": 763,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "A",
+            "J",
+            "T",
+            "T",
+            "4"
+        ],
+        "bid": 578,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "A",
+            "J",
+            "T",
+            "J",
+            "3"
+        ],
+        "bid": 650,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "A",
+            "Q",
+            "9",
+            "J",
+            "A"
+        ],
+        "bid": 643,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "A",
+            "Q",
+            "J",
+            "5",
+            "A"
+        ],
+        "bid": 118,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "A",
+            "A",
+            "3",
+            "9",
+            "2"
+        ],
+        "bid": 392,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "A",
+            "A",
+            "9",
+            "5",
+            "8"
+        ],
+        "bid": 615,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "A",
+            "A",
+            "J",
+            "5",
+            "3"
+        ],
+        "bid": 424,
+        "handType": "Pair"
+    },
+    {
+        "hand": [
+            "2",
+            "2",
+            "8",
+            "6",
+            "8"
+        ],
+        "bid": 38,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "2",
+            "3",
+            "5",
+            "2",
+            "5"
+        ],
+        "bid": 404,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "2",
+            "4",
+            "2",
+            "J",
+            "4"
+        ],
+        "bid": 625,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "2",
+            "4",
+            "4",
+            "5",
+            "2"
+        ],
+        "bid": 517,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "2",
+            "4",
+            "4",
+            "9",
+            "2"
+        ],
+        "bid": 438,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "2",
+            "5",
+            "5",
+            "2",
+            "J"
+        ],
+        "bid": 293,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "2",
+            "6",
+            "2",
+            "8",
+            "6"
+        ],
+        "bid": 702,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "2",
+            "6",
+            "6",
+            "T",
+            "2"
+        ],
+        "bid": 355,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "2",
+            "7",
+            "2",
+            "7",
+            "6"
+        ],
+        "bid": 847,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "2",
+            "8",
+            "8",
+            "2",
+            "4"
+        ],
+        "bid": 716,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "2",
+            "9",
+            "9",
+            "2",
+            "7"
+        ],
+        "bid": 516,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "2",
+            "9",
+            "9",
+            "2",
+            "J"
+        ],
+        "bid": 846,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "2",
+            "T",
+            "2",
+            "Q",
+            "Q"
+        ],
+        "bid": 681,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "2",
+            "Q",
+            "8",
+            "8",
+            "2"
+        ],
+        "bid": 989,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "2",
+            "Q",
+            "9",
+            "9",
+            "2"
+        ],
+        "bid": 875,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "2",
+            "Q",
+            "Q",
+            "6",
+            "6"
+        ],
+        "bid": 971,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "2",
+            "A",
+            "2",
+            "A",
+            "6"
+        ],
+        "bid": 614,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "3",
+            "3",
+            "2",
+            "4",
+            "4"
+        ],
+        "bid": 691,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "3",
+            "3",
+            "9",
+            "T",
+            "9"
+        ],
+        "bid": 562,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "3",
+            "3",
+            "J",
+            "J",
+            "5"
+        ],
+        "bid": 684,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "3",
+            "3",
+            "Q",
+            "5",
+            "Q"
+        ],
+        "bid": 193,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "3",
+            "3",
+            "Q",
+            "7",
+            "Q"
+        ],
+        "bid": 186,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "3",
+            "5",
+            "3",
+            "7",
+            "7"
+        ],
+        "bid": 616,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "3",
+            "6",
+            "3",
+            "A",
+            "A"
+        ],
+        "bid": 610,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "3",
+            "6",
+            "6",
+            "5",
+            "3"
+        ],
+        "bid": 891,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "3",
+            "6",
+            "J",
+            "3",
+            "6"
+        ],
+        "bid": 4,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "3",
+            "7",
+            "7",
+            "3",
+            "6"
+        ],
+        "bid": 673,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "3",
+            "8",
+            "3",
+            "Q",
+            "8"
+        ],
+        "bid": 139,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "3",
+            "8",
+            "8",
+            "5",
+            "3"
+        ],
+        "bid": 2,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "3",
+            "T",
+            "5",
+            "T",
+            "3"
+        ],
+        "bid": 120,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "3",
+            "J",
+            "K",
+            "K",
+            "3"
+        ],
+        "bid": 758,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "3",
+            "K",
+            "3",
+            "8",
+            "8"
+        ],
+        "bid": 213,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "3",
+            "K",
+            "3",
+            "T",
+            "K"
+        ],
+        "bid": 685,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "4",
+            "2",
+            "7",
+            "7",
+            "2"
+        ],
+        "bid": 304,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "4",
+            "3",
+            "3",
+            "4",
+            "A"
+        ],
+        "bid": 967,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "3",
+            "5",
+            "5"
+        ],
+        "bid": 272,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "3",
+            "9",
+            "3"
+        ],
+        "bid": 196,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "6",
+            "3",
+            "3"
+        ],
+        "bid": 638,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "9",
+            "J",
+            "9"
+        ],
+        "bid": 33,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "T",
+            "T",
+            "A"
+        ],
+        "bid": 778,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "4",
+            "5",
+            "6",
+            "4",
+            "5"
+        ],
+        "bid": 354,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "4",
+            "6",
+            "4",
+            "6",
+            "2"
+        ],
+        "bid": 874,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "4",
+            "6",
+            "4",
+            "6",
+            "T"
+        ],
+        "bid": 515,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "4",
+            "6",
+            "4",
+            "Q",
+            "6"
+        ],
+        "bid": 187,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "4",
+            "6",
+            "6",
+            "A",
+            "A"
+        ],
+        "bid": 613,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "4",
+            "7",
+            "4",
+            "7",
+            "J"
+        ],
+        "bid": 495,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "4",
+            "7",
+            "4",
+            "Q",
+            "Q"
+        ],
+        "bid": 975,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "4",
+            "9",
+            "4",
+            "9",
+            "8"
+        ],
+        "bid": 544,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "4",
+            "9",
+            "4",
+            "9",
+            "Q"
+        ],
+        "bid": 733,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "4",
+            "T",
+            "7",
+            "4",
+            "T"
+        ],
+        "bid": 962,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "4",
+            "T",
+            "T",
+            "8",
+            "4"
+        ],
+        "bid": 518,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "4",
+            "J",
+            "4",
+            "J",
+            "K"
+        ],
+        "bid": 791,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "4",
+            "K",
+            "T",
+            "K",
+            "4"
+        ],
+        "bid": 677,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "4",
+            "A",
+            "4",
+            "A",
+            "Q"
+        ],
+        "bid": 91,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "5",
+            "2",
+            "Q",
+            "Q",
+            "5"
+        ],
+        "bid": 164,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "5",
+            "3",
+            "J",
+            "5",
+            "3"
+        ],
+        "bid": 477,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "5",
+            "5",
+            "8",
+            "8",
+            "J"
+        ],
+        "bid": 598,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "5",
+            "6",
+            "6",
+            "J",
+            "5"
+        ],
+        "bid": 63,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "5",
+            "8",
+            "5",
+            "9",
+            "8"
+        ],
+        "bid": 520,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "5",
+            "9",
+            "5",
+            "9",
+            "A"
+        ],
+        "bid": 537,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "5",
+            "9",
+            "9",
+            "8",
+            "5"
+        ],
+        "bid": 747,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "5",
+            "T",
+            "5",
+            "6",
+            "6"
+        ],
+        "bid": 506,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "5",
+            "J",
+            "4",
+            "4",
+            "5"
+        ],
+        "bid": 262,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "5",
+            "J",
+            "4",
+            "J",
+            "4"
+        ],
+        "bid": 212,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "5",
+            "Q",
+            "5",
+            "9",
+            "Q"
+        ],
+        "bid": 762,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "5",
+            "A",
+            "5",
+            "T",
+            "A"
+        ],
+        "bid": 494,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "6",
+            "2",
+            "2",
+            "J",
+            "6"
+        ],
+        "bid": 893,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "6",
+            "2",
+            "T",
+            "T",
+            "2"
+        ],
+        "bid": 499,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "6",
+            "6",
+            "Q",
+            "5",
+            "Q"
+        ],
+        "bid": 41,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "6",
+            "9",
+            "6",
+            "9",
+            "3"
+        ],
+        "bid": 1000,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "6",
+            "T",
+            "T",
+            "5",
+            "5"
+        ],
+        "bid": 510,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "6",
+            "J",
+            "J",
+            "T",
+            "T"
+        ],
+        "bid": 632,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "6",
+            "Q",
+            "2",
+            "Q",
+            "2"
+        ],
+        "bid": 570,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "6",
+            "A",
+            "T",
+            "A",
+            "T"
+        ],
+        "bid": 863,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "7",
+            "2",
+            "2",
+            "7",
+            "Q"
+        ],
+        "bid": 52,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "7",
+            "2",
+            "7",
+            "5",
+            "2"
+        ],
+        "bid": 817,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "7",
+            "2",
+            "7",
+            "T",
+            "2"
+        ],
+        "bid": 253,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "7",
+            "4",
+            "7",
+            "4",
+            "9"
+        ],
+        "bid": 699,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "7",
+            "5",
+            "6",
+            "6",
+            "5"
+        ],
+        "bid": 952,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "7",
+            "6",
+            "9",
+            "6",
+            "9"
+        ],
+        "bid": 20,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "2",
+            "8",
+            "2"
+        ],
+        "bid": 981,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "8",
+            "6",
+            "6"
+        ],
+        "bid": 403,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "8",
+            "K",
+            "8"
+        ],
+        "bid": 65,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "J",
+            "2",
+            "J"
+        ],
+        "bid": 946,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "K",
+            "3",
+            "K"
+        ],
+        "bid": 309,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "7",
+            "9",
+            "7",
+            "9",
+            "3"
+        ],
+        "bid": 353,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "7",
+            "Q",
+            "7",
+            "J",
+            "Q"
+        ],
+        "bid": 508,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "7",
+            "Q",
+            "Q",
+            "7",
+            "2"
+        ],
+        "bid": 460,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "7",
+            "K",
+            "5",
+            "5",
+            "7"
+        ],
+        "bid": 458,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "7",
+            "K",
+            "A",
+            "7",
+            "K"
+        ],
+        "bid": 905,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "7",
+            "A",
+            "J",
+            "7",
+            "J"
+        ],
+        "bid": 426,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "8",
+            "3",
+            "8",
+            "9",
+            "9"
+        ],
+        "bid": 190,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "8",
+            "3",
+            "9",
+            "9",
+            "3"
+        ],
+        "bid": 670,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "8",
+            "4",
+            "J",
+            "4",
+            "8"
+        ],
+        "bid": 342,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "8",
+            "6",
+            "A",
+            "6",
+            "8"
+        ],
+        "bid": 866,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "8",
+            "7",
+            "4",
+            "8",
+            "7"
+        ],
+        "bid": 377,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "8",
+            "8",
+            "4",
+            "9",
+            "9"
+        ],
+        "bid": 27,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "8",
+            "8",
+            "6",
+            "Q",
+            "Q"
+        ],
+        "bid": 135,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "8",
+            "8",
+            "T",
+            "Q",
+            "T"
+        ],
+        "bid": 292,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "8",
+            "8",
+            "J",
+            "K",
+            "K"
+        ],
+        "bid": 310,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "8",
+            "T",
+            "2",
+            "8",
+            "T"
+        ],
+        "bid": 470,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "8",
+            "J",
+            "6",
+            "6",
+            "8"
+        ],
+        "bid": 636,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "8",
+            "J",
+            "J",
+            "8",
+            "T"
+        ],
+        "bid": 922,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "8",
+            "Q",
+            "3",
+            "3",
+            "Q"
+        ],
+        "bid": 239,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "8",
+            "Q",
+            "J",
+            "Q",
+            "8"
+        ],
+        "bid": 682,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "8",
+            "A",
+            "7",
+            "8",
+            "7"
+        ],
+        "bid": 351,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "8",
+            "A",
+            "K",
+            "K",
+            "8"
+        ],
+        "bid": 172,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "8",
+            "A",
+            "A",
+            "J",
+            "8"
+        ],
+        "bid": 845,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "9",
+            "3",
+            "7",
+            "9",
+            "3"
+        ],
+        "bid": 150,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "9",
+            "3",
+            "9",
+            "3",
+            "2"
+        ],
+        "bid": 180,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "9",
+            "4",
+            "T",
+            "T",
+            "4"
+        ],
+        "bid": 531,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "9",
+            "6",
+            "9",
+            "J",
+            "J"
+        ],
+        "bid": 965,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "9",
+            "6",
+            "J",
+            "6",
+            "J"
+        ],
+        "bid": 469,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "9",
+            "8",
+            "J",
+            "8",
+            "9"
+        ],
+        "bid": 236,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "9",
+            "T",
+            "2",
+            "2",
+            "9"
+        ],
+        "bid": 82,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "9",
+            "T",
+            "8",
+            "T",
+            "8"
+        ],
+        "bid": 111,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "9",
+            "T",
+            "T",
+            "9",
+            "2"
+        ],
+        "bid": 755,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "9",
+            "T",
+            "Q",
+            "9",
+            "Q"
+        ],
+        "bid": 554,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "9",
+            "K",
+            "Q",
+            "9",
+            "K"
+        ],
+        "bid": 785,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "9",
+            "A",
+            "9",
+            "7",
+            "A"
+        ],
+        "bid": 415,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "T",
+            "2",
+            "2",
+            "T",
+            "9"
+        ],
+        "bid": 167,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "T",
+            "4",
+            "8",
+            "8",
+            "T"
+        ],
+        "bid": 795,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "T",
+            "4",
+            "A",
+            "4",
+            "A"
+        ],
+        "bid": 746,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "T",
+            "6",
+            "6",
+            "4",
+            "T"
+        ],
+        "bid": 786,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "T",
+            "8",
+            "8",
+            "T",
+            "5"
+        ],
+        "bid": 801,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "T",
+            "8",
+            "T",
+            "Q",
+            "Q"
+        ],
+        "bid": 246,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "T",
+            "T",
+            "9",
+            "J",
+            "9"
+        ],
+        "bid": 579,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "T",
+            "T",
+            "J",
+            "Q",
+            "J"
+        ],
+        "bid": 601,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "T",
+            "T",
+            "Q",
+            "4",
+            "4"
+        ],
+        "bid": 369,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "T",
+            "J",
+            "3",
+            "T",
+            "3"
+        ],
+        "bid": 191,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "T",
+            "Q",
+            "Q",
+            "9",
+            "T"
+        ],
+        "bid": 657,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "J",
+            "2",
+            "2",
+            "3",
+            "3"
+        ],
+        "bid": 532,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "J",
+            "3",
+            "3",
+            "Q",
+            "Q"
+        ],
+        "bid": 179,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "J",
+            "3",
+            "8",
+            "3",
+            "8"
+        ],
+        "bid": 19,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "J",
+            "4",
+            "J",
+            "2",
+            "4"
+        ],
+        "bid": 360,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "J",
+            "5",
+            "2",
+            "2",
+            "J"
+        ],
+        "bid": 238,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "J",
+            "6",
+            "9",
+            "6",
+            "9"
+        ],
+        "bid": 968,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "J",
+            "6",
+            "T",
+            "T",
+            "6"
+        ],
+        "bid": 49,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "J",
+            "7",
+            "7",
+            "K",
+            "K"
+        ],
+        "bid": 723,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "J",
+            "8",
+            "T",
+            "8",
+            "T"
+        ],
+        "bid": 408,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "J",
+            "J",
+            "5",
+            "5",
+            "T"
+        ],
+        "bid": 561,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "J",
+            "K",
+            "9",
+            "K",
+            "9"
+        ],
+        "bid": 444,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "J",
+            "K",
+            "Q",
+            "K",
+            "Q"
+        ],
+        "bid": 980,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "J",
+            "A",
+            "A",
+            "6",
+            "6"
+        ],
+        "bid": 826,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "J",
+            "A",
+            "A",
+            "8",
+            "J"
+        ],
+        "bid": 730,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "2",
+            "2",
+            "4",
+            "4"
+        ],
+        "bid": 464,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "4",
+            "4",
+            "J",
+            "Q"
+        ],
+        "bid": 423,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "6",
+            "6",
+            "Q",
+            "7"
+        ],
+        "bid": 595,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "8",
+            "4",
+            "4",
+            "8"
+        ],
+        "bid": 507,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "T",
+            "Q",
+            "2",
+            "T"
+        ],
+        "bid": 872,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "J",
+            "Q",
+            "2",
+            "2"
+        ],
+        "bid": 47,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "J",
+            "A",
+            "A",
+            "J"
+        ],
+        "bid": 533,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "Q",
+            "2",
+            "K",
+            "K"
+        ],
+        "bid": 654,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "Q",
+            "4",
+            "4",
+            "8"
+        ],
+        "bid": 951,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "Q",
+            "9",
+            "J",
+            "9"
+        ],
+        "bid": 81,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "Q",
+            "K",
+            "7",
+            "7"
+        ],
+        "bid": 584,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "K",
+            "4",
+            "4",
+            "K"
+        ],
+        "bid": 207,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "K",
+            "4",
+            "Q",
+            "4"
+        ],
+        "bid": 288,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "K",
+            "6",
+            "6",
+            "Q"
+        ],
+        "bid": 166,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "Q",
+            "K",
+            "K",
+            "6",
+            "Q"
+        ],
+        "bid": 142,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "K",
+            "2",
+            "4",
+            "K",
+            "2"
+        ],
+        "bid": 345,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "K",
+            "2",
+            "6",
+            "K",
+            "6"
+        ],
+        "bid": 884,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "K",
+            "3",
+            "3",
+            "Q",
+            "K"
+        ],
+        "bid": 21,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "K",
+            "3",
+            "5",
+            "K",
+            "5"
+        ],
+        "bid": 815,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "K",
+            "4",
+            "K",
+            "5",
+            "4"
+        ],
+        "bid": 712,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "K",
+            "5",
+            "5",
+            "K",
+            "J"
+        ],
+        "bid": 822,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "K",
+            "5",
+            "A",
+            "A",
+            "5"
+        ],
+        "bid": 996,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "K",
+            "6",
+            "5",
+            "K",
+            "6"
+        ],
+        "bid": 383,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "K",
+            "7",
+            "8",
+            "7",
+            "K"
+        ],
+        "bid": 302,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "K",
+            "8",
+            "8",
+            "T",
+            "K"
+        ],
+        "bid": 440,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "K",
+            "J",
+            "T",
+            "J",
+            "K"
+        ],
+        "bid": 814,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "K",
+            "J",
+            "J",
+            "6",
+            "6"
+        ],
+        "bid": 282,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "K",
+            "K",
+            "2",
+            "J",
+            "2"
+        ],
+        "bid": 728,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "K",
+            "K",
+            "T",
+            "5",
+            "T"
+        ],
+        "bid": 254,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "K",
+            "K",
+            "A",
+            "T",
+            "T"
+        ],
+        "bid": 459,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "A",
+            "2",
+            "A",
+            "6",
+            "6"
+        ],
+        "bid": 575,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "A",
+            "4",
+            "J",
+            "4",
+            "A"
+        ],
+        "bid": 421,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "A",
+            "5",
+            "A",
+            "J",
+            "5"
+        ],
+        "bid": 220,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "A",
+            "6",
+            "4",
+            "6",
+            "4"
+        ],
+        "bid": 75,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "A",
+            "7",
+            "J",
+            "A",
+            "J"
+        ],
+        "bid": 306,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "A",
+            "7",
+            "Q",
+            "7",
+            "Q"
+        ],
+        "bid": 242,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "A",
+            "8",
+            "5",
+            "A",
+            "5"
+        ],
+        "bid": 80,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "A",
+            "8",
+            "T",
+            "T",
+            "8"
+        ],
+        "bid": 418,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "A",
+            "9",
+            "3",
+            "3",
+            "9"
+        ],
+        "bid": 321,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "A",
+            "Q",
+            "T",
+            "Q",
+            "T"
+        ],
+        "bid": 779,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "A",
+            "Q",
+            "A",
+            "2",
+            "Q"
+        ],
+        "bid": 178,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "A",
+            "K",
+            "3",
+            "3",
+            "A"
+        ],
+        "bid": 977,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "A",
+            "A",
+            "6",
+            "8",
+            "8"
+        ],
+        "bid": 809,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "A",
+            "A",
+            "J",
+            "2",
+            "2"
+        ],
+        "bid": 15,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "A",
+            "A",
+            "K",
+            "K",
+            "7"
+        ],
+        "bid": 600,
+        "handType": "Two pair"
+    },
+    {
+        "hand": [
+            "2",
+            "2",
+            "2",
+            "7",
+            "A"
+        ],
+        "bid": 94,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "2",
+            "2",
+            "2",
+            "9",
+            "7"
+        ],
+        "bid": 7,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "2",
+            "2",
+            "3",
+            "2",
+            "9"
+        ],
+        "bid": 405,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "2",
+            "3",
+            "3",
+            "8",
+            "3"
+        ],
+        "bid": 276,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "2",
+            "3",
+            "J",
+            "2",
+            "2"
+        ],
+        "bid": 3,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "2",
+            "5",
+            "5",
+            "5",
+            "J"
+        ],
+        "bid": 849,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "2",
+            "6",
+            "3",
+            "2",
+            "2"
+        ],
+        "bid": 104,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "2",
+            "8",
+            "8",
+            "8",
+            "7"
+        ],
+        "bid": 138,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "2",
+            "9",
+            "Q",
+            "2",
+            "2"
+        ],
+        "bid": 674,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "2",
+            "T",
+            "8",
+            "T",
+            "T"
+        ],
+        "bid": 897,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "2",
+            "Q",
+            "2",
+            "3",
+            "2"
+        ],
+        "bid": 210,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "2",
+            "Q",
+            "Q",
+            "8",
+            "Q"
+        ],
+        "bid": 244,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "3",
+            "3",
+            "3",
+            "2",
+            "T"
+        ],
+        "bid": 865,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "3",
+            "3",
+            "3",
+            "A",
+            "5"
+        ],
+        "bid": 457,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "3",
+            "3",
+            "T",
+            "Q",
+            "3"
+        ],
+        "bid": 974,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "3",
+            "4",
+            "4",
+            "4",
+            "Q"
+        ],
+        "bid": 864,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "3",
+            "5",
+            "5",
+            "5",
+            "9"
+        ],
+        "bid": 705,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "3",
+            "6",
+            "6",
+            "6",
+            "K"
+        ],
+        "bid": 247,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "3",
+            "7",
+            "4",
+            "7",
+            "7"
+        ],
+        "bid": 931,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "3",
+            "9",
+            "9",
+            "9",
+            "8"
+        ],
+        "bid": 256,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "3",
+            "T",
+            "T",
+            "8",
+            "T"
+        ],
+        "bid": 278,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "3",
+            "J",
+            "7",
+            "7",
+            "7"
+        ],
+        "bid": 125,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "3",
+            "Q",
+            "3",
+            "4",
+            "3"
+        ],
+        "bid": 936,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "3",
+            "K",
+            "K",
+            "K",
+            "J"
+        ],
+        "bid": 836,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "3",
+            "K",
+            "K",
+            "K",
+            "Q"
+        ],
+        "bid": 618,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "3",
+            "K",
+            "K",
+            "A",
+            "K"
+        ],
+        "bid": 708,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "4",
+            "3",
+            "5",
+            "3",
+            "3"
+        ],
+        "bid": 572,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "4",
+            "3",
+            "J",
+            "3",
+            "3"
+        ],
+        "bid": 344,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "4",
+            "8",
+            "T"
+        ],
+        "bid": 260,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "4",
+            "T",
+            "J"
+        ],
+        "bid": 74,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "Q",
+            "4",
+            "9"
+        ],
+        "bid": 539,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "Q",
+            "7",
+            "4"
+        ],
+        "bid": 731,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "4",
+            "7",
+            "K",
+            "K",
+            "K"
+        ],
+        "bid": 783,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "4",
+            "8",
+            "4",
+            "6",
+            "4"
+        ],
+        "bid": 669,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "4",
+            "J",
+            "2",
+            "2",
+            "2"
+        ],
+        "bid": 944,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "4",
+            "J",
+            "4",
+            "5",
+            "4"
+        ],
+        "bid": 777,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "4",
+            "K",
+            "4",
+            "7",
+            "4"
+        ],
+        "bid": 932,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "4",
+            "K",
+            "J",
+            "4",
+            "4"
+        ],
+        "bid": 511,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "4",
+            "A",
+            "4",
+            "4",
+            "2"
+        ],
+        "bid": 802,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "5",
+            "3",
+            "3",
+            "2",
+            "3"
+        ],
+        "bid": 914,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "5",
+            "3",
+            "3",
+            "K",
+            "3"
+        ],
+        "bid": 78,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "5",
+            "5",
+            "2",
+            "3",
+            "5"
+        ],
+        "bid": 551,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "5",
+            "5",
+            "5",
+            "4",
+            "7"
+        ],
+        "bid": 671,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "5",
+            "5",
+            "5",
+            "7",
+            "A"
+        ],
+        "bid": 249,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "5",
+            "5",
+            "5",
+            "Q",
+            "3"
+        ],
+        "bid": 277,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "5",
+            "5",
+            "6",
+            "4",
+            "5"
+        ],
+        "bid": 757,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "5",
+            "5",
+            "9",
+            "5",
+            "4"
+        ],
+        "bid": 385,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "5",
+            "7",
+            "7",
+            "A",
+            "7"
+        ],
+        "bid": 851,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "5",
+            "9",
+            "9",
+            "9",
+            "J"
+        ],
+        "bid": 848,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "5",
+            "J",
+            "6",
+            "5",
+            "5"
+        ],
+        "bid": 489,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "6",
+            "2",
+            "2",
+            "J",
+            "2"
+        ],
+        "bid": 330,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "6",
+            "2",
+            "6",
+            "Q",
+            "6"
+        ],
+        "bid": 923,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "6",
+            "2",
+            "6",
+            "K",
+            "6"
+        ],
+        "bid": 265,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "6",
+            "3",
+            "3",
+            "Q",
+            "3"
+        ],
+        "bid": 740,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "6",
+            "4",
+            "6",
+            "A",
+            "6"
+        ],
+        "bid": 503,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "6",
+            "6",
+            "3",
+            "J",
+            "6"
+        ],
+        "bid": 821,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "6",
+            "6",
+            "T",
+            "6",
+            "K"
+        ],
+        "bid": 734,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "6",
+            "7",
+            "8",
+            "7",
+            "7"
+        ],
+        "bid": 461,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "6",
+            "8",
+            "7",
+            "8",
+            "8"
+        ],
+        "bid": 896,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "6",
+            "9",
+            "9",
+            "8",
+            "9"
+        ],
+        "bid": 443,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "6",
+            "K",
+            "7",
+            "6",
+            "6"
+        ],
+        "bid": 60,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "2",
+            "7",
+            "7",
+            "9"
+        ],
+        "bid": 666,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "2",
+            "J",
+            "2",
+            "2"
+        ],
+        "bid": 215,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "4",
+            "A",
+            "7",
+            "7"
+        ],
+        "bid": 997,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "2",
+            "Q",
+            "7"
+        ],
+        "bid": 127,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "4",
+            "7",
+            "T"
+        ],
+        "bid": 833,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "7",
+            "K",
+            "J"
+        ],
+        "bid": 389,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "J",
+            "6",
+            "7"
+        ],
+        "bid": 31,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "A",
+            "7",
+            "2"
+        ],
+        "bid": 430,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "8",
+            "8",
+            "8",
+            "Q"
+        ],
+        "bid": 925,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "T",
+            "T",
+            "A",
+            "T"
+        ],
+        "bid": 316,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "J",
+            "7",
+            "7",
+            "A"
+        ],
+        "bid": 300,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "J",
+            "T",
+            "7",
+            "7"
+        ],
+        "bid": 258,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "Q",
+            "Q",
+            "Q",
+            "J"
+        ],
+        "bid": 697,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "A",
+            "3",
+            "3",
+            "3"
+        ],
+        "bid": 501,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "A",
+            "7",
+            "7",
+            "9"
+        ],
+        "bid": 325,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "8",
+            "2",
+            "5",
+            "5",
+            "5"
+        ],
+        "bid": 291,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "8",
+            "3",
+            "3",
+            "3",
+            "J"
+        ],
+        "bid": 182,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "8",
+            "3",
+            "4",
+            "4",
+            "4"
+        ],
+        "bid": 48,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "8",
+            "4",
+            "J",
+            "J",
+            "J"
+        ],
+        "bid": 206,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "8",
+            "7",
+            "7",
+            "J",
+            "7"
+        ],
+        "bid": 943,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "8",
+            "8",
+            "8",
+            "7",
+            "T"
+        ],
+        "bid": 885,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "8",
+            "8",
+            "8",
+            "T",
+            "4"
+        ],
+        "bid": 97,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "8",
+            "8",
+            "8",
+            "A",
+            "5"
+        ],
+        "bid": 910,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "8",
+            "8",
+            "9",
+            "8",
+            "3"
+        ],
+        "bid": 675,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "8",
+            "8",
+            "9",
+            "Q",
+            "8"
+        ],
+        "bid": 17,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "8",
+            "8",
+            "J",
+            "2",
+            "8"
+        ],
+        "bid": 203,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "8",
+            "8",
+            "Q",
+            "3",
+            "8"
+        ],
+        "bid": 396,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "8",
+            "T",
+            "T",
+            "K",
+            "T"
+        ],
+        "bid": 985,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "8",
+            "J",
+            "5",
+            "8",
+            "8"
+        ],
+        "bid": 992,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "8",
+            "K",
+            "5",
+            "K",
+            "K"
+        ],
+        "bid": 805,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "8",
+            "A",
+            "8",
+            "8",
+            "3"
+        ],
+        "bid": 463,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "2",
+            "4",
+            "4",
+            "4"
+        ],
+        "bid": 406,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "4",
+            "3",
+            "9",
+            "9"
+        ],
+        "bid": 869,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "4",
+            "9",
+            "6",
+            "9"
+        ],
+        "bid": 410,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "5",
+            "5",
+            "5",
+            "J"
+        ],
+        "bid": 12,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "5",
+            "9",
+            "Q",
+            "9"
+        ],
+        "bid": 79,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "6",
+            "4",
+            "6",
+            "6"
+        ],
+        "bid": 487,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "7",
+            "7",
+            "7",
+            "Q"
+        ],
+        "bid": 738,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "8",
+            "8",
+            "A",
+            "8"
+        ],
+        "bid": 143,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "8",
+            "9",
+            "9",
+            "J"
+        ],
+        "bid": 862,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "8",
+            "T",
+            "T",
+            "T"
+        ],
+        "bid": 446,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "9",
+            "9",
+            "2",
+            "J"
+        ],
+        "bid": 216,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "9",
+            "9",
+            "7",
+            "J"
+        ],
+        "bid": 541,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "9",
+            "K",
+            "9",
+            "A"
+        ],
+        "bid": 412,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "9",
+            "A",
+            "6",
+            "9"
+        ],
+        "bid": 488,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "9",
+            "A",
+            "9",
+            "T"
+        ],
+        "bid": 771,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "T",
+            "Q",
+            "Q",
+            "Q"
+        ],
+        "bid": 395,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "J",
+            "9",
+            "3",
+            "9"
+        ],
+        "bid": 267,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "Q",
+            "5",
+            "Q",
+            "Q"
+        ],
+        "bid": 808,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "Q",
+            "7",
+            "9",
+            "9"
+        ],
+        "bid": 14,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "T",
+            "2",
+            "2",
+            "2",
+            "A"
+        ],
+        "bid": 204,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "T",
+            "3",
+            "3",
+            "3",
+            "J"
+        ],
+        "bid": 703,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "T",
+            "6",
+            "T",
+            "T",
+            "J"
+        ],
+        "bid": 290,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "T",
+            "7",
+            "7",
+            "9",
+            "7"
+        ],
+        "bid": 604,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "T",
+            "9",
+            "7",
+            "T",
+            "T"
+        ],
+        "bid": 646,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "T",
+            "T",
+            "7",
+            "T",
+            "5"
+        ],
+        "bid": 843,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "T",
+            "T",
+            "8",
+            "T",
+            "J"
+        ],
+        "bid": 527,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "T",
+            "T",
+            "T",
+            "K",
+            "3"
+        ],
+        "bid": 357,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "T",
+            "T",
+            "J",
+            "3",
+            "T"
+        ],
+        "bid": 852,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "T",
+            "T",
+            "J",
+            "7",
+            "T"
+        ],
+        "bid": 890,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "T",
+            "T",
+            "Q",
+            "A",
+            "T"
+        ],
+        "bid": 381,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "T",
+            "K",
+            "3",
+            "K",
+            "K"
+        ],
+        "bid": 87,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "T",
+            "K",
+            "J",
+            "K",
+            "K"
+        ],
+        "bid": 644,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "T",
+            "K",
+            "K",
+            "K",
+            "5"
+        ],
+        "bid": 879,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "T",
+            "A",
+            "A",
+            "A",
+            "3"
+        ],
+        "bid": 376,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "J",
+            "2",
+            "J",
+            "5",
+            "J"
+        ],
+        "bid": 824,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "J",
+            "3",
+            "J",
+            "5",
+            "J"
+        ],
+        "bid": 513,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "J",
+            "4",
+            "4",
+            "8",
+            "4"
+        ],
+        "bid": 662,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "J",
+            "6",
+            "6",
+            "6",
+            "T"
+        ],
+        "bid": 11,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "J",
+            "7",
+            "5",
+            "7",
+            "7"
+        ],
+        "bid": 995,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "J",
+            "8",
+            "8",
+            "8",
+            "7"
+        ],
+        "bid": 320,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "J",
+            "8",
+            "Q",
+            "8",
+            "8"
+        ],
+        "bid": 913,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "J",
+            "9",
+            "9",
+            "9",
+            "K"
+        ],
+        "bid": 30,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "J",
+            "J",
+            "7",
+            "3",
+            "J"
+        ],
+        "bid": 83,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "J",
+            "J",
+            "T",
+            "K",
+            "J"
+        ],
+        "bid": 69,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "J",
+            "J",
+            "Q",
+            "5",
+            "J"
+        ],
+        "bid": 645,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "J",
+            "Q",
+            "T",
+            "Q",
+            "Q"
+        ],
+        "bid": 656,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "J",
+            "Q",
+            "Q",
+            "Q",
+            "2"
+        ],
+        "bid": 349,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "J",
+            "A",
+            "Q",
+            "A",
+            "A"
+        ],
+        "bid": 818,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "Q",
+            "2",
+            "2",
+            "K",
+            "2"
+        ],
+        "bid": 393,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "Q",
+            "5",
+            "8",
+            "Q",
+            "Q"
+        ],
+        "bid": 437,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "Q",
+            "5",
+            "Q",
+            "Q",
+            "7"
+        ],
+        "bid": 475,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "Q",
+            "5",
+            "Q",
+            "Q",
+            "K"
+        ],
+        "bid": 257,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "Q",
+            "6",
+            "Q",
+            "A",
+            "Q"
+        ],
+        "bid": 867,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "Q",
+            "J",
+            "A",
+            "Q",
+            "Q"
+        ],
+        "bid": 331,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "Q",
+            "Q",
+            "T",
+            "Q",
+            "4"
+        ],
+        "bid": 973,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "Q",
+            "Q",
+            "T",
+            "Q",
+            "7"
+        ],
+        "bid": 642,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "Q",
+            "Q",
+            "Q",
+            "2",
+            "7"
+        ],
+        "bid": 200,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "Q",
+            "Q",
+            "Q",
+            "J",
+            "8"
+        ],
+        "bid": 566,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "Q",
+            "Q",
+            "A",
+            "5",
+            "Q"
+        ],
+        "bid": 858,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "K",
+            "5",
+            "J",
+            "5",
+            "5"
+        ],
+        "bid": 982,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "K",
+            "5",
+            "K",
+            "K",
+            "2"
+        ],
+        "bid": 621,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "K",
+            "8",
+            "K",
+            "K",
+            "J"
+        ],
+        "bid": 857,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "K",
+            "9",
+            "9",
+            "9",
+            "3"
+        ],
+        "bid": 70,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "K",
+            "J",
+            "K",
+            "K",
+            "6"
+        ],
+        "bid": 490,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "K",
+            "J",
+            "K",
+            "K",
+            "Q"
+        ],
+        "bid": 832,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "K",
+            "K",
+            "2",
+            "7",
+            "K"
+        ],
+        "bid": 252,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "K",
+            "K",
+            "4",
+            "6",
+            "K"
+        ],
+        "bid": 811,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "K",
+            "K",
+            "9",
+            "J",
+            "K"
+        ],
+        "bid": 110,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "K",
+            "K",
+            "J",
+            "4",
+            "K"
+        ],
+        "bid": 948,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "K",
+            "A",
+            "5",
+            "K",
+            "K"
+        ],
+        "bid": 790,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "A",
+            "2",
+            "2",
+            "2",
+            "3"
+        ],
+        "bid": 28,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "A",
+            "3",
+            "3",
+            "J",
+            "3"
+        ],
+        "bid": 114,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "A",
+            "6",
+            "A",
+            "A",
+            "5"
+        ],
+        "bid": 328,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "A",
+            "8",
+            "4",
+            "A",
+            "A"
+        ],
+        "bid": 370,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "A",
+            "8",
+            "J",
+            "A",
+            "A"
+        ],
+        "bid": 622,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "A",
+            "9",
+            "8",
+            "A",
+            "A"
+        ],
+        "bid": 99,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "A",
+            "T",
+            "A",
+            "A",
+            "J"
+        ],
+        "bid": 183,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "A",
+            "Q",
+            "7",
+            "A",
+            "A"
+        ],
+        "bid": 121,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "A",
+            "Q",
+            "K",
+            "A",
+            "A"
+        ],
+        "bid": 42,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "A",
+            "A",
+            "2",
+            "A",
+            "4"
+        ],
+        "bid": 336,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "A",
+            "A",
+            "3",
+            "A",
+            "9"
+        ],
+        "bid": 177,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "A",
+            "A",
+            "4",
+            "A",
+            "6"
+        ],
+        "bid": 163,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "A",
+            "A",
+            "J",
+            "5",
+            "A"
+        ],
+        "bid": 941,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "A",
+            "A",
+            "A",
+            "2",
+            "8"
+        ],
+        "bid": 480,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "A",
+            "A",
+            "A",
+            "T",
+            "Q"
+        ],
+        "bid": 318,
+        "handType": "ThreeOfAKind"
+    },
+    {
+        "hand": [
+            "2",
+            "2",
+            "2",
+            "9",
+            "9"
+        ],
+        "bid": 797,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "2",
+            "2",
+            "5",
+            "2",
+            "5"
+        ],
+        "bid": 737,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "2",
+            "2",
+            "9",
+            "9",
+            "9"
+        ],
+        "bid": 240,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "2",
+            "2",
+            "K",
+            "2",
+            "K"
+        ],
+        "bid": 736,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "2",
+            "2",
+            "A",
+            "A",
+            "2"
+        ],
+        "bid": 201,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "2",
+            "2",
+            "A",
+            "A",
+            "A"
+        ],
+        "bid": 235,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "2",
+            "3",
+            "3",
+            "3",
+            "2"
+        ],
+        "bid": 629,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "2",
+            "6",
+            "6",
+            "6",
+            "2"
+        ],
+        "bid": 169,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "2",
+            "8",
+            "2",
+            "2",
+            "8"
+        ],
+        "bid": 61,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "2",
+            "T",
+            "2",
+            "T",
+            "T"
+        ],
+        "bid": 827,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "2",
+            "T",
+            "T",
+            "2",
+            "2"
+        ],
+        "bid": 776,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "2",
+            "J",
+            "2",
+            "J",
+            "2"
+        ],
+        "bid": 322,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "2",
+            "K",
+            "2",
+            "K",
+            "K"
+        ],
+        "bid": 137,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "3",
+            "2",
+            "2",
+            "3",
+            "2"
+        ],
+        "bid": 873,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "3",
+            "3",
+            "3",
+            "5",
+            "5"
+        ],
+        "bid": 23,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "3",
+            "3",
+            "3",
+            "A",
+            "A"
+        ],
+        "bid": 382,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "3",
+            "3",
+            "5",
+            "5",
+            "5"
+        ],
+        "bid": 402,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "3",
+            "3",
+            "T",
+            "T",
+            "T"
+        ],
+        "bid": 335,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "3",
+            "6",
+            "6",
+            "6",
+            "3"
+        ],
+        "bid": 799,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "3",
+            "7",
+            "3",
+            "7",
+            "7"
+        ],
+        "bid": 990,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "3",
+            "7",
+            "7",
+            "3",
+            "3"
+        ],
+        "bid": 18,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "3",
+            "T",
+            "3",
+            "T",
+            "3"
+        ],
+        "bid": 441,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "3",
+            "J",
+            "J",
+            "3",
+            "3"
+        ],
+        "bid": 994,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "3",
+            "Q",
+            "Q",
+            "Q",
+            "3"
+        ],
+        "bid": 85,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "3",
+            "A",
+            "A",
+            "A",
+            "3"
+        ],
+        "bid": 160,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "4",
+            "2",
+            "4",
+            "2",
+            "2"
+        ],
+        "bid": 744,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "4",
+            "3",
+            "4",
+            "4",
+            "3"
+        ],
+        "bid": 906,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "3",
+            "3",
+            "3"
+        ],
+        "bid": 478,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "4",
+            "7",
+            "7"
+        ],
+        "bid": 560,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "4",
+            "9",
+            "9"
+        ],
+        "bid": 775,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "4",
+            "J",
+            "J"
+        ],
+        "bid": 133,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "6",
+            "6",
+            "6"
+        ],
+        "bid": 387,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "8",
+            "8",
+            "4"
+        ],
+        "bid": 949,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "T",
+            "T",
+            "T"
+        ],
+        "bid": 781,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "4",
+            "Q",
+            "4",
+            "4",
+            "Q"
+        ],
+        "bid": 940,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "4",
+            "A",
+            "A",
+            "A",
+            "4"
+        ],
+        "bid": 432,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "5",
+            "5",
+            "A",
+            "A",
+            "5"
+        ],
+        "bid": 780,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "5",
+            "5",
+            "A",
+            "A",
+            "A"
+        ],
+        "bid": 26,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "5",
+            "7",
+            "5",
+            "7",
+            "5"
+        ],
+        "bid": 296,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "5",
+            "8",
+            "5",
+            "8",
+            "5"
+        ],
+        "bid": 693,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "5",
+            "9",
+            "5",
+            "5",
+            "9"
+        ],
+        "bid": 722,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "5",
+            "T",
+            "5",
+            "5",
+            "T"
+        ],
+        "bid": 680,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "5",
+            "K",
+            "K",
+            "5",
+            "5"
+        ],
+        "bid": 678,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "6",
+            "2",
+            "6",
+            "2",
+            "2"
+        ],
+        "bid": 627,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "6",
+            "4",
+            "4",
+            "6",
+            "4"
+        ],
+        "bid": 574,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "6",
+            "6",
+            "5",
+            "5",
+            "5"
+        ],
+        "bid": 311,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "6",
+            "6",
+            "6",
+            "T",
+            "T"
+        ],
+        "bid": 844,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "6",
+            "6",
+            "6",
+            "K",
+            "K"
+        ],
+        "bid": 750,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "6",
+            "6",
+            "6",
+            "A",
+            "A"
+        ],
+        "bid": 706,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "6",
+            "7",
+            "6",
+            "7",
+            "6"
+        ],
+        "bid": 481,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "6",
+            "7",
+            "6",
+            "7",
+            "7"
+        ],
+        "bid": 635,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "6",
+            "8",
+            "8",
+            "6",
+            "8"
+        ],
+        "bid": 998,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "6",
+            "J",
+            "6",
+            "J",
+            "J"
+        ],
+        "bid": 312,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "6",
+            "Q",
+            "Q",
+            "6",
+            "6"
+        ],
+        "bid": 158,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "6",
+            "K",
+            "K",
+            "6",
+            "K"
+        ],
+        "bid": 136,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "7",
+            "2",
+            "2"
+        ],
+        "bid": 467,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "7",
+            "K",
+            "K"
+        ],
+        "bid": 154,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "9",
+            "7",
+            "9"
+        ],
+        "bid": 59,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "T",
+            "7",
+            "T"
+        ],
+        "bid": 399,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "7",
+            "8",
+            "8",
+            "7",
+            "8"
+        ],
+        "bid": 479,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "7",
+            "J",
+            "J",
+            "7",
+            "J"
+        ],
+        "bid": 88,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "7",
+            "K",
+            "K",
+            "K",
+            "7"
+        ],
+        "bid": 450,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "7",
+            "A",
+            "7",
+            "7",
+            "A"
+        ],
+        "bid": 454,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "7",
+            "A",
+            "A",
+            "A",
+            "7"
+        ],
+        "bid": 152,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "8",
+            "8",
+            "3",
+            "3",
+            "3"
+        ],
+        "bid": 701,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "8",
+            "J",
+            "8",
+            "J",
+            "J"
+        ],
+        "bid": 898,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "8",
+            "Q",
+            "8",
+            "8",
+            "Q"
+        ],
+        "bid": 555,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "9",
+            "5",
+            "5",
+            "9",
+            "9"
+        ],
+        "bid": 605,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "9",
+            "6",
+            "9",
+            "9",
+            "6"
+        ],
+        "bid": 25,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "9",
+            "8",
+            "8",
+            "9",
+            "8"
+        ],
+        "bid": 113,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "9",
+            "8",
+            "9",
+            "8",
+            "9"
+        ],
+        "bid": 526,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "9",
+            "9",
+            "9",
+            "4",
+            "4"
+        ],
+        "bid": 571,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "9",
+            "9",
+            "J",
+            "9",
+            "J"
+        ],
+        "bid": 129,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "9",
+            "T",
+            "T",
+            "T",
+            "9"
+        ],
+        "bid": 92,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "T",
+            "8",
+            "8",
+            "T",
+            "8"
+        ],
+        "bid": 903,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "T",
+            "T",
+            "J",
+            "T",
+            "J"
+        ],
+        "bid": 603,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "T",
+            "A",
+            "T",
+            "T",
+            "A"
+        ],
+        "bid": 456,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "J",
+            "5",
+            "5",
+            "5",
+            "J"
+        ],
+        "bid": 698,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "J",
+            "6",
+            "6",
+            "6",
+            "J"
+        ],
+        "bid": 596,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "J",
+            "7",
+            "7",
+            "J",
+            "7"
+        ],
+        "bid": 205,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "J",
+            "8",
+            "8",
+            "8",
+            "J"
+        ],
+        "bid": 726,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "J",
+            "9",
+            "J",
+            "J",
+            "9"
+        ],
+        "bid": 713,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "J",
+            "J",
+            "Q",
+            "Q",
+            "Q"
+        ],
+        "bid": 333,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "J",
+            "J",
+            "K",
+            "K",
+            "K"
+        ],
+        "bid": 366,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "Q",
+            "2",
+            "2",
+            "2",
+            "Q"
+        ],
+        "bid": 453,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "Q",
+            "2",
+            "Q",
+            "Q",
+            "2"
+        ],
+        "bid": 753,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "Q",
+            "4",
+            "Q",
+            "Q",
+            "4"
+        ],
+        "bid": 486,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "Q",
+            "5",
+            "Q",
+            "5",
+            "Q"
+        ],
+        "bid": 245,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "Q",
+            "7",
+            "7",
+            "Q",
+            "Q"
+        ],
+        "bid": 756,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "Q",
+            "Q",
+            "6",
+            "Q",
+            "6"
+        ],
+        "bid": 53,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "Q",
+            "Q",
+            "Q",
+            "K",
+            "K"
+        ],
+        "bid": 112,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "K",
+            "3",
+            "K",
+            "3",
+            "K"
+        ],
+        "bid": 283,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "K",
+            "4",
+            "K",
+            "K",
+            "4"
+        ],
+        "bid": 870,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "K",
+            "5",
+            "5",
+            "K",
+            "K"
+        ],
+        "bid": 624,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "K",
+            "K",
+            "Q",
+            "K",
+            "Q"
+        ],
+        "bid": 445,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "K",
+            "A",
+            "A",
+            "K",
+            "K"
+        ],
+        "bid": 911,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "A",
+            "8",
+            "8",
+            "A",
+            "A"
+        ],
+        "bid": 619,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "A",
+            "9",
+            "A",
+            "9",
+            "A"
+        ],
+        "bid": 550,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "A",
+            "T",
+            "A",
+            "T",
+            "A"
+        ],
+        "bid": 514,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "A",
+            "J",
+            "A",
+            "J",
+            "A"
+        ],
+        "bid": 66,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "A",
+            "K",
+            "K",
+            "A",
+            "A"
+        ],
+        "bid": 543,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "A",
+            "A",
+            "A",
+            "6",
+            "6"
+        ],
+        "bid": 173,
+        "handType": "FullHouse"
+    },
+    {
+        "hand": [
+            "2",
+            "2",
+            "2",
+            "6",
+            "2"
+        ],
+        "bid": 540,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "2",
+            "2",
+            "4",
+            "2",
+            "2"
+        ],
+        "bid": 633,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "2",
+            "9",
+            "2",
+            "2",
+            "2"
+        ],
+        "bid": 606,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "3",
+            "3",
+            "3",
+            "5",
+            "3"
+        ],
+        "bid": 492,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "3",
+            "3",
+            "3",
+            "7",
+            "3"
+        ],
+        "bid": 859,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "3",
+            "3",
+            "3",
+            "J",
+            "3"
+        ],
+        "bid": 442,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "3",
+            "3",
+            "Q",
+            "3",
+            "3"
+        ],
+        "bid": 573,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "3",
+            "4",
+            "4",
+            "4",
+            "4"
+        ],
+        "bid": 720,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "2",
+            "4",
+            "4"
+        ],
+        "bid": 34,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "4",
+            "4",
+            "7"
+        ],
+        "bid": 546,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "4",
+            "5",
+            "4"
+        ],
+        "bid": 586,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "4",
+            "6",
+            "4"
+        ],
+        "bid": 820,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "8",
+            "4",
+            "4"
+        ],
+        "bid": 637,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "9",
+            "4",
+            "4"
+        ],
+        "bid": 68,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "J",
+            "4",
+            "4"
+        ],
+        "bid": 583,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "4",
+            "4",
+            "A",
+            "4",
+            "4"
+        ],
+        "bid": 37,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "4",
+            "5",
+            "5",
+            "5",
+            "5"
+        ],
+        "bid": 767,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "4",
+            "7",
+            "7",
+            "7",
+            "7"
+        ],
+        "bid": 929,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "5",
+            "2",
+            "5",
+            "5",
+            "5"
+        ],
+        "bid": 77,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "5",
+            "5",
+            "5",
+            "5",
+            "8"
+        ],
+        "bid": 100,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "5",
+            "5",
+            "5",
+            "5",
+            "K"
+        ],
+        "bid": 888,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "5",
+            "5",
+            "5",
+            "6",
+            "5"
+        ],
+        "bid": 313,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "5",
+            "5",
+            "J",
+            "5",
+            "5"
+        ],
+        "bid": 270,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "5",
+            "5",
+            "A",
+            "5",
+            "5"
+        ],
+        "bid": 356,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "5",
+            "7",
+            "7",
+            "7",
+            "7"
+        ],
+        "bid": 248,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "5",
+            "Q",
+            "5",
+            "5",
+            "5"
+        ],
+        "bid": 626,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "6",
+            "3",
+            "3",
+            "3",
+            "3"
+        ],
+        "bid": 711,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "6",
+            "5",
+            "6",
+            "6",
+            "6"
+        ],
+        "bid": 126,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "6",
+            "6",
+            "2",
+            "6",
+            "6"
+        ],
+        "bid": 918,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "6",
+            "6",
+            "3",
+            "6",
+            "6"
+        ],
+        "bid": 788,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "6",
+            "6",
+            "8",
+            "6",
+            "6"
+        ],
+        "bid": 192,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "2",
+            "2",
+            "2",
+            "2"
+        ],
+        "bid": 123,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "2",
+            "7",
+            "7",
+            "7"
+        ],
+        "bid": 347,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "5",
+            "5",
+            "5",
+            "5"
+        ],
+        "bid": 741,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "6",
+            "6",
+            "6",
+            "6"
+        ],
+        "bid": 9,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "7",
+            "6",
+            "7"
+        ],
+        "bid": 641,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "7",
+            "7",
+            "3"
+        ],
+        "bid": 451,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "7",
+            "7",
+            "T"
+        ],
+        "bid": 548,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "7",
+            "7",
+            "J"
+        ],
+        "bid": 401,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "7",
+            "7",
+            "Q"
+        ],
+        "bid": 950,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "7",
+            "7",
+            "K",
+            "7"
+        ],
+        "bid": 202,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "T",
+            "T",
+            "T",
+            "T"
+        ],
+        "bid": 483,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "7",
+            "A",
+            "A",
+            "A",
+            "A"
+        ],
+        "bid": 926,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "8",
+            "6",
+            "8",
+            "8",
+            "8"
+        ],
+        "bid": 294,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "8",
+            "7",
+            "7",
+            "7",
+            "7"
+        ],
+        "bid": 768,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "8",
+            "8",
+            "3",
+            "8",
+            "8"
+        ],
+        "bid": 987,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "8",
+            "8",
+            "8",
+            "8",
+            "2"
+        ],
+        "bid": 651,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "8",
+            "8",
+            "8",
+            "T",
+            "8"
+        ],
+        "bid": 772,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "8",
+            "8",
+            "J",
+            "8",
+            "8"
+        ],
+        "bid": 916,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "8",
+            "K",
+            "8",
+            "8",
+            "8"
+        ],
+        "bid": 782,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "6",
+            "6",
+            "6",
+            "6"
+        ],
+        "bid": 521,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "9",
+            "8",
+            "9",
+            "9"
+        ],
+        "bid": 623,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "9",
+            "9",
+            "2",
+            "9"
+        ],
+        "bid": 119,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "9",
+            "9",
+            "5",
+            "9"
+        ],
+        "bid": 339,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "9",
+            "9",
+            "9",
+            "J"
+        ],
+        "bid": 617,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "9",
+            "9",
+            "9",
+            "K"
+        ],
+        "bid": 268,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "K",
+            "K",
+            "K",
+            "K"
+        ],
+        "bid": 556,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "9",
+            "A",
+            "9",
+            "9",
+            "9"
+        ],
+        "bid": 825,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "T",
+            "2",
+            "2",
+            "2",
+            "2"
+        ],
+        "bid": 714,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "T",
+            "5",
+            "T",
+            "T",
+            "T"
+        ],
+        "bid": 155,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "T",
+            "T",
+            "2",
+            "T",
+            "T"
+        ],
+        "bid": 792,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "T",
+            "T",
+            "6",
+            "T",
+            "T"
+        ],
+        "bid": 64,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "T",
+            "T",
+            "T",
+            "4",
+            "T"
+        ],
+        "bid": 56,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "T",
+            "T",
+            "T",
+            "T",
+            "9"
+        ],
+        "bid": 881,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "T",
+            "K",
+            "T",
+            "T",
+            "T"
+        ],
+        "bid": 174,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "J",
+            "2",
+            "2",
+            "2",
+            "2"
+        ],
+        "bid": 661,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "J",
+            "6",
+            "6",
+            "6",
+            "6"
+        ],
+        "bid": 188,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "J",
+            "T",
+            "T",
+            "T",
+            "T"
+        ],
+        "bid": 51,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "J",
+            "J",
+            "8",
+            "J",
+            "J"
+        ],
+        "bid": 868,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "J",
+            "A",
+            "A",
+            "A",
+            "A"
+        ],
+        "bid": 717,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "Q",
+            "3",
+            "Q",
+            "Q",
+            "Q"
+        ],
+        "bid": 358,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "Q",
+            "T",
+            "T",
+            "T",
+            "T"
+        ],
+        "bid": 199,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "Q",
+            "J",
+            "Q",
+            "Q",
+            "Q"
+        ],
+        "bid": 89,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "Q",
+            "Q",
+            "7",
+            "Q",
+            "Q"
+        ],
+        "bid": 362,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "Q",
+            "Q",
+            "Q",
+            "4",
+            "Q"
+        ],
+        "bid": 933,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "Q",
+            "Q",
+            "Q",
+            "9",
+            "Q"
+        ],
+        "bid": 228,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "Q",
+            "Q",
+            "Q",
+            "Q",
+            "T"
+        ],
+        "bid": 899,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "Q",
+            "K",
+            "Q",
+            "Q",
+            "Q"
+        ],
+        "bid": 261,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "Q",
+            "A",
+            "Q",
+            "Q",
+            "Q"
+        ],
+        "bid": 640,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "K",
+            "2",
+            "2",
+            "2",
+            "2"
+        ],
+        "bid": 184,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "K",
+            "2",
+            "K",
+            "K",
+            "K"
+        ],
+        "bid": 308,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "K",
+            "T",
+            "K",
+            "K",
+            "K"
+        ],
+        "bid": 422,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "K",
+            "Q",
+            "K",
+            "K",
+            "K"
+        ],
+        "bid": 474,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "K",
+            "K",
+            "7",
+            "K",
+            "K"
+        ],
+        "bid": 745,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "K",
+            "K",
+            "K",
+            "4",
+            "K"
+        ],
+        "bid": 676,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "K",
+            "K",
+            "K",
+            "8",
+            "K"
+        ],
+        "bid": 491,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "K",
+            "K",
+            "K",
+            "K",
+            "J"
+        ],
+        "bid": 198,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "K",
+            "A",
+            "K",
+            "K",
+            "K"
+        ],
+        "bid": 735,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "A",
+            "8",
+            "A",
+            "A",
+            "A"
+        ],
+        "bid": 388,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "A",
+            "K",
+            "A",
+            "A",
+            "A"
+        ],
+        "bid": 710,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "A",
+            "A",
+            "Q",
+            "A",
+            "A"
+        ],
+        "bid": 883,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "A",
+            "A",
+            "A",
+            "A",
+            "4"
+        ],
+        "bid": 652,
+        "handType": "FourOfAKind"
+    },
+    {
+        "hand": [
+            "J",
+            "J",
+            "J",
+            "J",
+            "J"
+        ],
+        "bid": 647,
+        "handType": "FiveOfAKind"
+    }
+]
