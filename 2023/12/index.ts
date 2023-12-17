@@ -1,6 +1,6 @@
 import { expect } from 'chai'
 import { readFileSync } from 'fs'
-import { last, memoize, sum, uniq } from 'lodash'
+import { memoize, sum } from 'lodash'
 import { resolve } from 'path'
 
 const taskInput = readFileSync(resolve(__dirname, 'input.txt'), 'utf-8')
@@ -13,20 +13,19 @@ interface RowData {
 
 const findAllMatches = (target: string, search: string) => {
   const result: number[] = []
-  let current = target
 
   for (let i = 0; i < target.length; i++) {
-    const index = current.indexOf(search)
+    const index = target.indexOf(search, i)
 
     if (index === -1) return result
 
-    result.push(index + i)
-    current = current.slice(1)
-    if (i > 100) console.log({ i })
+    result.push(index)
   }
 
   return result
 }
+
+expect(findAllMatches('###', '#')).to.deep.equal([0, 1, 2])
 
 const findAllMatchesMemoized = memoize(findAllMatches, (target, search) => `${target}/${search}`)
 
@@ -40,45 +39,102 @@ const createDamagedSpringsString = (l: number) => {
 
 const createDamagedSpringsStringMemoized = memoize(createDamagedSpringsString)
 
-const findMatchesForGroup = (group: number, row: string, originalRow: string, lastIndex: number) => {
+const findValidPathsForGroup = (group: number, row: string, path: number[]) => {
   const groupStr = createDamagedSpringsStringMemoized(group)
-  const targetRow = originalRow.replaceAll('?', '#')
-  // console.log({ group, lastIndex })
-  const matchIndexes = findAllMatchesMemoized(targetRow, groupStr).filter((index) => index > lastIndex)
-  if (matchIndexes.length > 100) console.log({ len: matchIndexes })
-  const validPlacements = []
+  const targetRow = row.replaceAll('?', '#')
+  const matchIndexes = findAllMatchesMemoized(targetRow, groupStr)
+  const validPaths = []
   for (const matchIndex of matchIndexes) {
-    if (lastIndex === matchIndex) throw new Error('oops')
-
-    const sub = row.substring(0, matchIndex)
-    const sub2 = row.substring(matchIndex + group)
-    const replaced = sub + groupStr.replaceAll('#', '-') + sub2
-
-    if (replaced.match('-#') ?? replaced.match('#-')) {
+    if (row.charAt(matchIndex + group) === '#' || row.charAt(matchIndex - 1) === '#') {
       continue
     }
 
-    const replaced2 = replaced.replace('-?', '-.').replace('?-', '.-')
-    validPlacements.push({ replaced: replaced2, index: matchIndex + group })
-    if (validPlacements.length % 10000 === 0) console.log(validPlacements.length)
+    validPaths.push(path.concat(matchIndex))
   }
 
-  return validPlacements
+  return validPaths
 }
 
-const findMatches = ({ groups, row }: RowData, print: boolean): string[] => {
-  let validPlacements = [{ replaced: row, index: -1 }]
-  if (print) console.log('----', { row, groups })
+const findValidPathsForGroupMemoized = memoize(findValidPathsForGroup, (group, row, path) => `${group}/${row}/${path.join('-')}`)
 
-  for (const group of groups) {
-    validPlacements = validPlacements.flatMap(({ replaced, index }) => findMatchesForGroup(group, replaced, row, index))
-    // if (print) console.log(validPlacements)
+const checkIfValid = (groups: number[], path: number[], row: string) => {
+  let replaced = row
+  for (let p = 0; p < path.length; p++) {
+    const index = path[p]
+    const group = groups[p]
+    const sub = replaced.substring(0, index)
+    const sub2 = replaced.substring(index + group)
+    replaced = sub + createDamagedSpringsStringMemoized(group).replaceAll('#', '-') + sub2
   }
 
-  const uniqPlacements = uniq(validPlacements.map(p => p.replaced))
-  const filterOutUnreplacedStuff = uniqPlacements.filter(p => !p.includes('#'))
+  if (replaced.includes('#')) return false
+  return true
+}
 
-  return filterOutUnreplacedStuff
+const getKey = (path: number[]) => path.join('-')
+
+const findMatchesCount = ({ groups, row }: RowData): number => {
+  let validPlacements = [[] as number[]]
+  let cache: Record<string, number[]> = {}
+
+  const dateSectionA = new Date()
+  for (let groupIndex = 0; groupIndex < groups.length; groupIndex++) {
+    const group = groups[groupIndex]
+    const prevGroup = groups[groupIndex - 1] ?? 0
+
+    // const newPlacements: number[][][] = []
+    const validPlacementsDate = new Date()
+    console.log({ row, group, validPlacements: validPlacements.length })
+
+    validPlacements.forEach((prevPath) => {
+      // const key = getKey(prevPath, group)
+      // const cacheEntry = cache[key]
+      // if (cacheEntry) return
+
+      const validPaths = findValidPathsForGroupMemoized(group, row, prevPath)
+
+      if (groupIndex === 0) {
+        for (const path of validPaths) {
+          const subKey = getKey(path)
+          if (cache[subKey]) continue
+          cache[subKey] = path
+        }
+        return
+      }
+      const nextIndexToStartFrom = prevPath[prevPath.length - 1] + prevGroup
+      for (const path of validPaths) {
+        const subKey = getKey(path)
+        if (cache[subKey]) continue
+        if (path[path.length - 1] <= nextIndexToStartFrom) continue
+        cache[subKey] = path
+      }
+    })
+    console.log('dateValidPathForGroup', (new Date().getTime() - validPlacementsDate.getTime()) / 1000)
+
+    // console.log({
+    //   // cache: Object.keys(cache).length,
+    //   subCache: Object.keys(subCache).length
+    // })
+
+    validPlacements = Object.values(cache)
+    // cache = {}
+    cache = {}
+  }
+
+  console.log('Section A', (new Date().getTime() - dateSectionA.getTime()) / 1000)
+
+  // console.log('validPlacements count', validPlacements.length)
+
+  const validReplacedStrings = validPlacements.map(path => path.join('-'))
+
+  const filterOutUnreplacedStuff = validReplacedStrings.filter(p => {
+    const path = p.split('-').map(Number)
+    return checkIfValid(groups, path, row)
+  })
+
+  // console.log('filterOutUnreplacedStuff count', filterOutUnreplacedStuff.length)
+
+  return filterOutUnreplacedStuff.length
 }
 
 const parse = (input: string) => input
@@ -93,10 +149,10 @@ const solve = (input: string, print = false) => {
   const rows = parse(input)
 
   const matchCounts = rows
-    .map(row => findMatches(row, print))
-    .map(matches => matches.length)
-
-  // console.log({ matchCounts })
+    .map((row, rowIndex) => {
+      console.log({ rowIndex })
+      return findMatchesCount(row)
+    })
 
   return sum(matchCounts)
 }
@@ -104,7 +160,7 @@ const solve = (input: string, print = false) => {
 expect(solve('?###???????? 3,2,1')).to.equal(10)
 expect(solve('?#?#?? 1,1')).to.equal(1)
 expect(solve(testData)).to.equal(21)
-expect(solve(taskInput, true)).to.equal(7541)
+expect(solve(taskInput)).to.equal(7541)
 
 // Part 2
 
@@ -123,15 +179,23 @@ const unfoldAll = (rows: RowData[]) => rows.map(({ row, groups }) => ({
 //   groups
 // }))
 
-const solve2 = (input: string, print = false) => {
-  const rows = parse(input)
+// optimizations:
+// use indexes instead of replaced
+// more memoization
+// squeeze repeating '.'
+
+const solve2 = (input: string) => {
+  console.log('PART 2')
+  const rows = parse(input).map(({ groups, row }) => ({ groups, row: row.replaceAll(/\.+/g, '.') }))
   const unfoldedRows = unfoldAll(rows)
   // const unfoldedRows1 = unfoldOnce(rows)
   // const unfoldedRows2 = unfoldTwice(rows)
 
   const matchCounts = unfoldedRows
-    .map(row => findMatches(row, print))
-    .map(matches => matches.length)
+    .map((row, rowIndex) => {
+      console.log('ROW INDEX', { rowIndex })
+      return findMatchesCount(row)
+    })
 
   // const matchCount = sum(matchCounts)
 
@@ -159,7 +223,7 @@ const solve2 = (input: string, print = false) => {
   return sum(matchCounts)
 }
 
-expect(solve2(testData, true)).to.equal(525152)
-// expect(solve2(taskInput)).to.equal(undefined)
+expect(solve2(testData)).to.equal(525152)
+// expect(solve2(taskInpuast)).to.equal(17485169859432)
 
 // npx ts-node 2023/12/index.ts
