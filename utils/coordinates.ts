@@ -15,6 +15,18 @@ export const south = (c: Coordinates) => ({ x: c.x, y: c.y + 1 })
 export const get4Directions = (c: Coordinates) => [right(c), left(c), south(c), north(c)]
 export const get8Directions = (c: Coordinates) => [...get4Directions(c), south(left(c)), south(right(c)), north(left(c)), north(right(c))]
 
+export interface Bounds {
+  minX?: number
+  minY?: number
+  maxX: number
+  maxY: number
+}
+export const isInBounds = (
+  { x, y }: Coordinates,
+  { minX = 0, minY = 0, maxX, maxY }: Bounds
+) =>
+  x >= minX && x < maxX && y >= minY && y < maxY
+
 export type Symbols = Record<string, string>
 
 interface Render {
