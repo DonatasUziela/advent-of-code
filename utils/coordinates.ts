@@ -9,11 +9,11 @@ export const sameCoords = (a: Coordinates, b: Coordinates) => a.x === b.x && a.y
 
 export const left = (c: Coordinates) => ({ x: c.x - 1, y: c.y })
 export const right = (c: Coordinates) => ({ x: c.x + 1, y: c.y })
-export const down = (c: Coordinates) => ({ x: c.x, y: c.y - 1 })
-export const up = (c: Coordinates) => ({ x: c.x, y: c.y + 1 })
+export const north = (c: Coordinates) => ({ x: c.x, y: c.y - 1 })
+export const south = (c: Coordinates) => ({ x: c.x, y: c.y + 1 })
 
-export const get4Directions = (c: Coordinates) => [right(c), left(c), up(c), down(c)]
-export const get8Directions = (c: Coordinates) => [...get4Directions(c), up(left(c)), up(right(c)), down(left(c)), down(right(c))]
+export const get4Directions = (c: Coordinates) => [right(c), left(c), south(c), north(c)]
+export const get8Directions = (c: Coordinates) => [...get4Directions(c), south(left(c)), south(right(c)), north(left(c)), north(right(c))]
 
 export type Symbols = Record<string, string>
 

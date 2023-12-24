@@ -5,7 +5,7 @@ import {
 } from 'fs'
 import { sum } from 'lodash'
 import { resolve } from 'path'
-import { right, type Coordinates, left, up, down, serializeCoords, parseCoords, sameCoords } from 'utils/coordinates'
+import { right, type Coordinates, left, south, north, serializeCoords, parseCoords, sameCoords } from 'utils/coordinates'
 
 const taskInput = readFileSync(resolve(__dirname, 'input.txt'), 'utf-8')
 const testData = readFileSync(resolve(__dirname, 'testData.txt'), 'utf-8')
@@ -20,8 +20,8 @@ type Direction = 'N' | 'E' | 'S' | 'W'
 export const get4Directions = (c: Coordinates): Array<{ coord: Coordinates, direction: Direction }> => [
   { coord: right(c), direction: 'E' },
   { coord: left(c), direction: 'W' },
-  { coord: up(c), direction: 'S' },
-  { coord: down(c), direction: 'N' }
+  { coord: south(c), direction: 'S' },
+  { coord: north(c), direction: 'N' }
 ]
 
 const parse = (input: string) => {
