@@ -50,8 +50,7 @@ const directionByType = {
   [Direction.South]: south
 }
 
-const solve = (input: string) => {
-  const grid = parse(input)
+const energize = (start: Coordinates, startDirection: Direction, grid: string[][]) => {
   const bounds = { maxY: grid.length, maxX: grid[0].length }
   const visited: Record<string, Direction[]> = {
   }
@@ -87,23 +86,49 @@ const solve = (input: string) => {
     }
   }
 
-  const initialBeam = createBeam({ x: -1, y: 0 }, bounds)
+  const initialBeam = createBeam(start, bounds)
 
-  moveBeam(initialBeam, Direction.East)
+  moveBeam(initialBeam, startDirection)
 
   return Object.keys(visited).length
 }
 
+const solve = (input: string) => {
+  const grid = parse(input)
+
+  return energize({ x: -1, y: 0 }, Direction.East, grid)
+}
+
 expect(solve(testData)).to.equal(46)
-expect(solve(taskInput)).to.be.above(117)
-expect(solve(taskInput)).to.equal(undefined)
+expect(solve(taskInput)).to.equal(7067)
 
 // Part 2
 
 const solve2 = (input: string) => {
+  const grid = parse(input)
+  const maxX = grid[0].length
+  const maxY = grid.length
+
+  let max = 0
+
+  for (let x = 0; x < maxX; x++) {
+    const a = energize({ x, y: -1 }, Direction.South, grid)
+    const b = energize({ x, y: maxY }, Direction.North, grid)
+
+    max = Math.max(a, b, max)
+  }
+
+  for (let y = 0; y < maxY; y++) {
+    const a = energize({ x: -1, y }, Direction.East, grid)
+    const b = energize({ x: maxX, y }, Direction.West, grid)
+
+    max = Math.max(a, b, max)
+  }
+
+  return max
 }
 
-expect(solve2(testData)).to.equal(undefined)
-expect(solve2(taskInput)).to.equal(undefined)
+expect(solve2(testData)).to.equal(51)
+expect(solve2(taskInput)).to.equal(7324)
 
 // npx ts-node 2023/16/index.ts
