@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { readFileSync, writeFileSync } from 'fs';
 import { isEqual } from 'lodash';
 import { resolve } from 'path';
-import { Coordinates, north, left, render, right, serializeCoords, Symbols } from 'utils/coordinates';
+import { Coordinates, north, west, render, east, serializeCoords, Symbols } from 'utils/coordinates';
 
 const taskInput = readFileSync(resolve(__dirname, 'input.txt'), 'utf-8');
 const testData = readFileSync(resolve(__dirname, 'testData.txt'), 'utf-8');
@@ -67,7 +67,7 @@ const isShapeStoppped = (shape: Coordinates[], blocks: Coordinates[]) => {
 
 const windAdjustment = (shape: Shape, step: number, winds: string[], blocks: Coordinates[]) => {
     const wind = winds[step % winds.length];
-    const transform = wind === '>' ? right : left;
+    const transform = wind === '>' ? east : west;
     const newShape = shape.map(transform);
 
     if (newShape.find(({ x }) => x < 0 || x > WIDTH - 1)) return shape;

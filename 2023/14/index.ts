@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import { readFileSync } from 'fs'
 import { resolve } from 'path'
-import { serializeCoords, north, type Coordinates, south, left, right, type Bounds, isInBounds } from 'utils/coordinates'
+import { serializeCoords, north, type Coordinates, south, west, east, type Bounds, isInBounds } from 'utils/coordinates'
 import { ascendingSorter, descendingSorter } from 'utils/sort'
 
 const taskInput = readFileSync(resolve(__dirname, 'input.txt'), 'utf-8')
@@ -85,7 +85,7 @@ const tiltWest = (info: RockInfo) => {
     .sort((a, b) => ascendingSorter(a.y, b.y))
     .sort((a, b) => ascendingSorter(a.x, b.x))
     .forEach(c => {
-      roll(info, c, left)
+      roll(info, c, west)
     })
 }
 
@@ -94,7 +94,7 @@ const tiltEast = (info: RockInfo) => {
     .sort((a, b) => ascendingSorter(a.y, b.y))
     .sort((a, b) => descendingSorter(a.x, b.x))
     .forEach(c => {
-      roll(info, c, right)
+      roll(info, c, east)
     })
 }
 

@@ -2,7 +2,7 @@ import { expect } from 'chai'
 import { readFileSync } from 'fs'
 import { sum } from 'lodash'
 import { resolve } from 'path'
-import { type Coordinates, serializeCoords, get8Directions, left, parseCoords, sameCoords } from 'utils/coordinates'
+import { type Coordinates, serializeCoords, get8Directions, west, parseCoords, sameCoords } from 'utils/coordinates'
 
 const taskInput = readFileSync(resolve(__dirname, 'input.txt'), 'utf-8')
 const testData = readFileSync(resolve(__dirname, 'testData.txt'), 'utf-8')
@@ -11,7 +11,7 @@ const generateNumberCoords = (numberText: string, end: Coordinates) => {
   const result = [end]
 
   for (let i = 1; i < numberText.length; i++) {
-    result.push(left(result[result.length - 1]))
+    result.push(west(result[result.length - 1]))
   }
 
   return result

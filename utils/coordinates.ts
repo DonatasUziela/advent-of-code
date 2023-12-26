@@ -7,13 +7,21 @@ export const parseCoords = (coordinates: string) => {
 }
 export const sameCoords = (a: Coordinates, b: Coordinates) => a.x === b.x && a.y === b.y
 
-export const left = (c: Coordinates) => ({ x: c.x - 1, y: c.y })
-export const right = (c: Coordinates) => ({ x: c.x + 1, y: c.y })
+export enum Direction {
+  North = 'N',
+  East = 'E',
+  South = 'S',
+  West = 'W',
+}
+export type DirectionFunction = (c: Coordinates) => Coordinates
+
+export const west = (c: Coordinates) => ({ x: c.x - 1, y: c.y })
+export const east = (c: Coordinates) => ({ x: c.x + 1, y: c.y })
 export const north = (c: Coordinates) => ({ x: c.x, y: c.y - 1 })
 export const south = (c: Coordinates) => ({ x: c.x, y: c.y + 1 })
 
-export const get4Directions = (c: Coordinates) => [right(c), left(c), south(c), north(c)]
-export const get8Directions = (c: Coordinates) => [...get4Directions(c), south(left(c)), south(right(c)), north(left(c)), north(right(c))]
+export const get4Directions = (c: Coordinates) => [east(c), west(c), south(c), north(c)]
+export const get8Directions = (c: Coordinates) => [...get4Directions(c), south(west(c)), south(east(c)), north(west(c)), north(east(c))]
 
 export interface Bounds {
   minX?: number
