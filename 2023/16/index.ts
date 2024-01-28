@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import { readFileSync } from 'fs'
 import { resolve } from 'path'
-import { type DirectionFunction, type Coordinates, isInBounds, type Bounds, east, serializeCoords, west, north, south, Direction } from 'utils/coordinates'
+import { type DirectionFunction, type Coordinates, isInBounds, type Bounds, serializeCoords, Direction, directionByType } from 'utils/coordinates'
 
 const taskInput = readFileSync(resolve(__dirname, 'input.txt'), 'utf-8')
 const testData = readFileSync(resolve(__dirname, 'testData.txt'), 'utf-8')
@@ -41,13 +41,6 @@ const ninetyDegrees = {
     [Direction.North]: Direction.East,
     [Direction.West]: Direction.South
   }
-}
-
-const directionByType = {
-  [Direction.East]: east,
-  [Direction.North]: north,
-  [Direction.West]: west,
-  [Direction.South]: south
 }
 
 const energize = (start: Coordinates, startDirection: Direction, grid: string[][]) => {
