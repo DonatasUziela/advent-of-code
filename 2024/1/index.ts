@@ -38,9 +38,25 @@ expect(solve(taskInput)).to.equal(3508942)
 // Part 2
 
 const solve2 = (input: string) => {
+  const lists = parse(input)
+
+  const countsMap: Record<number, number> = {}
+  lists[0].forEach((n) => {
+    if (countsMap[n]) return
+
+    let count = 0
+    lists[1].forEach((m) => {
+      if (m === n) count += 1
+    })
+    countsMap[n] = count
+  })
+
+  const similarityScores = lists[0].map((n) => n * countsMap[n])
+
+  return sum(similarityScores)
 }
 
-expect(solve2(testData)).to.equal(undefined)
-expect(solve2(taskInput)).to.equal(undefined)
+expect(solve2(testData)).to.equal(31)
+expect(solve2(taskInput)).to.equal(26593248)
 
 // npx ts-node 2024/1/index.ts
