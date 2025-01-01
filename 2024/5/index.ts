@@ -67,9 +67,27 @@ expect(solve(taskInput)).to.equal(6034)
 // Part 2
 
 const solve2 = (input: string) => {
+  const { rules, updates } = parse(input)
+
+  const result = sum(updates
+    .filter(u => !isUpdateInRightOrder(u, rules))
+    .map(u => u.sort((a, b) => {
+      const rule = rules.find(({ before, after }) =>
+        (before === a && after === b) ||
+        (before === b && after === a)
+      )
+
+      if (!rule) return 0
+
+      return rule.before === a ? -1 : 1
+    }))
+    .map(u => u[(u.length - 1) / 2])
+    .map(n => Number(n)))
+
+  return result
 }
 
-expect(solve2(testData)).to.equal(undefined)
-expect(solve2(taskInput)).to.equal(undefined)
+expect(solve2(testData)).to.equal(123)
+expect(solve2(taskInput)).to.equal(6305)
 
 // npx ts-node 2024/5/index.ts
