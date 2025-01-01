@@ -21,7 +21,7 @@ const getAllIndexes = (str: string, search: string) => {
   return indexes
 }
 
-const getDiagonals = (matrix: string[][]) => {
+const getAllDiagonals = (matrix: string[][]) => {
   const diagonals: string[] = []
   // left-top quadrant of the matrix
   for (let row = 0; row < matrix.length; row++) {
@@ -58,7 +58,7 @@ const getDiagonals = (matrix: string[][]) => {
   return diagonals
 }
 
-expect(getDiagonals([
+expect(getAllDiagonals([
   ['1', '2', '3'],
   ['4', '5', '6'],
   ['7', '8', '9']
@@ -70,7 +70,7 @@ const findTextInMatrix = (matrix: string[][], searchTerm: string) => {
   const searchTermReversed = searchTerm.split('').reverse().join('')
   const lines = matrix.map(line => line.join(''))
   const columns = transpose(matrix).map(line => line.join(''))
-  const diagonals = getDiagonals(matrix)
+  const diagonals = getAllDiagonals(matrix)
   const searchData = [...lines, ...columns, ...diagonals]
 
   let count = 0
@@ -94,10 +94,48 @@ expect(solve(taskInput)).to.equal(2644)
 
 // Part 2
 
-const solve2 = (input: string) => {
+const getMainDiagonals = (matrix: string[][]) => {
+  let diagonal = ''
+  for (let row = 0; row < matrix.length; row++) {
+    diagonal += matrix[row][row]
+  }
+  let diagonal2 = ''
+  for (let row = 0; row < matrix.length; row++) {
+    diagonal2 += matrix[row][matrix.length - 1 - row]
+  }
+  return [diagonal, diagonal2]
 }
 
-expect(solve2(testData)).to.equal(undefined)
-expect(solve2(taskInput)).to.equal(undefined)
+expect(getMainDiagonals([
+  ['1', '2', '3'],
+  ['4', '5', '6'],
+  ['7', '8', '9']
+])).to.deep.equal(['159', '357'])
+
+// eslint-disable-next-line @typescript-eslint/naming-convention
+const hasX_MAS = (matrix: string[][]) => {
+  const diagonals = getMainDiagonals(matrix)
+  return (
+    (diagonals[0] === 'MAS' || diagonals[0] === 'SAM') &&
+    (diagonals[1] === 'MAS' || diagonals[1] === 'SAM')
+  )
+}
+
+const solve2 = (input: string) => {
+  const matrix = parse(input)
+  let count = 0
+  for (let row = 0; row < matrix.length - 2; row++) {
+    for (let j = 0; j < matrix[0].length - 2; j++) {
+      const subMatrix = matrix.slice(row, row + 3).map(line => line.slice(j, j + 3))
+      if (hasX_MAS(subMatrix)) {
+        count++
+      }
+    }
+  }
+  return count
+}
+
+expect(solve2(testData)).to.equal(9)
+expect(solve2(taskInput)).to.equal(1952)
 
 // npx ts-node 2024/4/index.ts
