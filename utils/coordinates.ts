@@ -15,6 +15,14 @@ export enum Direction {
 }
 export type DirectionFunction = (c: Coordinates, step?: number) => Coordinates
 
+export const changeDirectionRight = (direction: Direction) => {
+  if (direction === Direction.North) return Direction.East
+  if (direction === Direction.East) return Direction.South
+  if (direction === Direction.South) return Direction.West
+  if (direction === Direction.West) return Direction.North
+  throw new Error('Invalid direction')
+}
+
 export const west = (c: Coordinates, step = 1) => ({ x: c.x - step, y: c.y })
 export const east = (c: Coordinates, step = 1) => ({ x: c.x + step, y: c.y })
 export const north = (c: Coordinates, step = 1) => ({ x: c.x, y: c.y - step })
