@@ -1,6 +1,6 @@
 import { expect } from 'chai'
 import { readFileSync } from 'fs'
-import { sum, groupBy } from 'lodash'
+import { sum } from 'lodash'
 import { resolve } from 'path'
 
 const taskInput = readFileSync(resolve(__dirname, 'input.txt'), 'utf-8')
