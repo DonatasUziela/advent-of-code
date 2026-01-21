@@ -1,6 +1,7 @@
 import { expect } from 'chai'
 import { readFileSync } from 'fs'
 import { resolve } from 'path'
+import { isInRange, mergeRanges } from 'utils/range'
 
 const taskInput = readFileSync(resolve(__dirname, 'input.txt'), 'utf-8')
 const testData = readFileSync(resolve(__dirname, 'testData.txt'), 'utf-8')
@@ -14,8 +15,6 @@ const parse = (input: string) => {
     ranges: ranges.map(r => r.split('-').map(Number))
   }
 }
-
-const isInRange = (n: number, range: number[]) => n >= range[0] && n <= range[1]
 
 const solve = (input: string) => {
   const { ranges, availableIds } = parse(input)
@@ -38,9 +37,17 @@ expect(solve(taskInput)).to.equal(712)
 // Part 2
 
 const solve2 = (input: string) => {
+  const { ranges } = parse(input)
+  const mergedRanges = mergeRanges(ranges)
+  let count = 0
+  for (const range of mergedRanges) {
+    const length = range[1] - range[0] + 1
+    count += length
+  }
+  return count
 }
 
-expect(solve2(testData)).to.equal(undefined)
-expect(solve2(taskInput)).to.equal(undefined)
+expect(solve2(testData)).to.equal(14)
+expect(solve2(taskInput)).to.equal(332998283036769)
 
 // npx ts-node 2025/5/index.ts
