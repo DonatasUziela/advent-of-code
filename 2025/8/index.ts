@@ -11,16 +11,8 @@ const parse = (input: string) =>
   input
     .split('\n')
     .map(line => line.split(',').map(Number))
-    // .map(c => ({
-    //   x: c[0],
-    //   y: c[1],
-    //   z: c[2]
-    // }))
 
-const solve = (input: string, count: number) => {
-  const jukeboxes = parse(input)
-
-  // count all distances
+const countAllDistances = (jukeboxes: number[][]) => {
   const distances = []
   for (let i = 0; i < jukeboxes.length - 1; i++) {
     for (let j = i + 1; j < jukeboxes.length; j++) {
@@ -31,6 +23,14 @@ const solve = (input: string, count: number) => {
       })
     }
   }
+  return distances
+}
+
+const solve = (input: string, count: number) => {
+  const jukeboxes = parse(input)
+
+  // count all distances
+  const distances = countAllDistances(jukeboxes)
 
   const circuitByJukebox: Record<string, number> = {}
   for (let i = 0; i < jukeboxes.length; i++) {
@@ -71,9 +71,33 @@ expect(solve(taskInput, 1000)).to.equal(54600)
 // Part 2
 
 const solve2 = (input: string) => {
+  const jukeboxes = parse(input)
+
+  const distances = countAllDistances(jukeboxes)
+
+  const circuitByJukebox: Record<string, number> = {}
+  for (let i = 0; i < jukeboxes.length; i++) {
+    circuitByJukebox[serializeCoords(jukeboxes[i])] = i
+  }
+
+  // connect shortest distances while all connected to single circuit
+  distances.sort((a, b) => a.d - b.d)
+  let i = 0
+  while (uniq(Object.values(circuitByJukebox)).length !== 1) {
+    const { a, b } = distances[i]
+    const circuitA = circuitByJukebox[serializeCoords(a)]
+    const circuitB = circuitByJukebox[serializeCoords(b)]
+    const allJukeboxesInA = Object.keys(circuitByJukebox).filter(c => circuitByJukebox[c] === circuitA)
+    for (const j of allJukeboxesInA) {
+      circuitByJukebox[j] = circuitB
+    }
+    i++
+  }
+  const lastConnected = distances[i - 1]
+  return lastConnected.a[0] * lastConnected.b[0]
 }
 
-expect(solve2(testData)).to.equal(undefined)
-expect(solve2(taskInput)).to.equal(undefined)
+expect(solve2(testData)).to.equal(25272)
+expect(solve2(taskInput)).to.equal(107256172)
 
 // npx ts-node 2025/5/index.ts
